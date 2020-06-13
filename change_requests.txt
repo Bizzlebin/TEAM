@@ -1,6 +1,6 @@
 Change Requests
 
-https://github.com/bizzlebin/team/change_requests.txt
+https://github.com/bizzlebin/team/blob/master/change_requests.txt
 
 ***
 
@@ -9,6 +9,8 @@ By Jeremiah Thomas, et al
 ***
 
 Created on 2020-06-12
+
+Updated on 2020-06-13
 
 +++
 
