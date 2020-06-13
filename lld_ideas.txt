@@ -26,26 +26,26 @@ As far as SQLite and creating instances of a database, since our application is 
 
 
 ===
+
++++
+Class Ideas
+
 Zachary Wawrzaszek
 
-Class Ideas
 • Add a third level of user class that will handle all user creation and privilege methods. The mid level user class can delete and edit tags. The lowest level user can only create and search for tags. We can move around which permissions we think each level should have.
 
 ===
 Stavros Bannoura
 
-Class Ideas
 • Add a tag class that handles the file tagging information and data to transfer. 
-• We need a main class for just the user side 
-• We also need a communication class that can handle the HTTP(S) requests and communication
-• We need a database helper class that can handle the translation requests from the DB language we are using
+• Team needs a communication class that can handle the HTTP(S) requests and communication
+• A database helper class that can handle the translation requests from the DB language we are using
 • Add a Server class that will mainly be in charge of running the application to be available to users and has a relation to the database
 • Add a database access class
 
 ===
 Anna Malmberg
 
-Class Ideas:
 • A "master" tag class that can access/display all the tags related to one document, it could have information about when each tag was created and by whom etc. This could assist in auditing processes. Not sure if this would be more fitting for a method?
 
 ===
@@ -59,6 +59,7 @@ Chosen Listed Class Ideas
 • Add a third level of user class that will handle all user creation and privilege methods. The mid level user class can delete and edit tags. The lowest level user can only create and search for tags. We can move around which permissions we think each level should have.
 • Add a Main class, which calls the GUI and interacts with the user(s) and DB
 • A "master" tag class that can access/display all the tags related to one document, it could have information about when each tag was created and by whom etc. This could assist in auditing processes. Not sure if this would be more fitting for a method?
-•  We need a main class for just the user side to add to the one that interacts with the user(s) and DB
-•  Add a Server class that will mainly be in charge of running the application to be available to users and has a relation to the database
-• We need a database helper class that can handle the translation requests from the DB language we are using
+• Team need a communication class that can handle the HTTP(S) requests and communication
+• Add a Server class that will mainly be in charge of running the application to be available to users and has a relation to the database
+• A database helper class that can handle the translation requests from the DB language we are using
+• Database access class
