@@ -97,31 +97,29 @@ Our tag-based file manager which stores the metadata, in the form of custom tags
 
 ===
 1.5. Business Context
+In today’s world, providing the best customer experience is as important as getting a new customer. To achieve this goal every business needs wants to maintain its customer data and keep records of customers interact with their company.  Our software can be used by any organization that has a database and that it can be used to search customer information, either it is customer information, any user information,their medical history, personal data, or even their recent searches they have performed online. Our product can be used to retrieve any information quickly and effectively.
 
-In today’s world , providing a best customer experience is as important as getting a new customer. To achieve this goal every business needs wants to maintain their customer data and keep record of customers interaction with their company. This enhancement can be used in any organization which uses very heavy database ,either it is customer information, any user information , they medical history, personal data or even their recent searches they have  performed online. Our product can be used to retrieve any information quickly and effectively.
+The features like tag-based file manager will address the issue. For instance, whenever an employee searches the database to find the changes in the recent medical history of the customer.A file-tag will be created and stored in the database. The same information can be obtained by another employee if he wants to access the same customer's medical history using the file-tag. Our file-tag based file manager will provide solutions to make everyday access to business information simpler and more intuitive. 
 
-The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse. Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID: atomicity, consistency, isolation, durability. Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
-
-The new tag-based file manager will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with the legacy file managers,  simplifying administration. In short, our tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive.
 
 +++
 2. General Description
 
 ===
 2.1. Product Features/Functions
+This product creates a tag-based file manager that stores the metadata, in the form of custom tags, in a separate database. Instead of working directly in an operating system's limited file manager, the product will offer a clean user interface that can sort based on any number of user-selected tags. The program will remember searches and open with the most recent search displayed to ensure continuity and clarity. It will provide some basic tags and instructions to get users started but otherwise aim at being "invisible", allowing businesses to instantly search, sort, and access important data. Using predictive technologies, the program will search the file based on the tag-name, providing immediate, crucial feedback.
 
-This product creates a tag-based file manager which stores the metadata, in the form of custom tags, in a separate database. Instead of working directly in an operating system's limited file manager, product will  offer a clean user interface that can sort based on any number of user-selected tags. The program will remember searches and open with the most recent search displayed to ensure continuity and clarity. It will provide some basic tags and instruction to get users started but otherwise aim at being "invisible", allowing businesses to instantly search, sort, and access important data. Using predictive technologies, the program will start searching while the user is still typing, providing immediate, crucial feedback.
+The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse.Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID: atomicity, consistency, isolation, durability.Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
 
-The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse. Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID: atomicity, consistency, isolation, durability. Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
 
 The new tag-based file manager will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with the legacy file managers,  simplifying administration. In short, our tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive.
 
 ===
 2.2. User Characteristics
+Our client is an Insurance company where they maintain their data for each policy members. According to HIPPA, each policy holder’s data should not be disclosed to anyone. Policyholder data contains their personal information like social security no and birthdate. Along with that information they have all information about a person’s medical history, recent hospital visits. Prescription medication, any medical surgeries, etc.This information gets updated every year as the policyholder/patient medical information changes. This data is stored on their local server. This data is not available for the customers. The healthcare system needs to keep track of these records. This information would be used by the employees at MHC.
 
-Our client is an Insurance company  where they maintain their data for each policy members. According to HIPPA, each policy holder’s data should not be disclosed to anyone. Policy holder data contains their personal information like social security no and birthdate. Along with that information they have all information about person’s medical history, recent hospital visits.  Prescription medication ,any medical surgeries etc. This information gets updated every year as the policy holder/patient medical information changes. This data is stored internally for the organization. This data is not available for the customers. The healthcare system needs to keep track of these records. This information would be used by the employees at MHC.
+Most of the policy members call the customer care with questions regards to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network. Usually, the employee needs to provide this information within a certain time frame. They cannot keep the customer on hold for more than 3 mins. The employee has to get this information fast and accurate. They need some technology that pulls the information based on a person’s recent medical history changes. Or even based on the recent enquires. Based on these logs the customer care employee can provide the information efficiently and effectively.They are looking for some software that creates the file-tag for each scenario so that this information can be accessed quickly using the file tag.
 
-Most of the policy member call the customer care with questions regards  to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network. Usually employee needs to provide these information within certain time frame. They cannot keep the customer on hold more than 3 mins. Employee has to get this information fast and accurate. They need some technology which pulls the information based on person’s recent medical history changes. Or even based on the recent enquires. Based on these logs the customer care employee can provide the information efficiently and effectively.
 
 ===
 2.3. General Constraints
@@ -175,13 +173,13 @@ Version Control for your documents: As we progress through our project, all the 
 This division needs more work, including sorting into sections ("""===""") based on interface type.
 \\\
 
-2.1 User Interfaces
-5.1.1GUI--
-5.1.2CLI--
-2.1.1 API---
-2.2 Hardware Interfaces- Windows, MAC
-2.3 Communication Interfaces  - Local Area Network
-2.4 Software Interfaces- Any additional software is needed to implement this solution
+5.1 User Interfaces
+5.2 GUI--
+5.3 CLI--
+5.4  API---
+5.5 Hardware Interfaces- Windows, MAC
+5.6 Communication Interfaces  - Local Area Network
+5.7 Software Interfaces- Any additional software is needed to implement this solution
 
 +++
 6. Performance Requirements
