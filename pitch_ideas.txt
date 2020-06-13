@@ -1,6 +1,6 @@
 Pitch Ideas
 
-https://github.com/bizzlebin/team/pitch_ideas.txt
+https://github.com/bizzlebin/team/blob/master/pitch_ideas.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-07
+Updated on 2020-06-13
 
 +++
 Description
