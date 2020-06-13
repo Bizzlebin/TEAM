@@ -1,6 +1,6 @@
 Roles
 
-https://github.com/bizzlebin/team/roles.txt
+https://github.com/bizzlebin/team/blob/master/roles.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-09
+Updated on 2020-06-13
 
 +++
 Overview
