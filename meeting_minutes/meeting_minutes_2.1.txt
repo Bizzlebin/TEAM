@@ -1,6 +1,6 @@
 Meeting Minutes 2.1
 
-https://github.com/bizzlebin/team/meeting_minutes/meeting_minutes_2.1.txt
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_2.1.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Anna Malmberg, et al
 
 Created on 2020-06-02
 
-Updated on 2020-06-06
+Updated on 2020-06-12
 
 +++
 Summary
