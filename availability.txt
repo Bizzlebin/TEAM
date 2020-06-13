@@ -1,6 +1,6 @@
 Availability
 
-https://github.com/bizzlebin/team/availability.txt
+https://github.com/bizzlebin/team/blob/master/availability.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-11
+Updated on 2020-06-13
 
 +++
 
