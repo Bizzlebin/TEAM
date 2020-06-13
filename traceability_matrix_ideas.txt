@@ -1,6 +1,6 @@
 Traceability Matrix Ideas
 
-https://github.com/bizzlebin/team/traceability_matrix_ideas.txt
+https://github.com/bizzlebin/team/blob/master/traceability_matrix_ideas.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Anna Malmberg et al
 
 Created on 2020-06-02
 
-Updated on 2020-06-07
+Updated on 2020-06-13
 
 +++
 Description
