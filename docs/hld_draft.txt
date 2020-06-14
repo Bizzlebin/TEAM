@@ -1,6 +1,6 @@
 HLD Draft | TEAM Exists As Metonym
 
-https://github.com/Bizzlebin/TEAM/edit/master/docs/hld_draft.txt
+https://github.com/bizzlebin/team/blob/master/docs/hld_draft.txt
 
 ***
 
@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-03
 
-Updated on 2020-06-08
+Updated on 2020-06-14
 
 +++
 1. Introduction
@@ -18,12 +18,12 @@ Updated on 2020-06-08
 ===
 1.1. Purpose
 
-The purpose of our project is to improve and expedite the process of searching for files on your computer. In general the software is for anyone who has ever had a difficult time locating a specific file they need to find quickly within their file manager. Our client specifically is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Customer service representatives will especially benefit from the application because it will both simplify the search process and reduce the amount of time they need to keep a customer on hold, therefore, improving the mood of the customer and decreasing frustrations for the employee.
+The purpose of our project is to improve and expedite the process of searching for files on your computer. In general, the software is for anyone who has ever had a difficult time locating a specific file within their within their file manager, that they need to find quickly. Our client is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Customer service representatives especially will benefit from the application because it will both simplify the search process, and reduce the amount of time they need to keep a customer on hold, therefore, improving the mood of the customer and decreasing frustrations for the employee.
 
 ===
 1.2. Scope Of This Document
 
-This document will outline the basic structure of our software's interfaces and provide general information about the inner workings of the application. This includes descriptions and diagrams of how the GUI will communicate with the database for the editing, creation, and retrieval of tags, as well as how the software will interface with each computers basic file manager. This will also include details about our design including issues, tradeoffs, our development and collaboration tools, and the libraries we have chosen to implement to assist in the construction of the software. Additionally details will be provided about security, hardware, reports and output, the database, the class structure, and the flow of data.
+This document outlines the basic structure of our software's interfaces and provides general information about the inner workings of the application. This includes descriptions and diagrams of how the GUI will communicate with the database for the editing, creation, and retrieval of tags, as well as how the software will interface with each computers basic file manager. This document will also include details about our design including issues, tradeoffs, development and collaboration tools used, and the libraries we have chosen to implement to assist in the construction of the software. Additionally details will be provided about security, hardware, reports and output, database, class structure, and flow of data.
 
 ===
 1.3. Definitions, Acronyms, And Abbreviations
@@ -42,7 +42,15 @@ GUI - Graphic User Interface
 ===
 2.3. Tools 
 
-Slack version four is team’s primary communication tool to use, on Slack group members post updates to their current assignments, ask questions they may need help with and discuss plans for future requirement deadlines. Teams other collaboration tool is a popular version control system named GitHub, its primary responsibility is providing commits, pull requests and uploading files based on the project requirements provided.  Slack is team’s main application for communicating the projects guidelines, but that is not what the group members at team are only responsible for. Team uses Slack to schedule meetings at set times and this is all planned using GitHub as will be discussed later. The focus of using slack is to discuss certain areas of the project. The meeting section channels have an LLD channel, an HLD, an SRS channel and a meetings channel where the group discusses meetings and use emojis for response as per rule. Each channel page is a place for who has the responsibility of their given role to only discuss the subject given and work a way towards completion while working together. As discussed before, the version control collaboration tool GitHub is mainly used to commit, merge, and for members to work individually on their role’s responsibilities per given week assignment. Team coordinates its information in plain text files using the extension of .txt that follows the procedure for the group which are the meeting hours posted in a repo. Team’s schedule is not static and therefor flexible, so the scheduled work hours are posted in a .txt file with a set meeting time of 8PM every Tuesday and Thursday on GitHub. The members of Team have tasks and other assignments that are listed individually in our master branch, the readme file oversees by giving Team the weekly assignments and only to be modified by the Project Manager or Documentation Specialist. TEAM will be using PyCharm Version 2020.1.2 with the Build number 201.7846.77 as its Integrated Development Environment, this is a tool developed by JetBrains. The responsibilities of this IDE are to integrate it with SQLite which is the groups database language that is primarily based on Python, to develop the application when the SDLC is at the development phase and to implement testing procedures within that tool. 
+Slack version four is used as TEAM’s primary communication tool. On Slack, group members post updates to their current assignments, ask questions that they may need help with and discuss plans for future requirement deadlines. TEAM uses Slack to hold bi-weekly meetings, which are scheduled and documented on GitHub.
+
+TEAM uses Slack for collaboration and discussion of critical areas of the project. Dedicated channels  are set up for discussion, including an LLD channel, an HLD, an SRS channel and a meetings channel. Each channel is intended for use by the team member who has the responsibility of that respective role. Group discussions are held on the subject given and the group collaborate to find solutions to problems as they arise. 
+
+The other collaboration tool that TEAM is using, is a popular version control system named GitHub. It is used to make commits to files, merge and upload files based on the project requirements. Files are saved plain text using the extension of .txt following the Uniform English Writing Style Guide (UEWSG) format.
+
+Each group member has posted their prefered work hours in the availability.txt document on GitHub, based on which meeting times of 8PM every Tuesday and Thursday were decided. The members of TEAM have tasks and other assignments that are listed individually in our master branch in the readme document. The readme document contains the weekly assignments and are only to be modified by the Project Manager or the Documentation Specialist. 
+
+TEAM will be using PyCharm Version 2020.1.2 with the Build number 201.7846.77 as its Integrated Development Environment (IDE), this is a tool developed by JetBrains. The responsibilities of this IDE are to integrate with SQLite, which is the group's chosen database language and is primarily based on Python. The IDE will be used to develop the application when the SDLC is at the development phase and to implement testing procedures within that tool.
 
 ===
 2.4. Libraries
@@ -84,5 +92,4 @@ Slack version four is team’s primary communication tool to use, on Slack group
 3.11. Configuration Data
 
 ===
-3.12. Data Flows and States
-
+3.12. Data Flows And States
