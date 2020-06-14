@@ -1,6 +1,6 @@
 LLD Glossary
 
-https://github.com/bizzlebin/team/glossaries/srs_glossary.txt
+https://github.com/bizzlebin/team/blob/master/glossaries/srs_glossary.txt
 
 ***
 
@@ -9,6 +9,8 @@ By Anna Malmberg et al
 ***
 
 Created on 2020-06-06
+
+Updated on 2020-06-14
 
 +++
 
