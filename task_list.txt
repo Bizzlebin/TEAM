@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-06-13
+Updated on 2020-06-15
 
 +++
 
@@ -80,5 +80,40 @@ LLD
 
 • LLD Draft
 •• Introduction (LLD 1)
-•• 
-••
+•• Object Oriented Design (LLD 2)
+•• Database Design (LLD 3)
+
+===
+Development
+
+• Server
+•• Networking
+•• Database
+
+• Client
+•• Networking
+•• GUI
+•• User
+••• Groups
+
+===
+Testing
+
+• Interface
+• Performance
+• Recovery
+• Usability
+• Alpha
+
+===
+Installation
+
+• Packaging
+• User manual
+• Marketing
+• On-site installation
+
+===
+Maintenance
+
+• Customer support
