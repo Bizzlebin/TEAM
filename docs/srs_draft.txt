@@ -76,7 +76,7 @@ Table Of Contents
 ===
 1.1. Purpose
 
-Purpose of this document is to describe a tag-based file manager system which stores the metadata, in the form of custom tags contained in a separate database, instead of working directly in an operating system’s limited file manager. This program will remember searches and open with the most recent search displayed to ensure continuity and clarity. This product will be used enhance the search capabilities in user’s database system.
+Purpose of this document to describe what a tag-based file manager system will do.The tag-based file manager system stores the metadata in the form of custom tags in a separate database, instead of working directly in an operating system’s limited file manager. The program searches and opens with the most recent search displayed to ensure continuity and clarity. This product will be used to enhance the search capabilities in the user’s database system.
 
 ===
 1.2. Scope Of This Document
