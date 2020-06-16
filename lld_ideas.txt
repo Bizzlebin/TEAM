@@ -69,3 +69,13 @@ Chosen Listed Class Ideas
 • Add a Server class that will mainly be in charge of running the application to be available to users and has a relation to the database
 • A database helper class that can handle the translation requests from the DB language we are using
 • Database access class
+
++++
+General Ideas
+
+===
+Jeremiah Thomas
+
+• Make a list of common SQLite commands (maybe in docs/?)
+• Determine which DB fields can't be null
+• Clarify more about which "leg" we're using in Scope (read Ms Halliday's response; we may want another [domain] diagram for the HLD reflecting the current architecture and separation of concerns—with or without a focus on the classes)
