@@ -154,3 +154,23 @@ Internal Interface Design Detail
 External Interface Design Detail
 
 • What module will we use to access the filesystem?
+=========
+Sandhya Joshi
+Design Issue
+•	Hardware :Support both Windows and Linux 
+
+Security Design Detail
+•	Follow AAA method- Authentication, Authorization and Accounting  to access the computer resources.
+•	Do not support mobile devices for security
+
+UI Design Detail
+•	After user log in , UI should pull the list of most searched file-tags.
+Internal Interface Design Detail
+   
+•	What kind of should we use.
+•	Which data should flow between modules?
+•	How do we support simple error handling method?
+
+External Interface Design Detail
+•	How the data will be stored , will it be stored in the cloud or the server?
+
