@@ -32,7 +32,7 @@ B
 C
 
 **Customer**: A person who uses services proviced by Insurance Company
-
+** CLI ** : Command Line Interface; a text-based interface used for entering commands. 
 ===
 D
 
