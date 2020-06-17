@@ -12,7 +12,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-12
+Updated on 2020-06-16
 
 ***
 
@@ -189,6 +189,34 @@ Due By Saturday (2020-06-20)
 14.3. Add any other DB access controls, restrictions, etc.
 15. Check formatting on all documents *and* reach out to anyone who is still having trouble with commit messages (DS only).
 
+===
+Week 5 (2020-06-21)
+
+---
+Due By Tuesday (2020-06-23)
+
+1. Comment on at least 1 thing you like about our formal SRS Draft in #srs and 1 thing you might improve.
+2. HLD (LSD, LUID, and LT).
+2.1. Add Configuration Data (HLD 3.11).
+2.2. Finish Design Summary (HLD 2).
+2.3. Finish all draft graphics (1+ structure and 1+ behavior UML).
+3. Meeting prep
+3.1. Group activity: roundtable: what is your biggest concern with current state of HLD?
+
+---
+Due By Thursday (2020-06-25)
+
+4. Update task list with at least *1* more post-LLD item and with *all* times (in hours, rounded down to nearest hour (0 is fine)) for tasks you were the primary responsible party for; include only time *you* spent.
+5. Copyedit of SRS Draft [in plaintext] (DS only).
+6. Create SRS Final in docs/ (CA only; copy over SRS Draft).
+7. LLD (LSD, LT only).
+7.1. Finish Introduction (LLD 1).
+7.2. Finish Database Design (LLD 3).
+7.2.1. Add ER diagram (LLD 3.2).
+7.2.2. Add psuedocode for database access (LLD 3.1).
+7.2.3. Add information on how the DB uses 3rd normal form (LLD 3.2).
+8. Meeting prep
+
 +++
 Ground Rules
 
@@ -208,4 +236,4 @@ Metametadata
 **meta_author**: Jeremiah Thomas
 **meta_generator**: Notepad++
 **meta_created**: 2020-05-24
-**meta_updated**: 2020-06-12
+**meta_updated**: 2020-06-16
