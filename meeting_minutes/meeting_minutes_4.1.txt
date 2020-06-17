@@ -1,0 +1,40 @@
+Meeting Minutes 4.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_4.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-06-16
+
++++
+Summary
+
+Thursday meeting on 2020-06-16 of TEAM Exists As Metonym, to discuss progress, focus on SRS, HLD and LLD progress and new releases. Text version of SRS is now frozen for finalization.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Jack Kagan, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Jeremiah**: Wrote database tables, contributed to LLD tables, added change control board procedures and updated task list with some post-project activites for the final SRS appendix. Planned to add readme tasks for week 5 tonight. 
+**Anna**: Re-worked use cases and a new diagram. Planned to work on getting SRS text version and deliverable ready for submission.
+**Jack**: Considered dropping class.
+**Sandhya**: Completed the general description, business context, user characteristics sections and formatted the M[o]SC[o]W requirements. Edited the purpose of SRS section.
+**Stavros**: Worked on testing scenarios, to be released tomorrow on the LLD. Worked some on the database diagram. Not planning to add any more tables.
+**Zach**: Deleted old class hierarchy and released updated version. Added sections 2.1, 3.1, 3.2, 3.3, 3.5 and 3.10 to HLD Draft. Released LLD template.
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:16
+**Next Meeting Scheduled** 2020-06-18 20:00
