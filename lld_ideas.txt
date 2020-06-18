@@ -102,3 +102,13 @@ Stavros Bannoura
 • Possibly add tag info, when and who created the tag in the database.
 • To possibly get classes in psuedocode, we should follow our UML diagrams and determine the class names first then determine what that class will do, will it be a private instance variable? will that class rely on an extension of another class? What will be the superclass and subclasses?
 • To get the database into pseudocode we need to also follow our database table, We should also possibly start by writing the creation of the tables and declaring primary and foreign keys. That will also be in charge of knowing what will be part of a join and what will not be dependent one each other. Then if that table is in charge of a join, we implement the psuedocode that allows the join of a specific table.
+
+===
+Anna Malmberg
+
+• We could create some pseudo code in the form of flow charts, that may be easier to follow than just text based.
+• Method for creating user accounts, including how the userID should be created for log in.
+• Specifics for how the the reports are run and what information they will contain (tag name, created by, created date...?)
+
+
+
