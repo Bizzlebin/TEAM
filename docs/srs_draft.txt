@@ -145,30 +145,30 @@ Most of the policy members call the customer care line with questions regards to
 
 2.4 Collaboration Tools
 
-2.4.1 Communication: The team has been using Slack and GitHub as the primary collaboration tools. Slack is mainly used for communication. We have created channels based on the project deliverables. We discuss the specific topics related to the relevant deliverable on each respective channel. In the main channel we discuss general topics and communicate with our group members. We have a meeting channel where our bi-weekly meeting is communicated. 
+2.4.1 Communication: The team has been using Slack and GitHub as the primary collaboration tools, Slack is mainly used for communication. The project manager has created channels based on the project deliverables. Discussions regarding the specific topics related to each deliverable on the respective channel. The main channel is used for discussing general topics are discussed and communicating with the team. The meeting channel is used for bi-weekly team meeting.
 
 2.4.2 Document Storage and Control: All project documents are stored in a GitHub repository. The project manager has given permission to all team members to commit changes to these documents.
 
-2.4.3 File Sharing and Management: We use GitHub for storing and sharing project related files. The team repository contains all documentation that concerns our project.
+2.4.3 File Sharing and Management: GitHub is used for storing and sharing project related files. The team repository contains all documentation that concerns the project.
 
-2.4.4 Project Management: We use both GitHub and Slack for project management. The readme document on GitHub contains our to-do list. All the team members are encouraged to read the list, which is organized according to our assigned roles, and complete tasks by the due date. Slack is used for bi-weekly meetings, questions, and discussion.
+2.4.4 Project Management: GitHub and Slack are for project management. The readme document on GitHub contains the to-do list with current tasks and organized by assigned team roles. All the team members are encouraged to read the list and complete tasks by the due date. Slack is used for bi-weekly meetings, questions, and discussion.
 
-2.4.5 Version Control for your documents: As we progress through our project, all the members keep updating their files in the GitHub repository. GitHub allows for reverting documents back to previous versions and to see changes that have been made.  
+2.4.5 Version Control for your documents: As progress is made to the project, all the members keep updating their files in the GitHub repository. GitHub allows for reverting documents back to previous versions and to see changes that have been made.  
 
 +++
 3. Business Requirements
 
-**B1**: Insurance Company wants to maintain its Quality of Service by providing the best customer care service in a timely manner. (M)
-**B2**: Insurance Company wants to maintain all its customer data so that it can be searched efficiently and effectively. (M)
+**B1**: Insurance company wants to maintain its Quality of Service by providing the best customer care service in a timely manner. (M)
+**B2**: Insurance company wants to maintain all its customer data so that it can be searched efficiently and effectively. (M)
 **B3**: Find files when filename, filetype, and/or location is unknown. (M)
 **B4**: Software shall not have direct access to any confidential data or documents, rather, tags shall be attached to files in a way that does not require read permissions. (M)
-**B5**: Customer hold-times during peak hours shall be 15 minutes or less. (S)
+**B5**: Customer hold-times during peak hours shall be 5 minutes or less. (S)
 
 +++
 4.Functional Requirements
 
 **F1**: Customer care representative shall be able to retrieve the policy holder information using a keyword from their database. (M)
-**F2**: Insurance agent shall be able to log in to the system and find related documents by using keywords related to the client or project (M)
+**F2**: Insurance agent shall be able to log in to the system and find related documents by using keywords associated with the client or project (M)
 **F3**: Managers shall be able to create additional tags that their group requires (M)
 **F4**: Tags shall not allow users to access documents that they do not have permissions to access (M)
 **F5**: Administrator log in shall be required to manage the tag database (S)
@@ -209,12 +209,12 @@ The application will use Local Area Network access to communicate with external 
 ===									  
 5.4. Software Interfaces
 
-Any additional software is needed to implement this solution.
+The application will need to interface with local operating system.
 
 +++
 6. Performance Requirements
 
-**P1**: Software will be able to pull and display files based on search criteria in a reasonable amount of time (less than 15 seconds). (M)
+**P1**: Software will be able to pull and display files based on search criteria in a reasonable amount of time (less than 5 seconds). (M)
 **P2**: Software will be relatively lightweight and not affect other business necessary operations that must also be performed. (M)
 
 +++
@@ -233,8 +233,8 @@ Any additional software is needed to implement this solution.
 ===
 7.3. Maintainability
 
-**N3**: Database system should perform database maintenance every midnight. (C)
-**N4**: System should not have any external dependencies.
+**N3**: Database system should perform database maintenance every midnight. (S)
+**N4**: System should not have any external dependencies. (S)
 
 ===
 7.4. Portability
@@ -275,106 +275,95 @@ Manager wants to pull data of people who have recently ordered prescription for 
 ===
 9.1 Use Case
 
-9.1.1 BR-1 UC-1
+9.1.1 B-1 UC-1
 Title: Customer interaction
 Primary Actor: Customer service representative
 Success Scenario: Customer service representative receives call from customer. Customer is identified and poses question. Customer service representative locates applicable plan and benefits. Customer service representative provides estimate to customer.
 
-9.1.2 BR-2 UC-1
+9.1.2 B-2 UC-1
 Title: Employee file search
 Primary Actor: Employee
 Success Scenario: Employee logs in to PC. Employee logs in to tag system. Employee starts search. Application suggests results based on history. Application creates list of results based on finalized search. Employee views found records.
 
 ===
-
 9.2 User Stories
+9.2.1 User Stories Per Business Requirement
 **B1US01**: As a customer care representative, I need quick access to policy information, benefits and estimates to share with the customer.
 **B2US01**: As a customer care representative, I want to access all case related documents while on the phone with the customer.
 **B3US01**: As a manager, I want my employees to be able to find training documents and report templates when they need them.
-**B4US01**: As legal council, I need to be able to audit the software to ensure confidentialty of all customer records.
+**B4US01**: As legal counsel, I need to be able to audit the software to ensure confidentiality of all customer records.
 **B5US01**: As a customer care representative, I want all case related documents to be easy to organize and view.
 
-===
-**F1US01**: 
-**F2US01**: As an administrator, I need to be able to log in to the tag database to perform routine maintenace.
+---
+9.1.2 User Stories Per Functional Requirement
+**F2US01**: As an administrator, I need to be able to log in to the tag database to perform routine maintenance.
 **F3US01**: As a manager, I need to be able to log in to the tag database and create new tags, delete old tags and edit existing tags for clarity and content.
-**F4US01**: 
-**F5US01**:
 **F6US01**: As a manager, I need to create specialized tags for my employees to ensure they can find all documents that they need.
-**F7US01**: As legal council, I need to be able to audit employee permissions to ensure nobody has received access past their clearance level.
+**F7US01**: As legal counsel, I need to be able to audit employee permissions to ensure nobody has received access past their clearance level.
 **F8US01**: As a customer care representative, I want to be able to sort found files based on date created and claim type.
- 
-See User Story vs Use Case (Plain Text Link: https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/)
 
 +++
 10. Sequence Diagrams
-
-What is a Sequence Diagram (Plain Text Link: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/)
 
 +++
 11. Appendices
 
 ===
-11.1. MOSCOW
+11.1. M[o]SC[o]W
 
-11.1.1  MUST
-**M1**: Insurance Company wants to maintain its Quality of Service by providing best customer care service in timely manner. 
-**M2**: Insurance Company wants to maintain all its customer's data so that it can be searched efficiently and effectively.
+11.1.1  Must
+**M1**: Insurance company wants to maintain its Quality of Service by providing best customer care service in timely manner. 
+**M2**: Insurance company wants to maintain all its customer's data so that it can be searched efficiently and effectively.
 **M3**: Find files when filename, filetype, and location are unknown.
 **M4**: Software shall not have direct access to any confidential data or documents, rather, tags shall be attached to files in a way that does not require read permissions.
 **M5**: Customer care representative shall be able to retrieve the policy holder information using a keyword from their database.
-**M6**: Insurance agent shall be able to log in to the system and find related documents by using keywords related to the client or project.
+**M6**: Insurance agent shall be able to log in to the system and find related documents by using keywords associated with the client or project.
 **M7**: Managers shall be able to create additional tags that their group requires.
 **M8**: Tags shall not allow users to access documents that they do not have permissions to access.
 **M9**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
 **M10**: Main pane must be able to change target directory.
-**M11**: Software will be able to pull, and display files based on search criteria in a reasonable amount of time (less than 15 seconds?)
-**M12**: Software will be relatively lightweight (not hog processing power) and not affect other business necessary operations that must also be performed.
-**M13**: Make no changes to any file or file's metadata.
+**M11**: Software will be able to pull and display files based on search criteria in a reasonable amount of time (less than 5 seconds).
+**M12**: Software will be relatively lightweight and not affect other business necessary operations that must also be performed.
+**M13**: The application shall make no changes to any file or file's metadata.
+**M14**: Tags must be able to be removed without side effects.
 
-11.1.2 SHOULD
-***S1***: Customer hold-times during peak hours shall be 5 minutes or less.
+11.1.2 Should
+**S1**: Customer hold-times during peak hours shall be 5 minutes or less.
 **S2**: Administrator log in shall be required to manage the tag database.
 **S3**: Relevant employee login will be required to delete, edit, and create tags.
 **S4**: System assigned tags shall only be deleted by managers, agent assigned tags may be deleted by agent.
-**S5**: Files that have been returned from a tag search will have additional methods available to sort based on filetype?
+**S5**: Files that have been returned from a tag search will have additional methods available to sort based on filetype.
 **S6**: User interface for managing personal tags shall require log in.
 **S7**: GUI will include history tab for recently searched and accessed tags/files.
-**S8**: Secondary pane must a check box is allow/disallow searching subdirectories.
+**S8**: Secondary pane must contain an option to allow/disallow searching subdirectories.
 **S9**: System should be available 24x7 for all users.
-**S10**: Software must be able to support many (100s ?) users/employees’ ability to create, access, and modify tags simultaneously.
+**S10**: Software must be able to support several hundred users/employees’ ability to create, access, and modify tags simultaneously.
 **S11**: Software must keep all tags up to date in real time as they are added, deleted, modified.
+**S12**: Database system should perform database maintenance every midnight.
+**S13**: System should not have any external dependencies.
 
-11.1.3 COULD
+11.1.3 Could
 **C1**: System shall always cross-reference customer ID before assigning customer specific tags to any documents.
 **C2**: Customers shall not be able to access the tag system.
 **C3**: Windows log in shall be recognized when adding tags to shared files or folders.
-**C4**: Start searching in n seconds after a tag match is guessed but the user is still typing.
-**C5**: Customer care representative shall be able to retrieve all the case history by searching caseId or tag number.
-**C6**: Produce regular reports on most popular tags, searches (tag combos).
+**C4**: Start searching within 2 seconds after a tag match is guessed but the user is still typing.
+**C5**: Customer care representative shall be able to retrieve all of the case history by searching caseId or tag number.
+**C6**: The application shall produce regular reports on most popular tags and searches.
 **C7**: Tags shall stay assigned to document if moved to a different project or directory.
-**C8**: Files that have been searched will be support drag and drop?
-**C9**: Database system should perform database maintenance every midnight.
-**C10**: User interface for adding personal tags shall be on mouse-right-click drop down.
-**C11**: User Interface shall offer options for personalized color schemes for tags.
+**C8**: Files that have been found during search will support drag and drop.
+**C9**: User interface for adding personal tags shall be on mouse-right-click drop down.
+**C10**: User interface shall offer options for personalized color schemes for tags.
 
-11.1.4 WONT
+11.1.4 Wont
 **W1**: All customer correspondence shall be compiled and mailed out the same business day as customer request was made.
 **W2**: When a case is closed, all relevant documents shall be transfered to customer file within one business day.
-**W3**: Software shall consider HIPAA laws and all data and transfers of data shall be completely secure (encryption?).
+**W3**: Software shall consider HIPAA regulations and all data and transfers of data shall be completely secure.
 **W4**: System shall maintain a user portal for policy members using customer specific tags.
-**W5**: System shall create a client and project specific tags when a new client or project is created.
-**W6**: What’s the type of speed that we want for this application?
-**W7**: How will we optimize the application to be effective? 
-**W8**: What is the maximum capacity of the database are we creating?
-**W9**: Can it survive data overload ? 
-**W10**: The application must be able to support users effectively organizing files.
-**W11**: System shall maintain a user portal for policy members. #redundant requirement.
-**W12**: To ensure confidnetiality, if a customer tag is present on a document a document move must be approved by a manager or group leader.
-**W13**: Project relevant tags shall be assigned to any document that is added to a tagged project folder.
-**W14**: System shall assign reward points to policy holder based on their medical history and lifestyle.
-**W15**: Customer representative should follow HIPAA regulations.
-**W16**: How can we smoothly connect to other databases? 
+**W5**: System shall create client and project specific tags when a new client or project is created.
+**W6**: The application must be able to support users effectively organizing files.
+**W7**: To ensure confidentiality, if a customer tag is present on a document, a document move must be approved by a manager or group leader.
+**W8**: Project relevant tags shall be assigned to any document that is added to a tagged project folder.
+**W9**: System shall assign reward points to policy holder based on their medical history and lifestyle.
 
 ===
 11.2. Procedures For Project Requirement Changes
@@ -409,7 +398,7 @@ During the next team meeting, the change control board must vote on all active i
 11.4. Requirements Traceability Matrix
 
 Req ID		Applicable Role			Testcase Descr.		Status			Tested by        
-FXPXX		XXXX					XXXX				XXXX		    XX
+[id]		[user role]				[description]		True|False	    [initials]
 
 ===
 11.5. Verification And Validation Testing Document
