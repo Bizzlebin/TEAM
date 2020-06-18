@@ -50,6 +50,7 @@ Tables
 **userhistory**: uuid (PK: int), user.name (FK: str), tag.name (FK: str), count (int)
 
 +++
+
 Class Ideas
 
 Zachary Wawrzaszek
@@ -102,3 +103,16 @@ Stavros Bannoura
 • Possibly add tag info, when and who created the tag in the database.
 • To possibly get classes in psuedocode, we should follow our UML diagrams and determine the class names first then determine what that class will do, will it be a private instance variable? will that class rely on an extension of another class? What will be the superclass and subclasses?
 • To get the database into pseudocode we need to also follow our database table, We should also possibly start by writing the creation of the tables and declaring primary and foreign keys. That will also be in charge of knowing what will be part of a join and what will not be dependent one each other. Then if that table is in charge of a join, we implement the psuedocode that allows the join of a specific table.
+
+
+=======
+Sandhya Joshi
+•	Expanding the Stavros idea to Possibly add tag info.  Who and when created in the database?
+•	Make another table tagInfo – Primary key as tag_id and Foreign key to tag table
+•	Tag class is primary id is tag_id which is referencing to the tag_id of tag info table
+•	Check all the databases are in 3NF
+
+
+
+
+
