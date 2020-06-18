@@ -95,3 +95,10 @@ Jeremiah Thomas
 • Make a list of common SQLite commands (maybe in docs/?)
 • Determine which DB fields can't be null
 • Clarify more about which "leg" we're using in Scope (read Ms Halliday's response; we may want another [domain] diagram for the HLD reflecting the current architecture and separation of concerns—with or without a focus on the classes)
+
+===
+Stavros Bannoura
+
+• Possibly add tag info, when and who created the tag in the database.
+• To possibly get classes in psuedocode, we should follow our UML diagrams and determine the class names first then determine what that class will do, will it be a private instance variable? will that class rely on an extension of another class? What will be the superclass and subclasses?
+• To get the database into pseudocode we need to also follow our database table, We should also possibly start by writing the creation of the tables and declaring primary and foreign keys. That will also be in charge of knowing what will be part of a join and what will not be dependent one each other. Then if that table is in charge of a join, we implement the psuedocode that allows the join of a specific table.
