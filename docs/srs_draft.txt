@@ -67,7 +67,6 @@ Table Of Contents
 **Documentation specialist**: Anna Malmberg
 **Customer advocate**: Sandhya Joshi
 **Lead software developer**: Zachary Wawrzaszek
-**Lead UI designer**: Jack Kagan
 **Lead tester**: Stavros Bannoura
 
 ===
@@ -190,17 +189,16 @@ As progress is made to the project, all the members keep updating their files in
 +++
 5. Interface Requirements
 
-**I1**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
-**I2**: Main pane must be able to change target directory.
-**I3**: User interface for managing personal tags shall require log in.
-**I4**: GUI will include history tab for recently searched and accessed tags/files.
-**I5**: Secondary pane must contain an option to allow/disallow searching subdirectories.
-
 ===
 5.1 User Interfaces
 
 ---
 5.1.1. GUI
+**I1**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
+**I2**: Main pane must be able to change target directory.
+**I3**: User interface for managing personal tags shall require log in.
+**I4**: GUI will include history tab for recently searched and accessed tags/files.
+**I5**: Secondary pane must contain an option to allow/disallow searching subdirectories.
 
 ---
 5.1.2. CLI
@@ -288,14 +286,14 @@ Manager wants to pull data of people who have recently ordered prescription for 
 9.1. Use Case
 
 ---
-9.1.1. B-1 UC-1
+9.1.1. B1 UC01
 
 **Title**: Customer interaction
 **Primary actor**: Customer service representative
 **Success scenario**: Customer service representative receives call from customer. Customer is identified and poses question. Customer service representative locates applicable plan and benefits. Customer service representative provides estimate to customer.
 
 ---
-9.1.2. B-2 UC-1
+9.1.2. B2 UC01
 
 **Title**: Employee file search
 **Primary actor**: Employee
@@ -343,18 +341,18 @@ Manager wants to pull data of people who have recently ordered prescription for 
 ---
 11.1.1. Must
 
-**M1**: Insurance company wants to maintain its Quality of Service by providing best customer care service in timely manner.
-**M2**: Insurance company wants to maintain all its customer's data so that it can be searched efficiently and effectively.
-**M3**: Find files when filename, filetype, and location are unknown.
-**M4**: Software shall not have direct access to any confidential data or documents, rather, tags shall be attached to files in a way that does not require read permissions.
-**M5**: Customer care representative shall be able to retrieve the policy holder information using a keyword from their database.
-**M6**: Insurance agent shall be able to log in to the system and find related documents by using keywords associated with the client or project.
+**M1**: MHC wants to maintain its quality of service by providing best customer care in a timely manner.
+**M2**: MHC wants to maintain all its customer data so that it can be searched efficiently and effectively.
+**M3**: Software must find files when filename, filetype, and/or location are unknown.
+**M4**: Software shall not have direct access to any confidential data or documents; rather, tags shall be attached to files in a way that does not require read permissions.
+**M5**: Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
+**M6**: Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
 **M7**: Managers shall be able to create additional tags that their group requires.
 **M8**: Tags shall not allow users to access documents that they do not have permissions to access.
 **M9**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
 **M10**: Main pane must be able to change target directory.
-**M11**: Software will be able to pull and display files based on search criteria in a reasonable amount of time (less than 5 seconds).
-**M12**: Software will be relatively lightweight and not affect other business necessary operations that must also be performed.
+**M11**: Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+**M12**: Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.
 **M13**: The application shall make no changes to any file or file's metadata.
 **M14**: Tags must be able to be removed without side effects.
 
@@ -362,16 +360,16 @@ Manager wants to pull data of people who have recently ordered prescription for 
 11.1.2. Should
 
 **S1**: Customer hold-times during peak hours shall be 5 minutes or less.
-**S2**: Administrator log in shall be required to manage the tag database.
-**S3**: Relevant employee login will be required to delete, edit, and create tags.
-**S4**: System assigned tags shall only be deleted by managers, agent assigned tags may be deleted by agent.
+**S2**: Administrator login shall be required to manage the tag database.
+**S3**: Relevant employee logins will be required to create, update, and delete tags.
+**S4**: System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by agent.
 **S5**: Files that have been returned from a tag search will have additional methods available to sort based on filetype.
 **S6**: User interface for managing personal tags shall require log in.
 **S7**: GUI will include history tab for recently searched and accessed tags/files.
 **S8**: Secondary pane must contain an option to allow/disallow searching subdirectories.
-**S9**: System should be available 24x7 for all users.
-**S10**: Software must be able to support several hundred users/employees’ ability to create, access, and modify tags simultaneously.
-**S11**: Software must keep all tags up to date in real time as they are added, deleted, modified.
+**S9**: System should be available 24 x 7 for all users.
+**S10**: Software must be able to support several hundred user's/employee's ability to create, access, and modify tags simultaneously.
+**S11**: Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
 **S12**: Database system should perform database maintenance every midnight.
 **S13**: System should not have any external dependencies.
 
@@ -380,7 +378,7 @@ Manager wants to pull data of people who have recently ordered prescription for 
 
 **C1**: System shall always cross-reference customer ID before assigning customer specific tags to any documents.
 **C2**: Customers shall not be able to access the tag system.
-**C3**: Windows log in shall be recognized when adding tags to shared files or folders.
+**C3**: Windows login shall be recognized when adding tags to shared files or folders.
 **C4**: Start searching within 2 seconds after a tag match is guessed but the user is still typing.
 **C5**: Customer care representative shall be able to retrieve all the case history by searching caseId or tag number.
 **C6**: The application shall produce regular reports on most popular tags and searches.
