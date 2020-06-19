@@ -1,0 +1,41 @@
+Meeting Minutes 4.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_4.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-06-18
+
++++
+Summary
+
+Thursday meeting on 2020-06-18 of TEAM Exists As Metonym, to discuss progress, focus on finalizing SRS, HLD and LLD progress. Text version of SRS is still frozen for finalizing and submission.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Jeremiah Thomas, Sandhya Joshi
+**Absent**: Zachary Wawrzaszek, Jack Kagan
+**Tardy**: Stavros Bannoura
+
++++
+Presentations
+
+**Jeremiah**:  Worked on week 5 assignments, planned to finish tonight. Planned to submit SRS initial draft this weekend.
+**Sandhya**: Planned on working on week 5 assignments. Finalized edits on SRS draft.
+**Anna**: Worked on finalizing SRS, planned to have text document completed tonight or tomorrow and Word deliverable shortly after.
+**Stavros**: Created a class diagram and a database diagram. Released database general information. Started to prepare for writing algorithms.
+
+**Vote on application name**: Suggestions were TagIt or TagBase. TagIt won unanimously.
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:14
+**Next Meeting Scheduled** 2020-06-23 20:00
