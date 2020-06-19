@@ -80,8 +80,12 @@ Insert GUI diagram here
 ===
 3.4. Internal Interfaces
 
+There will be a few internal interfaces at work for our project due to several classes needing to pass data back and forth between eachother. The GUI will be interfacing with the tags class in order to retrieve the list of created tags and add them to the display for the user to see. The GUI will also interface with the history class which will all the GUI to retrieve a list of the users recent actions and display them to the user. The main class will be interfacing with both the user and GUI class to manage their interactions through the users choices and actions in the GUI.
+
 ===
 3.5. External Interfaces
+
+There will be two external interfaces involved in the creation of this project. The first external interface that will be needed is one to communicate with the computers base file manager in order to pull the file hierarchy for the computer into our application. The file hierarchy after being pulled will still maintain full functionality and navigational ability while being displayed witing the GUI. The second external interface that the project will include is for communicating with our SQLite database. It will be responsible for reformatting transfer requests on both ends so that both the database and our program can understand and utilize the information.
 
 ===
 3.6. Architecture
@@ -93,11 +97,15 @@ Insert architecture diagram here
 ===
 3.7. Reports
 
+Some of the reports that will be available with the application on release will include most used tags, most searched tags, most searched files, number of searches by user for a certain time period.
+
 ===
 3.8. Other Output
 
 ===
 3.9. Databases
+
+This project only requires the use of one RDBMS for the storage and management of user identification parameters, group permissions, filename and tag relations, and user histories. SQLite works well for the client because it is a robust and lightweight system that boasts speedy query times which will be important for the customer service representatives who are trying to search for files in the most efficient manner possible. SQLite also offers high portability and will work across a wide variety of operating systems allowing the company to utilize any equipment they already have available and not worry about having to standardize everything for compatibility with our application. One final benefit of SQLite is that content can be updated continously and automatically so that in the event of a power outage or crash little to no data will be lost.
 
 ===
 3.10. Top-Level Classes (Class Hierarchy)
