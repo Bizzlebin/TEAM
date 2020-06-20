@@ -10,7 +10,7 @@ By JBT
 
 Created on 2019-08-25
 
-Updated on 2020-06-09
+Updated on 2020-06-20
 
 ***
 
@@ -145,9 +145,17 @@ Note: Any code of unknown type (eg, markup) goes into Output by default.
 
 	Optional paragraphs may follow, providing more details about the *use* of the class; these may get parsed as documentation.
 
-	+ public_method(params)
-	# restricted_method(params)
-	- private_method(params)
+	+ public_var: int
+	# restricted_var: str
+	- private_var: bool
+	*[+|#|-] overridden_var: list
+	_[+|#|-] class_var: float
+
+	+ public_method(params): no returns # If no returns, write "no returns"
+	# restricted_method(params): int
+	- private_method(params): str, int, list
+	*[+|#|-] overridden_method(params): func
+	_[+|#|-] class_method(params): obj
 	'''
 	'''
 	A second docstring, directly after the first, may be used to document the unexposed *design* of the class and issues related to the development and testing, particularly if there are concerns which cannot be adequately addressed by inline comments.
@@ -160,15 +168,15 @@ Note: Any code of unknown type (eg, markup) goes into Output by default.
 # ===
 # Definitions
 #
-[def function(arg_1, arg_2, arg_3):
+[def function(arg_1, arg_2 = True, arg_3):
 	'''
 	Docstring—with *single* quotes (the PEP is wrong!)—starts with a 1-sentence brief summary of the function in active voice (eg, "Do x." but never "Does x.").
 
 	Optional paragraphs may follow, providing more details about the *use* of the function; these may get parsed as documentation.
 
 	**arg_1**: str: name of ... # If there are no parameters, write "No parameters"
-	**arg_2**: bool: value of ...
-	**arg_3**: list of int: contains...
+	**arg_2**: bool = True: value of ... # Default values come before the explanation
+	**arg_3**: list: of ints representing...
 
 	Returns tuple (hashes of list), int (number of ...) # If there are no returns, write "No returns"
 	'''
