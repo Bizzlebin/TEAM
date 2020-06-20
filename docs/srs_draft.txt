@@ -10,9 +10,9 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-06-19
+Updated on 2020-06-20
 
-Released on 2020-XX-XX
+Released on 2020-06-21
 
 +++
 Table Of Contents
@@ -27,6 +27,12 @@ Table Of Contents
 2.1. Product Features/Functions
 2.2. User Characteristics
 2.3. General Constraints
+2.4. Collaboration Tools
+2.4.1. Communication
+2.4.2. Document Storage And Control
+2.4.3. File Sharing And Management
+2.4.4. Project Management
+2.4.5. Version Control For Your Documents
 3. Business Requirements
 4. Functional Requirements
 5. Interface Requirements
@@ -50,10 +56,20 @@ Table Of Contents
 8.2. Scenario B
 8.3. Scenario C
 9. Use Case And User Stories
+9.1. Use Case
+9.1.1. B1 UC01
+9.1.2. B2 UC01
+9.1.3. Use Case Diagram
+9.2. User Stories
+9.2.2. User Stores Per Functional Requirement
+9.2.1. User Stories Per Business Requirement
 10. Sequence Diagrams
+10.1. Sequence Diagram Of Requirements I1 And P6
+10.2. Sequence Diagram Of Requirement N2
 11. Appendices
 11.1. MOSCOW
 11.2. Procedures For Project Requirement Changes
+11.2.1. Example Change
 11.3. Schedule
 11.4. Requirements Traceability Matrix
 11.5. Verification And Validation Testing Document
