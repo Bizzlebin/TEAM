@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-05-28
 
-Updated on 2020-06-15
+Updated on 2020-06-20
 
 +++
 Description
@@ -119,12 +119,10 @@ Anna Malmberg
 • Method for creating user accounts, including how the userID should be created for log in.
 • Specifics for how the the reports are run and what information they will contain (tag name, created by, created date...?)
 
-=======
+===
 Sandhya Joshi
 
 • Expanding the Stavros idea to Possibly add tag info.  Who and when created in the database?
 • Make another table tagInfo – Primary key as tag_id and Foreign key to tag table
 • Tag class is primary id is tag_id which is referencing to the tag_id of tag info table
 • Check all the databases are in 3NF
-
-===
