@@ -10,7 +10,7 @@ By Anna Malmberg et al
 
 Created on 2020-06-06
 
-Updated on 2020-06-14
+Updated on 2020-06-23
 
 +++
 
@@ -19,9 +19,8 @@ This glossary of terms is a living document, please add any definitions of words
 +++
 A
 
-**API**: Application Programming Interface
-**ACID**: Atomicity, Consistency, Isolation, Durability
-**Term**:
+**API**: Application programming interface
+**ACID**: Atomicity, consistency, isolation, durability
 
 ===
 B
@@ -31,12 +30,12 @@ B
 ===
 C
 
-**CLI**: Command Line Interface
+**CLI**: Command line interface
 
 ===
 D
 
-**DBMS**: Database Management System
+**DBMS**: Database management system
 
 ===
 E
@@ -51,12 +50,13 @@ F
 ===
 G
 
-**GUI**: Graphical User Interface
+**GUI**: Graphical user interface
 
 ===
 H
 
-**Term**: 
+**HIPAA**: Health insurance portability and accountability act of 1996
+**HTTPS**: Hypertext transfer protocol secure is an extension of the hypertext transfer protocol that is used for secure communication over a computer network
 
 ===
 I
@@ -96,7 +96,7 @@ O
 ===
 P
 
-**Term**: 
+**Python**: An interpreted, high-level, general-purpose programming language
 
 ===
 Q
@@ -106,12 +106,13 @@ Q
 ===
 R
 
-**RDBMS**: Relational Database Management System
+**RDBMS**: Relational database management system
 
 ===
 S
 
-**Term**: 
+**SDLC**: Software development life cycle
+**SQL**: Structured query language: a language used in programming that is designed for data held in a relational database management system 
 
 ===
 T
@@ -121,7 +122,8 @@ T
 ===
 U
 
-**UML**: Unified Modeling Language
+**UML**: Unified modeling language
+**UEWSG**: Uniform english writing style guide, a set of rules and styles used to codify, standardize and simplify writing.
 
 ===
 V
