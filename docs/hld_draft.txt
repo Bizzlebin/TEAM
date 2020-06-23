@@ -18,7 +18,7 @@ Updated on 2020-06-14
 ===
 1.1. Purpose
 
-The purpose of our project is to improve and expedite the process of searching for files on your computer. In general, the software is for anyone who has ever had a difficult time locating a specific file within their within their file manager, that they need to find quickly. Our client is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Customer service representatives especially will benefit from the application because it will both simplify the search process, and reduce the amount of time they need to keep a customer on hold, therefore, improving the mood of the customer and decreasing frustrations for the employee.
+The purpose of our project is to improve and expedite the process of searching for files on your computer. In general, the software is for anyone who has ever had a difficult time locating a specific file within their within their file manager, that they need to find quickly. Our client is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Customer service representatives especially will benefit from the application because it will both simplify the search process, and reduce the amount of time they need to keep a customer on hold, therefore, improving the mood of the customer and decreasing frustrations for the employee. This document's specific purpose is to provide information on what will be included on the initial release of the application. Once it is known what exactly needs to be included for the application, the team can begin to work on the specifics and how all of the pieces and systems will intereact.
 
 ===
 1.2. Scope Of This Document
@@ -40,6 +40,8 @@ Our design for this project is based around a main class that will manage the in
 
 ===
 2.2. Design Issues
+
+The project originally included many more features that were slowly filtered out as it became known there would not be enough time to include all of them in an intitial release. One of the things that we wanted to include was a predictive search feature that would allow the application to start searching for files based on what the user had partially typed. This would have taken a lot of extra reasearch and effort to be able to include and was scrapped to increase focus on the main functionality of the application. Another feature that we intended to include was the ability for the user to personalize a color scheme for the GUI and tags. Again this feature was pushed off of the initial release as it is only a quality of life improvement and has no effect on the neccessary features. The final feature that we decided not to include in an intial release was a way for the application to save the currently selected file that a user was viewing when the application stops running, whether intentionally or accidentally. This would be a quality of life improvement that could be made to the application that could save the user a minute everyday and would be something we would focus on for updates rather than cramming it in with all of the neccesary features for the first version.
 
 ===
 2.3. Tools 
@@ -135,3 +137,5 @@ Insert class behavior diagram here
 
 ===
 3.12. Data Flows And States
+
+Insert data flow diagram here
