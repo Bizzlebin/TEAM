@@ -1,0 +1,567 @@
+SRS Final | TEAM Exists As Metonym
+
+https://github.com/bizzlebin/team/blob/master/docs/srs_draft.txt
+
+***
+
+By Sandhya Joshi, et al
+
+***
+
+Created on 2020-06-04
+
+Updated on 2020-06-21
+
+Released on 2020-06-23
+
++++
+Table Of Contents
+
+1. Introduction
+1.1. Purpose
+1.2. Scope Of This Document
+1.3. Definitions, Acronyms, And Abbreviations
+1.4. Overview
+1.5. Business Context
+2. General Description
+2.1. Product Features/Functions
+2.2. User Characteristics
+2.3. General Constraints
+2.4. Collaboration Tools
+2.4.1. Communication
+2.4.2. Document Storage And Control
+2.4.3. File Sharing And Management
+2.4.4. Project Management
+2.4.5. Version Control For Your Documents
+3. Business Requirements
+4. Functional Requirements
+5. Interface Requirements
+5.1. User Interfaces
+5.1.1. GUI
+5.1.2. CLI
+5.1.3. API
+5.2. Hardware Interfaces
+5.3 Communication Interfaces
+5.4 Software Interfaces
+6. Performance Requirements
+7. Other Non-Functional Attributes
+7.1. Security
+7.2. Reliability
+7.3. Maintainability
+7.4. Portability
+7.5. Resource Utilization
+7.6. Serviceability
+8. Operational Scenarios
+8.1. Scenario A
+8.2. Scenario B
+8.3. Scenario C
+9. Use Case And User Stories
+9.1. Use Case
+9.1.1. B1 UC01
+9.1.2. B2 UC01
+9.1.3. Use Case Diagram
+9.2. User Stories
+9.2.2. User Stores Per Functional Requirement
+9.2.1. User Stories Per Business Requirement
+10. Sequence Diagrams
+10.1. Sequence Diagram Of Requirements I1 And P6
+10.2. Sequence Diagram Of Requirement N2
+11. Appendices
+11.1. MOSCOW
+11.2. Procedures For Project Requirement Changes
+11.2.1. Example Change
+11.3. Schedule
+11.4. Requirements Traceability Matrix
+11.5. Verification And Validation Testing Document
+
++++
+1. Introduction
+
+**Team name**: TEAM Exists As Metonym
+
+**Project manager**: Jeremiah Thomas
+**Documentation specialist**: Anna Malmberg
+**Customer advocate**: Sandhya Joshi
+**Lead software developer**: Zachary Wawrzaszek
+**Lead tester**: Stavros Bannoura
+
+===
+1.1. Purpose
+
+The purpose of this document is to describe what a tag-based file manager system will do. The tag-based file manager system stores metadata in the form of custom tags in a separate database instead of working directly in an operating system's limited file manager. The program searches tags and displays the most recent searches to ensure continuity and clarity. This product will be used to enhance the search capabilities in the user's database system.
+
+===
+1.2. Scope Of This Document
+
+The intended readers of this document are current and future developers working on "Team Exists As Metonym", hereafter referred to as the team, and the sponsors of the project. The plan will include, but is not restricted to, a summary of the system functionality, the scope of the project from the perspective of the team, scheduling and delivery estimates, project risks and how those risks will be mitigated, the processes by which the project will be developed, and metrics and measurements that will be recorded throughout the project.
+
+===
+1.3. Definitions, Acronyms, And Abbreviations
+
+**ACID**: Atomicity, consistency, isolation, durability
+**API**: Application programming interface
+**Customer**: A person who uses services provided by the insurance company
+**CLI**: Command line interface; a text-based interface used for entering commands
+**DBMS**: Database management system
+**Git**: Distributed version-control system used for tracking source code during software development
+**GitHub**: Company that provides hosting for software development version control using Git
+**GUI**: Graphical user interface
+**HIPAA**: Health Insurance Portability And Accountability Act Of 1996
+**Metadata**: Data about data, or data which further describes the properties, qualities, and/or quantities of other data
+**MHC**: My Healthcare, fictional insurance company used for this project
+**Slack**: Proprietary business communication platform that features chat and file sharing
+**SQLite**: A database that operates directly from library function calls, without a separate process or server
+**Tag**: A string without spaces which provides categorical information about its object
+**UML**: Unified modeling language
+
+===
+1.4. Overview
+
+Contemporary businesses generate vast amounts of digital information, including documentation for business processes, customer lists, accounting spreadsheets, and more. Efficiently accessing this data, however, can be a problem: only filenames and some filesystem-specific metadata are easily searchable and systems that add information or tags directly to files can cause integrity problems. Additionally, modifications to the files may not be acceptable due to regulatory or other requirements. Clearly, a different solution is required.
+
+Our tag-based file manager, TagIt.FM, stores the metadata in the form of custom tags in a separate database. Instead of working directly in the limited file manager of an operating system, we will offer a clean user interface that can sort based on any number of user-selected tags. The program searches and opens with the most recent search displayed to ensure continuity and clarity.
+
+===
+1.5. Business Context
+
+In today's world, providing the best customer experience is as important as getting a new customer. To achieve this goal every business needs to maintain its customer data and to keep records of all customers who interact with the company. Our software can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent searches the employee has performed online. TagIt.FM can be used to retrieve any information quickly and effectively.
+
+The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that is stored in the database. Another employee can obtain the same information if he or she wants to access the same customer's medical history using any of the tags associated with the customer's file. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive.
+
++++
+2. General Description
+
+===
+2.1. Product Features/Functions
+
+TagIt.FM creates a tag-based file manager that stores metadata, in the form of custom tags, in a separate database. Instead of working directly in an operating system's limited file manager, the product will offer a clean user interface that can sort based on any number of user-selected tags. The program will remember searches and open with the most recent search displayed to ensure continuity and clarity. It will provide some basic tags and instructions to get users started but otherwise aim at being "invisible", allowing businesses to instantly search, sort, and access important data. Using predictive technologies, the program will search the file based on the tag name, providing immediate, crucial feedback.
+
+The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse. Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID. Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
+
+TagIt.FM will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with legacy file managing systems, which simplifies administration. In short, the tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive.
+
+===
+2.2. User Characteristics
+
+The client, MHC, is an insurance company that maintains its data for each policy member in a database. According to HIPAA, each policy holder's data must be kept confidential. Policy holder data contains personal information like social security number and date of birth. Additionally, the database contains information about a policy holder's medical history, hospital visits, prescription medications, surgeries, etc. This information gets updated at minimum annually, or as the policy holder medical information changes. The data is stored internally at the organization in a database and policy holders are only allowed to access their own information. As this information would be used by the employees at MHC, the business needs to keep track of all these records.
+
+Most of the policy members call the customer care line with questions regarding their benefits, claims, and billing or with questions regarding specialists who are members of the insurance network. The employee needs to provide this information within a certain time frame. According to company customer service policy, they cannot keep the customer on hold for more than 3 min. The employee must be able to access this information in a fast and accurate manner. They need technology that can pull information based on a person's recent medical history changes or on other recent inquiries. MHC will benefit from an application that creates file tags based on custom criteria and search history so that the information can be accessed quickly.
+
+===
+2.3. General Constraints
+
+1. The software must be operated on Windows or Linux operating systems.
+2. The maximum size of a database file is 2147483646 pages.
+
+===
+2.4. Collaboration Tools
+
+---
+2.4.1. Communication
+
+The team has been using Slack and GitHub as the primary collaboration tools; Slack is mainly used for communication. The project manager has created channels based on the project deliverables. Discussions regarding the specific topics related to each deliverable on the respective channel. The main channel is used for discussing general topics and communicating with the team. The meeting channel is used for bi-weekly team meeting.
+
+---
+2.4.2. Document Storage And Control
+
+All project documents are stored in a GitHub repository. The project manager has given permission to all team members to commit changes to these documents.
+
+---
+2.4.3. File Sharing And Management
+
+GitHub is used for storing and sharing project related files. The team repository contains all documentation that concerns the project.
+
+---
+2.4.4. Project Management
+
+GitHub and Slack are for project management. The readme document on GitHub contains the to-do list with current tasks and organized by assigned team roles. All the team members are required to read the list and complete tasks by the due date. Slack is used for bi-weekly meetings, questions, and discussion.
+
+---
+2.4.5. Version Control For Your Documents
+
+As progress is made to the project, all the members keep updating their files in the GitHub repository. GitHub allows for reverting documents back to previous versions and to see changes that have been made.
+
++++
+3. Business Requirements
+
+===
+3.1. B1
+
+MHC wants to maintain its quality of service by providing the best customer care in a timely manner.
+
+===
+3.2. B2
+
+MHC wants to maintain all its customer data so that it can be searched efficiently and effectively.
+
+===
+3.3. B3
+
+Software must find files when filename, filetype, and/or location are unknown.
+
+===
+3.4. B4
+
+Software shall not have direct access to any confidential data or documents; rather, tags shall be attached to files in a way that does not require read permissions.
+
+===
+3.4. B5
+
+Customer hold times during peak hours shall be 5 minutes or less.
+
++++
+4.Functional Requirements
+
+===
+4.1. F1
+
+Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
+
+===
+4.2. F2
+
+Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
+
+===
+4.3. F3
+
+Managers shall be able to create additional tags that their group requires.
+
+===
+4.4. F4
+
+Tags shall not allow users to access documents that they do not have permissions to access.
+
+===
+4.5. F5
+
+Administrator logins shall be required to manage the tag database.
+
+===
+4.6. F6
+
+Relevant employee logins will be required to create, update, and delete tags.
+
+===
+4.7. F7
+
+System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by agent.
+
+===
+4.8. F8
+
+Files that have been returned from a tag search will have additional methods available to sort based on filetype.
+
++++
+5. Interface Requirements
+
+===
+5.1 User Interfaces
+
+---
+5.1.1. GUI
+
+~~~~~
+5.1.1.1. I1
+
+GUI will include a centralized (easily spotted) search bar for the searching of tags.
+
+~~~~~
+5.1.1.2. I2
+
+Main pane must be able to change target directory.
+
+~~~~~
+5.1.1.3. I3
+
+User interface for managing personal tags shall require log in.
+
+~~~~~
+5.1.1.4. I4
+
+GUI will include history tab for recently searched and accessed tags/files.
+
+~~~~~
+5.1.1.1. I5
+
+Secondary pane must contain an option to allow/disallow searching subdirectories.
+
+---
+5.1.2. CLI
+
+---
+5.1.3. API
+
+===
+5.2. Hardware Interfaces
+
+---
+5.2.1. I6
+
+The application will be available on x86 systems.
+
+===
+5.3. Communication Interfaces
+
+---
+5.3.1 I7
+
+The application will use local area network access to facilitate communication between the clients and server.
+
+===
+5.4. Software Interfaces
+
+---
+5.4.1. I8
+
+The application will need to interface with the filesystem of Microsoft Windows and Linux.
+
++++
+6. Performance Requirements
+
+===
+6.1. P1
+
+Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+
+===
+6.2. P2
+
+Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.
+
++++
+7. Other Non-Functional Attributes
+
+===
+7.1. Security
+
+---
+7.1.1. N1
+
+The application shall make no changes to any file or file's metadata.
+
+===
+7.2. Reliability
+
+---
+7.2.1. N2
+
+System should be available 24 × 7 for all users.
+
+===
+7.3. Maintainability
+
+---
+7.3.1. N3
+
+Database system should perform database maintenance every midnight.
+
+7.3.2. N4
+
+System should not have any external dependencies.
+
+===
+7.4. Portability
+
+---
+7.4.1. N5
+
+Software must be able to support several hundred users's/employees's ability to create, access, and modify tags simultaneously.
+
+===
+7.5. Resource Utilization
+
+---
+7.5.1. N6
+
+Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
+
+===
+7.6. Serviceability
+
+---
+7.6.1.
+
+Tags must be able to be removed without side effects.
+
++++
+8. Operational Scenarios
+
+===
+8.1. Scenario A
+
+Manager wants to know, due to COVID-19, how many customers with age of 60 or above have visited the hospital.
+
+===
+8.2. Scenario B
+
+Customer wants to know what his benefits are if he has another knee surgery for his torn ACL.
+
+===
+8.3. Scenario C
+
+Manager wants to pull data of people who have recently ordered prescription for Chloroquine phosphate.
+
++++
+9. Use Case And User Stories
+
+===
+9.1. Use Case
+
+---
+9.1.1. B1 UC01
+
+**Title**: Customer interaction
+**Primary actor**: Customer service representative
+**Success scenario**: Customer service representative receives call from customer. Customer is identified and poses question. Customer service representative locates applicable plan and benefits. Customer service representative provides estimate to customer.
+
+---
+9.1.2. B2 UC01
+
+**Title**: Employee file search
+**Primary actor**: Employee
+**Success scenario**: Employee logs in to PC. Employee logs in to tag system. Employee starts search. Application suggests results based on history. Application creates list of results based on finalized search. Employee views found records.
+
+---
+9.1.3. Use Case Diagram
+
+===
+9.2. User Stories
+
+---
+9.2.1. User Stories Per Business Requirement
+
+**B1US01**: As a customer care representative, I need quick access to policy information, benefits and estimates to share with the customer.
+**B2US01**: As a customer care representative, I want to access all case related documents while on the phone with the customer.
+**B3US01**: As a manager, I want my employees to be able to find training documents and report templates when they need them.
+**B4US01**: As legal counsel, I need to be able to audit the software to ensure confidentiality of all customer records.
+**B5US01**: As a customer care representative, I want all case related documents to be easy to organize and view.
+
+---
+9.1.2. User Stories Per Functional Requirement
+
+**F2US01**: As an administrator, I need to be able to log in to the tag database to perform routine maintenance.
+**F3US01**: As a manager, I need to be able to log in to the tag database and create new tags, delete old tags, and edit existing tags for clarity and content.
+**F6US01**: As a manager, I need to create specialized tags for my employees to ensure they can find all documents that they need.
+**F7US01**: As legal counsel, I need to be able to audit employee permissions to ensure nobody has received access past their clearance level.
+**F8US01**: As a customer care representative, I want to be able to sort found files based on date created and claim type.
+
++++
+10. Sequence Diagrams
+
+===
+10.1. Sequence Diagram Of Requirements I1 And P6
+
+===
+10.2. Sequence Diagram Of Requirement N2
+
++++
+11. Appendices
+
+===
+11.1. M[o]SC[o]W
+
+---
+11.1.1. Must
+
+**M1**: MHC wants to maintain its quality of service by providing best customer care in a timely manner.
+**M2**: MHC wants to maintain all its customer data so that it can be searched efficiently and effectively.
+**M3**: Software must find files when filename, filetype, and/or location are unknown.
+**M4**: Software shall not have direct access to any confidential data or documents; rather, tags shall be attached to files in a way that does not require read permissions.
+**M5**: Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
+**M6**: Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
+**M7**: Managers shall be able to create additional tags that their group requires.
+**M8**: Tags shall not allow users to access documents that they do not have permissions to access.
+**M9**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
+**M10**: Main pane must be able to change target directory.
+**M11**: The application will be available on x86 systems.
+**M12**: The application will use local area network access to facilitate communication between the clients and server.
+**M13**: The application will need to interface with the filesystem of Microsoft Windows and Linux.
+**M14**: Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+**M15**: Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.
+**M16**: The application shall make no changes to any file or file's metadata.
+**M17*: Tags must be able to be removed without side effects.
+
+---
+11.1.2. Should
+
+**S1**: Customer hold-times during peak hours shall be 5 minutes or less.
+**S2**: Administrator login shall be required to manage the tag database.
+**S3**: Relevant employee login will be required to create, update, and delete tags.
+**S4**: System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by agent.
+**S5**: Files that have been returned from a tag search will have additional methods available to sort based on filetype.
+**S6**: User interface for managing personal tags shall require log in.
+**S7**: GUI will include history tab for recently searched and accessed tags/files.
+**S8**: Secondary pane must contain an option to allow/disallow searching subdirectories.
+**S9**: System should be available 24 x 7 for all users.
+**S10**: Software must be able to support several hundred user's/employee's ability to create, access, and modify tags simultaneously.
+**S11**: Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
+**S12**: Database system should perform database maintenance every midnight.
+**S13**: System should not have any external dependencies.
+
+---
+11.1.3. Could
+
+**C1**: System shall always cross-reference customer ID before assigning customer specific tags to any documents.
+**C2**: Customers shall not be able to access the tag system.
+**C3**: Windows login shall be recognized when adding tags to shared files or folders.
+**C4**: Start searching within 2 seconds after a tag match is guessed but the user is still typing.
+**C5**: Customer care representative shall be able to retrieve all the case history by searching caseId or tag number.
+**C6**: The application shall produce regular reports on most popular tags and searches.
+**C7**: Tags shall stay assigned to document if moved to a different project or directory.
+**C8**: Files that have been found during search will support drag and drop.
+**C9**: User interface for adding personal tags shall be on mouse-right-click drop down.
+**C10**: User interface shall offer options for personalized color schemes for tags.
+
+---
+11.1.4. Won't
+
+**W1**: All customer correspondence shall be compiled and mailed out the same business day as customer request was made.
+**W2**: When a case is closed, all relevant documents shall be transferred to customer file within one business day.
+**W3**: Software shall consider HIPAA regulations and all data and transfers of data shall be completely secure.
+**W4**: System shall maintain a user portal for policy members using customer specific tags.
+**W5**: System shall create client and project specific tags when a new client or project is created.
+**W6**: The application must be able to support users effectively organizing files.
+**W7**: To ensure confidentiality, if a customer tag is present on a document, a document move must be approved by a manager or group leader.
+**W8**: Project relevant tags shall be assigned to any document that is added to a tagged project folder.
+**W9**: System shall assign reward points to policy holder based on their medical history and lifestyle.
+
+===
+11.2. Procedures For Project Requirement Changes
+
+To submit a change request, a team member must create a numbered section in the change_requests.txt file. This section must contain, in description list items, the status (open), the ID of the requirement, the updated requirement text, the rationale, the requester's name, and the request's open date as follows:
+
+"""
+===
+0. Example Change
+
+**Status**: Open
+**Requirement ID**: [ID of requirement (eg, B1); use the official req code, not the M[o]SC[o]W numbering; make a new ID if the requirement is new]
+**Requirement text**: [Full text of the proposed change; for new requirements, simply make a new text]
+**Rationale**: [*Briefly* describe why the change should be made]
+**Requester**: [Name]
+**Open date**: [ISO date]
+"""
+
+During the next team meeting, the change control board must vote on all active items. The status must be changed to "Closed" by the CA (customer advocate). The CA must add in the rest of the fields—namely the close date (the date of the vote) and the result (with description according their judgment, if it was not discussed at the time of the vote)—and then update the SRS itself with the new requirement, if approved. The format is:
+
+"""
+**Status**: Closed
+...
+**Close date**: [ISO date]
+**Result**: Accepted|Rejected: [brief description of why the change was accepted or rejected, including if the requirement text in the change request was modified]
+"""
+
+===
+11.3. Schedule
+
+===
+11.4. Requirements Traceability Matrix
+
+"""
+Req ID   Applicable Role   Testcase Desc   Status       Tested By
+[ID]     [user role]       [description]   True|False   [initials]
+"""
+
+===
+11.5. Verification And Validation Testing Document
