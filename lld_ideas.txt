@@ -51,11 +51,11 @@ Testing Scenarios
 
 Tables
 
-**user**: uuid (PK: int), name (str), creation_date (date), group.name (FK: str), salt (str), hash (str), update_date (date)
-**group**: uuid (PK: int), name (str), c_tag (bool), u_tag (bool), r_tag (bool), d_tag (bool), c_user (bool), u_user (bool), r_user (bool), d_user (bool), c_group (bool), u_group (bool), r_group (bool), d_group (bool)
-**filetag**: uuid (PK: int), path (str), name (str), ext (str), tag.name (FK: str), dead (bool)
-**tag**: uuid (PK: int), name (str), description (str)
-**userhistory**: uuid (PK: int), user.name (FK: str), tag.name (FK: str), count (int)
+**user**: id (PK: int), name (str), creation_date (date), group.id (FK: int), salt (str), hash (str), update_date (date)
+**group**: id (PK: int), name (str), c_tag (bool), u_tag (bool), r_tag (bool), d_tag (bool), c_user (bool), u_user (bool), r_user (bool), d_user (bool), c_group (bool), u_group (bool), r_group (bool), d_group (bool)
+**filetag**: id (PK: int), file_path (str), file_name (str), file_ext (str), tag.id (FK: int)
+**tag**: id (PK: int), name (str), description (str)
+**userhistory**: id (PK: int), user.id (FK: int), tag.id (FK: int), count (int)
 
 +++
 
