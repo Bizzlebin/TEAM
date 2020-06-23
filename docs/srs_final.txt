@@ -10,9 +10,6 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-06-21
-
-Released on 2020-06-23
 
 +++
 Table Of Contents
