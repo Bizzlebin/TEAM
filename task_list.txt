@@ -52,7 +52,7 @@ SRS
 •• Copyedit
 •• Template
 •• Final acceptance edit
-
+•• SRS (Final)
 ===
 HLD
 
