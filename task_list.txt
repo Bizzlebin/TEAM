@@ -10,21 +10,21 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-06-15
+Updated on 2020-06-23
 
 +++
 
-Please add items as per the weekly assignment(s). Every task is broken into subtasks, based on the number of bullet points (this will be a creative way to play with the UEWSG list format plus keep the document simple). Tasks won't be timed directly here (I may add that if you think it would help) but do not break out any task that is very short or unsubstantive so we don't get lost in the minutiae.
+Please add items as per the weekly assignment(s). Every task is broken into subtasks, based on the number of bullet points (this will be a creative way to play with the UEWSG list format plus keep the document simple). Do not break out any task that is very short or unsubstantive so we don't get lost in the minutiae.
 
 ===
 Pitch
 
-• Pitch Ideas
+• Pitch Ideas: 1 h
 
-• Pitch
-•• Edits
+• Pitch: 2 h
+•• Edits: 0 h
 •• Copyedit
-•• Final acceptance edit
+•• Final acceptance edit: 0 h
 
 ===
 SRS
@@ -46,13 +46,15 @@ SRS
 •• Sequence Diagrams (SRS 9)
 •• Appendices
 ••• M[o]SC[o]W (SRS 10.1)
-••• Procedures (SRS 10.2)
+••• Procedures (SRS 10.2): 1 h
 ••• Schedule (SRS 10.3)
 ••• RTM (SRS 10.4)
 •• Copyedit
 •• Template
 •• Final acceptance edit
-•• SRS (Final)
+
+• SRS (final)
+
 ===
 HLD
 
