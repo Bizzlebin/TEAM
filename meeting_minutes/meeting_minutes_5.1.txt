@@ -1,0 +1,67 @@
+Meeting Minutes 5.1
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_5.1.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-06-23
+
++++
+Summary
+
+Tuesday meeting on 2020-06-23 of TEAM Exists As Metonym, to discuss progress, focus on HLD and LLD progress and release of SRS Draft. Discussion regarding current state of HLD draft. HLD draft freeze delayed until Thursday, LLD assignments pushed to Saturday.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Anna**: Copyedit on SRS Draft, released for finalizing. Started to proof read the HLD draft, added several items to the glossary. Checked formatting on documents that were modified last week.
+**Sandhya**: Finalized the SRS draft and approved changes. Made note on requirement that may not be needed. Released srs_final.txt.
+**Stavros**: Planned to post draft diagrams, including edit to ui mockup tomorrow. Finished 3NF description and worked on tables and relationships for database design. Planned to start working on pseudocode.
+**Zach**: Added sections 2.2, 3.4, 3.5, 3.7 and 3.9 to HLD, crated data flow diagram for section 3.12. Planned on writing introduction for LLD and some pseudo code.
+**Jeremiah**: Made some updates on NKCF, worked on DB and SRS Draft. Planned to release week 6 schedule tonight, and portion of the tas list assignment.
+
++++
+Round Table Discussion Regarding HLD
+
+**Anna**: How will our hierachy chart reflect the SRS?
+**Jeremiah**: Does not like the choice of PyCharm
+**Sandhya**: Has some questions regarding the database but nothing for the HLD
+**Stavros**: Overall HLD looks good
+**Zach**: Concerns about empty sections
+**Anna**: could we use Python math library
+**Jeremiah**: try to make the report sound more professinal
+**Stavros**: tkinter could be an option for a library
+**Anna**: Feedback on SRS Draft should help with HLD Draft
+**Jeremiah**: Overall the HLD looks good but the class list needs to be updated and better reflect the flow of the program
+**Stavros**: What updates does the class list need?
+**Zach**: Disagrees about the tone of the document, confused about comment about the flow of the program
+**Anna**: Made a few changes tonight that should help with the tone of the document
+**Jeremiah**: Overview of design does not have the current classes, including the various user types, which are required for the project
+**Stavros**: HLD needs to be updated with client main and server main classes
+**Zach**: Will add additional user classes and how they interact with the application to the overview of design and the class list
+**Anna**: Please send me any need changes for the HLD and I can update
+**Jeremiah**: UI division mentions features that aren't in the requirements and are unsupported by the DB, such as types of history we aren't tracking
+**Sandhya**: Will check the SRS draft for features that are not necessary
+**Zach**: May need more time to work on the suggested changes to the HLD
+**Jeremiah**: How are we creating reports? Does the DB support it? Do we have a class or function to handle it?
+**Stavros**: Maybe the dbhelper class could handle it
+**Zach**: We will probably need another table that holds counts for every time a tag or file is queried
+**Sandhya**: Do we implement the requirement to allow/disallow searching subdirectories in the HLD?
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:43
+**Next Meeting Scheduled** 2020-06-25 20:00
