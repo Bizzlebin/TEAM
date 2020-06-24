@@ -10,6 +10,8 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-15
 
+Updated on 2020-06-24
+
 +++
 1. Introduction
 
@@ -35,7 +37,7 @@ Created on 2020-06-15
 2.3. Refinement Of Parent Classes To Subclasses
 
 ===
-2.4. Object Compisition
+2.4. Object Composition
 
 +++
 3. Database Design
@@ -45,3 +47,29 @@ Created on 2020-06-15
 
 ===
 3.2. Tables And Relationships
+
+**User**: 
+The user table has a primary key(PK) of id(int) because it is primarily in charge of transfering data to join other tables to modify. Its main purpose is to store information for the user which consist of six rows that handle the data. The data rows in the User table consist of the name(str) and creation_date(date) of when the user created his name on a specific date. A salt(str) cryptography row and a hash(str) are also included to handle passwords which have a unique hash to handling the encoding, this provides a more secure profile. As well as the update_date(date) row which takes care of the updating the date of the users application of when a specific task was modified. The foreign key(FK) involved is the group.id which is the relation between the user and the group table for handling CRUD tasks of the tags, users and groups in boolean. The boolean values in the group table handle the AND, OR, NOT or AND NOT values which are then used to save time and be more precise with the search results of the database.
+
+---
+**User History**:
+The user history table has a primary key of id(int) because its important to distinguish between modifications and its responsibilites include the users data based when a tag was created, deleted. The rows in this data table include only 2 foreign keys which are the user.id(int) and tag.id(int) which are both involved in relation to the Tag table and the User table. It also has a count(int) which is in charge of keeping track of the user history of when anything gets modified, etc. The user foreign key is in relation to the user table because every new creation of a username and password will be kept in the user history tables data, as well as the users tag information which will also be in relation with the Tag table. 
+
+---
+**File Tag**:
+The file tag tables primary responsibility is to handle the technical information that the tag stores while joining with the Tag table which then relates to the user and user history. The table includes 4 rows and one being a foreign key which are the file_path(str), file_name(str), file_ext(str) and tag.id(int) foreign key. The file path will include the users path that he/she chose to tag the file in to the directory and with this includes the file_name(str) which is in charge of the naming conventions of the file. The file extension row is primarily in charge of organizing the extensions associated with the users tagging behavior, that may be something like when the user is tagging a file and chooses a .ext type, that then will be stored in the File Tag table. The foreign key involved is primarily for the Tag table that correlates with the details involved with that table, it relies on when the tag is created so that when it is stored all the details from the file tag table can be transfered. 
+
+---
+**Tag**:
+The tag table is primarily in charge of keeping track of of the name(str) which has connections to the File Tag table which include all the specifics of the tags information. The tag also has its description(str), the description detailing what that tags main responsibility is in the application, etc. it only has one primary key because this table will not be touched but it will be used in relation to the users history and the file tag table which connects to the user. Its primary relation is the File Tag table, that table relies on the Tag table to transfer information that is included in the tag, whether that would be the extension, the file name or what its location is in the directory. This table also has a main responsbility with the updating and deleting of tags in 3NF format, so any tags getting dealt with CRUD tasks will not be removed entirely from the Tag table but only from the joined table. 
+
+---
+**Group**:
+The group table is primarily involved with the CRUD roles, the only primary key in the table is the unique id. It stores rows based on the name(str) of the users group that was once created, it also handles all the modifications involved like updating the tag, reading and deleting the tags involved with the user. It will also handle all of these rows in boolean as it will make it more efficient when trying to find specific information in the database. All of the group tables responsibility deals with handling multiple users as the program will include a regular user, a mid level user and a high level user that will determine what that users access level is. 
+
+---
+**Third Normal Form**:
+
+The database table is setup in a third normal form by only using primary keys and foreign keys as the functional dependent in this database, nothing else has a transitive dependency in this table because there are 5 different tables that do relate to each other but had to be split for 3NF. The User history table is a split of the user table, since the table knows that the user will have a history it is then organized and put into a separate table that have 2 primary keys to follow 3NF. It can then add users that are separate from the tags and also have the ability to delete tags without changing users from joining tables. The User table is normalized into rows that are in charge of the users information, that is the name, dates, and cryptography with the relation being User History as discussed before and the Group table all use foreign keys. The Group table includes information that involves CRUD. tasks based on the tags, users and groups. The tag table only has a primary key and no foreign keys involved in that table but there are relations that follow 3NF with the file tag, the file tag table includes 1 primary and foreign key. The three rows involved are all file information based on the file path, the name and the extension type, so when this joins with another table and administration decides to delete a row the only thing getting deleted are the tag.id(int) keys information.   
+
+---
