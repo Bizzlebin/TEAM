@@ -12,7 +12,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-18
+Updated on 2020-06-21
 
 ***
 
@@ -196,34 +196,65 @@ Week 5 (2020-06-21)
 Due By Tuesday (2020-06-23)
 
 1. Comment on at least 1 thing you like about our formal SRS Draft in #srs and 1 thing you might improve.
-2. HLD (LSD, LUID, and LT).
-2.1. Add Configuration Data (HLD 3.11).
-2.2. Finish Design Summary (HLD 2).
-2.3. Finish all draft graphics (1+ structure and 1+ behavior UML).
-3. Meeting prep.
-3.1. Group activity: roundtable: what is your biggest concern with current state of HLD?
+2. Meeting prep.
+2.1. Group activity: roundtable: what is your biggest concern with current state of the HLD?
 
 ---
 Due By Thursday (2020-06-25)
 
-4. Update task list with at least *1* more post-LLD item and with *all* times (in hours, rounded down to nearest hour (0 is fine)) for tasks you were the primary responsible party for; include only time *you* spent.
-5. Copyedit of HLD Draft [in plaintext] (DS only).
-6. Create SRS Final in docs/ (CA only; copy over SRS Draft).
-7. LLD (LSD, LT only).
-7.1. Finish Introduction (LLD 1).
-7.2. Finish Database Design (LLD 3).
-7.2.1. Add ER diagram (LLD 3.2).
-7.2.2. Add psuedocode for database access (LLD 3.1).
-7.2.3. Add information on how the DB uses 3rd normal form (LLD 3.2).
-8. Meeting prep.
-8.1. Group activity: roundtable: what did we learn from the SRS feedback?
+3. Update task list with at least *1* more post-LLD item and with *all* times (in hours, rounded down to nearest hour (0 is fine)) for tasks you were the primary responsible party for; include only time *you* spent.
+4. Create SRS Final in docs/ (CA only; copy over SRS Draft).
+5. HLD (LSD, LUID, and LT).
+5.1. Add Configuration Data (HLD 3.11).
+5.2. Finish Design Summary (HLD 2).
+5.3. Finish all draft graphics (1+ structure and 1+ behavior UML).
+5.4. Cleanup of HLD Draft: all divisions fixed, full paragraph descriptions where appropriate, etc.
+6. Meeting prep.
+6.1. Group activity: roundtable: what did we learn from the SRS feedback?
 
 ---
 Due By Saturday (2020-06-27)
 
-9. Template HLD Draft, including all graphics (DS only).
-10. Reorder all SRS requirements in terms of importance (CA only).
-11. Check formatting on all documents *and* reach out to anyone who is still having trouble with any formatting (DS only).
+7. Copyedit of HLD Draft [in plaintext] (DS only).
+8. LLD (LSD, LT only).
+8.1. Finish Introduction (LLD 1).
+8.2. Finish Database Design (LLD 3).
+8.2.1. Add ER diagram (LLD 3.2).
+8.2.2. Add pseudocode for database access (LLD 3.1).
+8.2.3. Add information on how the DB uses 3rd normal form (LLD 3.2).
+9. Reorder all SRS requirements in terms of importance (CA only).
+10. Check formatting on all documents *and* reach out to anyone who is still having trouble with any formatting (DS only).
+
+===
+Week 6 (2020-06-28)
+
+---
+Due By Tuesday (2020-06-30)
+
+1. Template HLD Draft, including all graphics (DS only).
+2. LLD (LSD, LT only).
+2.1. Add pseudocode for classes (LLD 2.1).
+2.2. Add pseudocode for all other needed items (LLD 2).
+3. Meeting prep.
+3.1. Group activity: roundtable: what are your concerns with current state of the LLD?
+
+---
+Due By Thursday (2020-07-02)
+
+4. Create HLD Final in docs/ (LSD only; copy over HLD Draft).
+5. Cleanup of LLD: all divisions fixed, full paragraph descriptions where appropriate, etc (LSD, LT only).
+6. SRS (CA only).
+6.1. Get below 20 requirements.
+6.2. Add requirements for divisions that don't have them (eg, 5.1.2) or describe why.
+6.3. Address any teacher feedback.
+7. Meeting prep.
+
+---
+Due By Saturday (2020-07-04)
+
+8. Copyedit of LLD Draft [in plaintext] (DS only).
+9. First draft of SRS requirements traceability matrix (LT only).
+10. Check formatting on all documents *and* reach out to anyone who is still having trouble with any formatting (DS only).
 
 +++
 Ground Rules
@@ -244,4 +275,4 @@ Metametadata
 **meta_author**: Jeremiah Thomas
 **meta_generator**: Notepad++
 **meta_created**: 2020-05-24
-**meta_updated**: 2020-06-18
+**meta_updated**: 2020-06-23
