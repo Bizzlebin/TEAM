@@ -29,11 +29,13 @@ Updated on 2020-06-13
 **Status**: Open:
 **Requirement ID**: CCB2
 **Requirement text**: Change and Remove requests for functional requirements.
+**Requester**: Sandhya Joshi
+**Open date**: 2020-06-25
+**Close date**: 2020-06-25
+**Result**: 
 
 **Remove**: F2 Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
 **Reason** : Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
-**Requester**: Sandhya Joshi
-
 
 **Remove** :F3 Managers shall be able to create additional tags that their group requires.
 **Reason**  : Redudant Requirement
