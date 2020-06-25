@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-06-13
+Updated on 2020-06-25
 
 +++
 
@@ -25,9 +25,9 @@ Updated on 2020-06-13
 **Open date**: 2020-06-12
 **Close date**: 2020-06-12
 **Result**: Accepted: unless someone comes up with a more efficient system, this looks like the way to go
-========================
 
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB2
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -36,10 +36,10 @@ Updated on 2020-06-13
 **Result**: 
 
 **Remove**: F2 Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
-**Reason** : Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
-=========================
+**Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
 
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB3
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -47,10 +47,11 @@ Updated on 2020-06-13
 **Close date**: 2020-06-25
 **Result**: 
 
-**Remove** :F3 Managers shall be able to create additional tags that their group requires.
-**Reason**  : Redudant Requirement
-============================
-**Status**: Open:
+**Remove**: F3 Managers shall be able to create additional tags that their group requires.
+**Reason**: Redundant Requirement
+
+===
+**Status**: Open
 **Requirement ID**: CCB4
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -59,11 +60,10 @@ Updated on 2020-06-13
 **Result**: 
 
 **Remove**: F4 Tags shall not allow users to access documents that they do not have permissions to access
-**Reason** : Redudant requirement 
+**Reason**: Redundant requirement 
 
-=================================
-
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB5
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -71,12 +71,11 @@ Updated on 2020-06-13
 **Close date**: 2020-06-25
 **Result**: 
 
-**Remove** :F5  F5:Administrator logins shall be required to manage the tag database.
-**Reason** :Redudant requirement (F6 covers the same requirement)
+**Remove**: F5 Administrator logins shall be required to manage the tag database.
+**Reason**: Redundant requirement (F6 covers the same requirement)
 
-================================
-
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB6
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -85,11 +84,10 @@ Updated on 2020-06-13
 **Result**: 
 
 **Remove**: F7 System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by the agent.
-**Reason**  : This requirement is not implented.
+**Reason**: This requirement is not implented.
 
-==================================
-
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB7
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -100,8 +98,8 @@ Updated on 2020-06-13
 **Remove** F8 Files that have been returned from a tag search will have additional methods available to sort based on filetype.
 **Reason**  : Sorting method is never implemented 
 
-====================================
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB8
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -110,12 +108,11 @@ Updated on 2020-06-13
 **Result**: 
 
 **Review/Propose**: Keep only one
-6.1.	P1 Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
-6.2.  P2 Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.	
+6.1. P1 Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+6.2. P2 Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.	
 
-=====================================
-
-**Status**: Open:
+===
+**Status**: Open
 **Requirement ID**: CCB9
 **Requirement text**: Change and Remove requests for functional requirements.
 **Requester**: Sandhya Joshi
@@ -123,8 +120,7 @@ Updated on 2020-06-13
 **Close date**: 2020-06-25
 **Result**: 
 
-**propose** :Propose to keep P2 
+**Propose** : Propose to keep P2 
 **Reason**: SQlite is completes this requirement.
 
-===============================================
-
+===
