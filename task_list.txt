@@ -64,9 +64,9 @@ HLD
 •• Settle on base classes/functions that we need
  
 • First draft
-•• Introduction (HLD 1)
-•• Design Summary (HLD 2)
-•• Design Details (HLD 3)
+•• Introduction (HLD 1) 3h
+•• Design Summary (HLD 2) 5h
+•• Design Details (HLD 3) 10h
 ••• Report types (audting for confidentiality - cradle to grave analysis?, removal of unused tags)
 ••• Create UML Behavior Diagram (required) 2h
 ••• Create UML Structure Diagram (required) 2h
