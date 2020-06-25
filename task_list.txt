@@ -29,23 +29,23 @@ Pitch
 ===
 SRS
 
-• SRS Ideas
-•• Pick ideas
+• SRS Ideas  :1 h
+•• Pick ideas : 1h
 
 • Client
 
 • SRS (first draft)
-•• Introduction (SRS 1)
-•• General Description (SRS 2)
-•• Requirements
-••• BR 1 (SRS 3.1)
-••• FR 1 (SRS 4.1)
-••• NFR 1 (SRS 5.1/6.1/7.1)
+•• Introduction (SRS 1) : 2 h
+•• General Description (SRS 2) : 3h
+•• Requirements:2 h
+••• BR 1 (SRS 3.1) :2 h
+••• FR 1 (SRS 4.1): 2 h
+••• NFR 1 (SRS 5.1/6.1/7.1)  :0 h
 •• User Story (SRS 8) 0 h
 •• Use Case (SRS 8) 0 h
 •• Sequence Diagrams (SRS 9)
 •• Appendices
-••• M[o]SC[o]W (SRS 10.1)
+••• M[o]SC[o]W (SRS 10.1): 1 h
 ••• Procedures (SRS 10.2): 1 h
 ••• Schedule (SRS 10.3)
 ••• RTM (SRS 10.4)
@@ -88,7 +88,7 @@ LLD
 ===
 Development
 
-• Server
+• Server 
 •• Networking
 •• Database
 
