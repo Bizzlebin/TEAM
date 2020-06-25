@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-03
 
-Updated on 2020-06-23
+Updated on 2020-06-25
 
 +++
 1. Introduction
@@ -28,7 +28,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 ===
 1.3. Definitions, Acronyms, And Abbreviations
 
-GUI - Graphic User Interface
+See external glossary
 
 +++
 2. Design Summary
@@ -36,7 +36,7 @@ GUI - Graphic User Interface
 ===
 2.1. Overview of Design
 
-The design for this project is based around a main class that will manage the interactions between the GUI class, User class, and the database. The GUI class will instantiate objects that allow the user to view information about their file hierarchy, tags, and the history of the actions that they have performed. The GUI is also where the user will interact with these areas to select files, and either add tags or remove tags from them, create new tags or delete existing tags, and search for files based upon their given tags. There will be a centrally located search bar in the GUI to facilitate searching for files by their tags. To access the application the user will need to log in through the GUI with a username and password that will be stored in the database. There will be three different levels of users based on subclasses where the increased level of user indicates increased privleges and gives them access to more methods that they can execute. A basic user has a username and password and can add and remove tags from files, as well as, search for files based upon their tags. The next level of user inherits the previous methods and properties and is also able to create new tags or delete existing tags. The highest level of user inherits the previous methods and properties but can create new users, delete users, promote users to the next level, and demote users down a level. The GUI will also communicate through an external interface with the computer's file manager so that the file hierarchy can be viewed and navigated through within the GUI. Additionally, the DBhelper class reformats incoming and outgoing data so that the data will interact correctly with both the database and the programming language. All data will be transferred through an HTTPS server for security purposes and the server will be set up with a Server class.     
+The design for this project is based around a two main classes that will manage the interactions between the GUI class, User classes, and the database. There will be a client main class that handles interactions between the user's inputs and how the GUI will react. The server main class will handle interactions between the DBhelper and server classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The GUI class will instantiate objects that allow the user to view information about their file hierarchy, tags, and the history of the actions that they have performed. The GUI is also where the user will interact with these objects to select files, and either add tags or remove tags from them, create new tags or delete existing tags, and search for files based upon their given tags. There will be a centrally located search bar in the GUI to facilitate searching for files by their tags. To access the application the user will need to log in through the GUI with a username and password that will be stored in the database. There will be three different levels of users based on subclasses where the increased level of user indicates increased privleges and gives them access to more methods that they can execute. A basic user has a username and password and can add and remove tags from files, as well as, search for files based upon their tags. The next level of user inherits the previous methods and properties and is also able to create new tags or delete existing tags. The highest level of user inherits the previous methods and properties but can create new users, delete users, promote users to the next level, and demote users down a level. The GUI will also communicate through an external interface with the computer's file manager so that the file hierarchy can be viewed and navigated through within the GUI. Additionally, the DBhelper class reformats incoming and outgoing data so that the data will interact correctly with both the database and the programming language. All data will be transferred through an HTTPS server for security purposes and the server will be set up with a Server class.     
 
 ===
 2.2. Design Issues
@@ -75,9 +75,9 @@ The hardware that will be required for this project will include the following; 
 ===
 3.3. User Interfaces
 
-The GUI of TagIt.FM will be a window that appears in the middle of the screen and can be resized and dragged to where the user wants it. A login screen will be the first thing to appear when the application starts. The employee must enter their username and password to log in the application. After a successful login, the GUI will display with three separated areas. On one side will be a panel where the user employee can navigate their file tree and select a folder or file that they want to add or remove tags from. There will also be a checkbox that allows the tags that are added/removed to be inherited by the subfolders and files beneath it. On the other side of the screen there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to delete tags from the database, as well as, create new tags for use. In the middle of the screen there will be a search bar where the employee will be able to search for files by entering the associated tags, and this is where the returned files will be displayed. There will also be a button where the user can display their personal history of what actions they have recently performed. Clicking on this button will bring up a new panel that will display these archived actions in two columns. The first column will have what action the user performed, whether it be adding a tag to a file, deleting a tag, or searching for a file by its tags. The second column will have the what object the action took place upon, whether it be the filename that was returned by the search or show the tag that was created/deleted.  
+The GUI of TagIt.FM will be a window that appears in the middle of the screen and can be resized and dragged to where the user wants it. A login screen will be the first thing to appear when the application starts. The employee must enter their username and password to log in the application. After a successful login, the GUI will display with three separated areas. On one side will be a panel where the user employee can navigate their file tree and select a folder or file that they want to add or remove tags from. There will also be a checkbox that allows the tags that are added/removed to be inherited by the subfolders and files beneath it. On the other side of the screen there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to delete tags from the database, as well as, create new tags for use. In the middle of the screen there will be a search bar where the employee will be able to search for files by entering the associated tags, and this is where the returned files will be displayed. There will also be a button where the user can display their personal history of what files they have recently searched.
 
-Insert GUI diagram here
+https://github.com/Bizzlebin/TEAM/blob/master/ui_mockup.png
 
 ===
 3.4. Internal Interfaces
@@ -94,12 +94,10 @@ There will be two external interfaces involved in the creation of this project. 
 
 The architecture being used for this project is a client/server model. Our client will have many different instances of the GUI open on different employee computers. All of these separate instances will be simultaneously communicating over the established company network and routed into the database using an HTTPS server that we will have set up. This architecture will support constant updates of the GUI based on any changes made to the data on the server side that were created by another user and instance of the program. This ensures that all of the information remains constant and reliable for the employees who need to use it.
 
-Insert architecture diagram here
+https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 
 ===
 3.7. Reports
-
-Some of the reports that will be available with the application on release will include most used tags, most searched tags, most searched files, number of searches by user for a certain time period.
 
 ===
 3.8. Other Output
@@ -112,7 +110,9 @@ This project only requires the use of one RDBMS for the storage and management o
 ===
 3.10. Top-Level Classes (Class Hierarchy)
 
-• Main class - This class will call the GUI class and handle all interaction between the user inputs and the GUI.
+• Client Main class - This class will handle the classes for the client side which will call the GUI class and handle all interaction between the user inputs and the GUI, this will be separate from the server main that handles classes associated with the server and dbhelper. 
+
+• Server Main class - This class handles the server and database helper side classes, which will handle the data for authentication purposes of the clients requests. 
 
 • GUI class - This will be the class that contains and displays all of the other objects.
 
@@ -128,9 +128,9 @@ This project only requires the use of one RDBMS for the storage and management o
 
 • FileManagerHelper class - This class will be responsible for retrieveing the computers file hierarchy from the file manager for display in the GUI
 
-Insert class structure diagram here
+https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
-Insert class behavior diagram here
+https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
 ===
 3.11. Configuration Data
@@ -138,4 +138,5 @@ Insert class behavior diagram here
 ===
 3.12. Data Flows And States
 
-Insert data flow diagram here
+https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
+https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
