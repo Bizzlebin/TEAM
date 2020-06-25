@@ -23,7 +23,7 @@ Pitch
 
 • Pitch: 2 h
 •• Edits: 0 h
-•• Copyedit
+•• Copyedit 0 h
 •• Final acceptance edit: 0 h
 
 ===
@@ -41,16 +41,16 @@ SRS
 ••• BR 1 (SRS 3.1)
 ••• FR 1 (SRS 4.1)
 ••• NFR 1 (SRS 5.1/6.1/7.1)
-•• User Story (SRS 8)
-•• Use Case (SRS 8)
+•• User Story (SRS 8) 0 h
+•• Use Case (SRS 8) 0 h
 •• Sequence Diagrams (SRS 9)
 •• Appendices
 ••• M[o]SC[o]W (SRS 10.1)
 ••• Procedures (SRS 10.2): 1 h
 ••• Schedule (SRS 10.3)
 ••• RTM (SRS 10.4)
-•• Copyedit
-•• Template
+•• Copyedit 4 h
+•• Template 2 h
 •• Final acceptance edit
 
 • SRS (final)
@@ -103,6 +103,7 @@ Testing
 
 • Interface
 • Performance
+•• Stress Testing
 • Recovery
 • Usability
 • Alpha
@@ -112,6 +113,7 @@ Installation
 
 • Packaging
 • User manual
+• Video tutorial
 • Marketing
 • On-site installation
 
