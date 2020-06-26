@@ -1,0 +1,50 @@
+Meeting Minutes 5.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_5.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-06-25
+
++++
+Summary
+
+Thursday meeting on 2020-06-25 of TEAM Exists As Metonym, to discuss progress, focus on finalizing SRS, HLD and LLD progress. Text version of HLD will be frozen for copyedit, deliverable due June 1. Roundtable: SRS feedback.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Jeremiah Thomas, Sandhya Joshi, Stavros Bannoura, Zachary Wawrzaszek
+**Absent**: None
+
++++
+Presentations
+
+**Zach**: Made some of the suggested edits to HLD, edited section 3.10 to split the main class based on Stavros' diagram. Edited the overview of design and reports section, deleted a tracking feature that we are not using, remade architecture diagram, added insert diagram links to sections.
+**Stavros**:  Edited graphics are ready and will be posted tomorrow. Worked on Database design section, completed tables and realtionships, discussed pseudocode with Zach, planned to write up draft of testing matrix, modified class list in the HLD.
+**Sandhya**: Checked HLD draft to confirm functional requirements are met, created change requests to update requirements.
+**Jeremiah**: Updated readme assignments for week 6, prepared to review HLD.
+**Anna**: Gave some HLD feedback, planned to start working on HLD draft copyedit tomorrow.
+
++++
+Vote On Change Control Requests
+
+**1**: accept
+**2**: accept
+**3**: reject
+**4**: accept
+**5**: accept
+**6**: accept
+**7**: postpone until next meeting
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:20
+**Next Meeting Scheduled** 2020-06-30 20:00
