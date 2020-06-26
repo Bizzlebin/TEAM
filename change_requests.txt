@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-06-25
+Updated on 2020-06-26
 
 +++
 
@@ -100,3 +100,39 @@ Updated on 2020-06-25
 **Close date**: 2020-06-25
 **Result**: Accepted: Agreed by team members.
 **Status**: Closed
+
+===
+7. Update Search Functionality
+
+**Status**: Open
+**Requirement ID**: I1
+**Requirement text**: GUI must feature a conspicuous search feature for the searching of tags.
+**Requester**: Jeremiah Thomas
+**Reason**: No reason to limit the search to a bar or a "central" location
+**Open date**: 2020-06-26
+**Close date**: 
+**Result**: 
+
+===
+8. Update Search Directory Switching
+
+**Status**: Open
+**Requirement ID**: I2
+**Requirement text**: GUI must be able to change target search directory.
+**Requester**: Jeremiah Thomas
+**Reason**: Generalizing the targeting functionality will provide more flexibility in the GUI design
+**Open date**: 2020-06-26
+**Close date**: 
+**Result**: 
+
+===
+9. Update Subdirectory Option
+
+**Status**: Open
+**Requirement ID**: I5
+**Requirement text**: GUI must contain an option to allow/disallow searching subdirectories.
+**Requester**: Jeremiah Thomas
+**Reason**: No need to lock us into a pane-based design
+**Open date**: 2020-06-26
+**Close date**: 
+**Result**: 
