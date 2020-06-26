@@ -17,7 +17,7 @@ Updated on 2020-06-25
 ===
 0. Example Request To Implement CCB Procedures
 
-**Status**: Closed
+**Status**: Open
 **Requirement ID**: CCB1
 **Requirement text**: For the SRS final, all requirement changes must be made here.
 **Reason**: This keeps changes centralized and clear, reducing miscommunication and oversight across the project
@@ -32,69 +32,71 @@ Updated on 2020-06-25
 
 **Status**: Open
 **Requirement ID**: F2
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F2]
 **Requester**: Sandhya Joshi
 **Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accept
-
+**Result**: Accepted :Voted by majority members , it is not a required business requirement or functional requirement.
+**Status**: Closed
 ===
 2. Delete Manager Privilege
 
-**Status**: Open
+**Status**: open
 **Requirement ID**: F3
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F3]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accepted : Agreed by team members.
+**Status**: Closed
 
 ===
 3. Delete Permission Check
 
-**Status**: Open
+**Status**: open
 **Requirement ID**: F4
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F4]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accept
-
+**Result**: Rejected :This functionality enchaces the file security and confidentiality, so this should not be removed.
+**Status**: Closed
 ===
 4. Delete Administrator Login
 
-**Status**: Open
+**Status**: open
 **Requirement ID**: F5
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F5]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement (F6 covers the same requirement)
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accept 
-
+**Result**: Accepted : Agreed by team members.
+**Status**: Closed
 ===
 5. Delete Different Classes Of Tags
 
-**Status**: Open
+**Status**: open
 **Requirement ID**: F7
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F7]
 **Requester**: Sandhya Joshi
 **Reason**: This requirement is not implemented.
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accept
-
+**Result**: Accepted :Agreed by team members.
+**Status**: Closed
 ===
 6. Delete Sorting Methods
 
-**Status**: Open
+**Status**: open
 **Requirement ID**: F8
-**Requirement text**: [delete]
+**Requirement text**: [Request to Remove F8]
 **Requester**: Sandhya Joshi
 **Reason**: Sorting method is never implemented 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accepted: Agreed by team members.
+**Status**: Closed
