@@ -33,7 +33,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 **Remove**: F2 Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
 **Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
@@ -45,7 +45,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 **Remove**: F3 Managers shall be able to create additional tags that their group requires.
 **Reason**: Redundant Requirement
@@ -57,7 +57,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Reject
 
 **Remove**: F4 Tags shall not allow users to access documents that they do not have permissions to access
 **Reason**: Redundant requirement 
@@ -69,7 +69,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 **Remove**: F5 Administrator logins shall be required to manage the tag database.
 **Reason**: Redundant requirement (F6 covers the same requirement)
@@ -81,7 +81,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 **Remove**: F7 System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by the agent.
 **Reason**: This requirement is not implented.
@@ -93,7 +93,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**:Accept 
 
 **Remove** F8 Files that have been returned from a tag search will have additional methods available to sort based on filetype.
 **Reason**  : Sorting method is never implemented 
@@ -105,7 +105,7 @@ Updated on 2020-06-25
 **Requester**: Sandhya Joshi
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 **Review/Propose**: Keep only one
 6.1. P1 Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
