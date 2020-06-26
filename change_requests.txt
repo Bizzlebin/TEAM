@@ -29,6 +29,7 @@ Updated on 2020-06-25
 ===
 1. Delete Login
 
+
 **Status**: Open
 **Requirement ID**: F2
 **Requirement text**: [delete]
@@ -36,7 +37,7 @@ Updated on 2020-06-25
 **Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 ===
 2. Delete Manager Privilege
@@ -60,7 +61,7 @@ Updated on 2020-06-25
 **Reason**: Redundant requirement 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 ===
 4. Delete Administrator Login
@@ -72,7 +73,7 @@ Updated on 2020-06-25
 **Reason**: Redundant requirement (F6 covers the same requirement)
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept 
 
 ===
 5. Delete Different Classes Of Tags
@@ -84,7 +85,7 @@ Updated on 2020-06-25
 **Reason**: This requirement is not implemented.
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: 
+**Result**: Accept
 
 ===
 6. Delete Sorting Methods
