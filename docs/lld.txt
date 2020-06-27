@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-15
 
-Updated on 2020-06-26
+Updated on 2020-06-27
 
 +++
 1. Introduction
@@ -28,7 +28,33 @@ The scope of this document is to outline all of the low level details that will 
 ===
 1.3. Definitions, Acronyms, and Abbreviations
 
-See external glossary 
+**API**: Application programming interface
+**1NF**: First Normal Form
+**2NF**: Second Normal Form
+**3NF**: Third Normal Form
+**ACID**: Atomicity, consistency, isolation, durability
+**CLI**: Command line interface
+**Class*: A user-defined blueprint or prototype from which all objects are created that contains the set of properties and methods that an object of that type has
+**DBMS**: Database management system
+**Git**: Distributed version-control system used for tracking source code during software development 
+**GitHub**: Company that provides hosting for software development version control using Git.
+**GUI**: Graphical user interface
+**HIPAA**: Health insurance portability and accountability act of 1996
+**HTTPS**: Hypertext transfer protocol secure is an extension of the hypertext transfer protocol that is used for secure communication over a computer network
+**IDE**: An integrated development environment, such as PyCharm
+**Library**: Reusable code, including functions, that can be used for common programming tasks
+**LAN**: Local area network
+**Object**: An abstract data type that contain multiple properties and methods, or even other objects as defined by its class
+**Python**: An interpreted, high-level, general-purpose programming language
+**PyCharm**: An IDE used specifically for the Python programming language
+**RDBMS**: Relational database management system
+**SDLC**: Software development life cycle
+**Slack**: Proprietary business communication platform that features chat and file sharing
+**SQL**: Structured query language: a language used in programming that is designed for data held in a relational database management system
+**SQLite**: A database that operates directly from library function calls, without a separate process or server
+**Tag**: A string without spaces which provides categorical information about its object
+**UML**: Unified modeling language
+**UEWSG**: Uniform English writing style guide, a set of rules and styles used to codify, standardize, and simplify writing.
 
 +++
 2. Object Oriented Design
