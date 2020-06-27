@@ -31,6 +31,7 @@ B
 C
 
 **CLI**: Command line interface
+**Class*: A user-defined blueprint or prototype from which all objects are created that contains the set of properties and methods that an object of that type has
 
 ===
 D
@@ -61,7 +62,7 @@ H
 ===
 I
 
-**Term**: 
+**IDE**: An integrated development environment, such as PyCharm
 
 ===
 J
@@ -76,7 +77,8 @@ K
 ===
 L
 
-**Term**: 
+**Library**: Reuseable code, including functions, that can be used for common programming tasks
+**LAN**: Local area network
 
 ===
 M
@@ -91,12 +93,13 @@ N
 ===
 O
 
-**Term**: 
+**Object**: An abstract data type that contain multiple properties and methods, or even other objects as defined by its class
 
 ===
 P
 
 **Python**: An interpreted, high-level, general-purpose programming language
+**PyCharm**: An IDE used specifically for the Python programming language
 
 ===
 Q
