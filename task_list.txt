@@ -23,34 +23,34 @@ Pitch
 
 • Pitch: 2 h
 •• Edits: 0 h
-•• Copyedit 0 h
+•• Copyedit: 0 h
 •• Final acceptance edit: 0 h
 
 ===
 SRS
 
-• SRS Ideas  :1 h
-•• Pick ideas : 1h
+• SRS Ideas: 1 h
+•• Pick ideas: 1 h
 
 • Client
 
 • SRS (first draft)
-•• Introduction (SRS 1) : 2 h
-•• General Description (SRS 2) : 3h
-•• Requirements:2 h
-••• BR 1 (SRS 3.1) :2 h
+•• Introduction (SRS 1): 2 h
+•• General Description (SRS 2): 3 h
+•• Requirements: 2 h
+••• BR 1 (SRS 3.1): 2 h
 ••• FR 1 (SRS 4.1): 2 h
-••• NFR 1 (SRS 5.1/6.1/7.1)  :0 h
-•• User Story (SRS 8) 0 h
-•• Use Case (SRS 8) 0 h
+••• NFR 1 (SRS 5.1/6.1/7.1): 0 h
+•• User Story (SRS 8): 0 h
+•• Use Case (SRS 8): 0 h
 •• Sequence Diagrams (SRS 9)
 •• Appendices
 ••• M[o]SC[o]W (SRS 10.1): 1 h
 ••• Procedures (SRS 10.2): 1 h
 ••• Schedule (SRS 10.3)
 ••• RTM (SRS 10.4)
-•• Copyedit 4 h
-•• Template 2 h
+•• Copyedit: 4 h
+•• Template: 2 h
 •• Final acceptance edit
 
 • SRS (final)
@@ -64,12 +64,12 @@ HLD
 •• Settle on base classes/functions that we need
  
 • First draft
-•• Introduction (HLD 1) 3h
-•• Design Summary (HLD 2) 5h
-•• Design Details (HLD 3) 10h
+•• Introduction (HLD 1): 3 h
+•• Design Summary (HLD 2): 5 h
+•• Design Details (HLD 3): 10 h
 ••• Report types (audting for confidentiality - cradle to grave analysis?, removal of unused tags)
-••• Create UML Behavior Diagram (required) 2h
-••• Create UML Structure Diagram (required) 2h
+••• Create UML Behavior Diagram (required): 2 h
+••• Create UML Structure Diagram (required): 2 h
 
 ===
 LLD
@@ -77,13 +77,13 @@ LLD
 • LLD Ideas
 •• Pick/decide on ideas
 •• Decide what database we want e.g. Relational, etc.
-•• Pick the normalization that we can use 1h
+•• Pick the normalization that we can use: 1 h
 •• Create drafts of psuedo-code for how certain functions will be performed
 
 • LLD Draft
 •• Introduction (LLD 1)
 •• Object Oriented Design (LLD 2)
-•• Database Design (LLD 3) 3h
+•• Database Design (LLD 3): 3 h
 
 ===
 Development
