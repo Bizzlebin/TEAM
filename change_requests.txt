@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-06-26
+Updated on 2020-06-27
 
 +++
 
@@ -29,69 +29,67 @@ Updated on 2020-06-26
 ===
 1. Delete Login
 
-
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: F2
 **Requirement text**: [Request to Remove F2]
 **Requester**: Sandhya Joshi
 **Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accepted :Voted by majority members , it is not a required business requirement or functional requirement.
-**Status**: Closed
+**Result**: Accepted: Voted by majority members, it is not a required business requirement or functional requirement.
+
 ===
 2. Delete Manager Privilege
 
-**Status**: open
+**Status**: Closed
 **Requirement ID**: F3
 **Requirement text**: [Request to Remove F3]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accepted : Agreed by team members.
-**Status**: Closed
+**Result**: Accepted: Agreed by team members.
 
 ===
 3. Delete Permission Check
 
-**Status**: open
+**Status**: Closed
 **Requirement ID**: F4
 **Requirement text**: [Request to Remove F4]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement 
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Rejected :This functionality enchaces the file security and confidentiality, so this should not be removed.
-**Status**: Closed
+**Result**: Rejected: This functionality enhances the file security and confidentiality, so it should not be removed.
+
 ===
 4. Delete Administrator Login
 
-**Status**: open
+**Status**: Closed
 **Requirement ID**: F5
 **Requirement text**: [Request to Remove F5]
 **Requester**: Sandhya Joshi
 **Reason**: Redundant requirement (F6 covers the same requirement)
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accepted : Agreed by team members.
-**Status**: Closed
+**Result**: Accepted: Agreed by team members.
+
 ===
 5. Delete Different Classes Of Tags
 
-**Status**: open
+**Status**: Closed
 **Requirement ID**: F7
 **Requirement text**: [Request to Remove F7]
 **Requester**: Sandhya Joshi
 **Reason**: This requirement is not implemented.
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
-**Result**: Accepted :Agreed by team members.
-**Status**: Closed
+**Result**: Accepted: Agreed by team members.
+
 ===
 6. Delete Sorting Methods
 
-**Status**: open
+**Status**: Closed
 **Requirement ID**: F8
 **Requirement text**: [Request to Remove F8]
 **Requester**: Sandhya Joshi
@@ -99,7 +97,6 @@ Updated on 2020-06-26
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
 **Result**: Accepted: Agreed by team members.
-**Status**: Closed
 
 ===
 7. Update Search Functionality
