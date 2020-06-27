@@ -10,6 +10,8 @@ By Anna Malmberg, et al
 
 Created on 2020-06-25
 
+Updated on 2020-06-27
+
 +++
 Summary
 
@@ -41,7 +43,6 @@ Vote On Change Control Requests
 **4**: accept
 **5**: accept
 **6**: accept
-**7**: postpone until next meeting
 
 +++
 Adjournment
