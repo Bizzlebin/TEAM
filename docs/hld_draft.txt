@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-03
 
-Updated on 2020-06-27
+Updated on 2020-06-28
 
 +++
 1. Introduction
@@ -18,7 +18,7 @@ Updated on 2020-06-27
 ===
 1.1. Purpose
 
-The purpose of our project is to improve and speed up the process of searching for files on your computer. TagIt.FM is created to assist anyone who has ever had a difficult time locating a specific file within their file manager when they need it urgently. The client, MHC, is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Especially customer service representatives will benefit from the application because it will both simplify the search process, and reduce the amount of time they need to keep a customer on hold, therefore, improving the mood of the customer and decreasing frustrations for the employee. The purpose of this document is to provide an overview of what will be included in the initial release of the application. The details of the project will be further discussed and developed in the Low-Level Design document.
+The purpose of this project is to improve and speed up the process of searching for files on your computer. TagIt.FM is created to assist anyone who has ever had a difficult time locating a specific file within their file manager when they need it urgently. The client, MHC, is an insurance company and they need the application to be able to quickly locate important medical and financial documents of varying filetype. Customer service representatives especially will benefit from the application because it will both simplify the search process and reduce the amount of time they need to keep a customer on hold. Therefore, improving the mood of the customer and decreasing frustrations for the employee. The purpose of this document is to provide an overview of what will be included in the initial release of the application. The details of the project will be further discussed and developed in the Low-Level Design document.
 
 ===
 1.2. Scope Of This Document
@@ -31,7 +31,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 **API**: Application programming interface
 **ACID**: Atomicity, consistency, isolation, durability
 **CLI**: Command line interface
-**Class*: A user-defined blueprint or prototype from which all objects are created that contains the set of properties and methods that an object of that type has
+**Class*: A user-defined blueprint or prototype from which all objects are created
 **DBMS**: Database management system
 **Git**: Distributed version-control system used for tracking source code during software development 
 **GitHub**: Company that provides hosting for software development version control using Git.
@@ -59,7 +59,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 ===
 2.1. Overview of Design
 
-The design of this project will be based around two main classes, the client main class and the server class, that will manage the interactions between the GUI class, the user classes, and the database. 
+The design of this project will be based around two main classes, the client main class and the server main class. These two classes will manage the interactions between the GUI class, the user classes, and the database. 
 
 The client main class will handle interactions between the user inputs and how the GUI will react. The server main class will handle interactions between the DBhelper and server classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The GUI class will instantiate objects that allow the user to view information about their file hierarchy, tags, and their search history. The GUI class is also where the user class will interact with these objects to select files, add tags or remove tags from files, create new tags or delete existing tags, and search for files based upon their assigned tags.
 
@@ -87,7 +87,7 @@ Slack version four is used as TEAM's primary communication tool. On Slack, group
 
 TEAM uses Slack for collaboration and discussion of critical areas of the project. Dedicated channels are set up for discussion, including an LLD channel, an HLD, an SRS channel and a meetings channel. Each channel is intended to primarily discuss matters related to the associated deliverable. Group discussions are held on Slack, and the group collaborate to find solutions to problems as they arise. 
 
-The other collaboration tool that TEAM is using, is a popular version control system named GitHub. It is used to make updates to files, merge and upload files based on the project requirements. Narratives are saved on GitHub in plain text using the extension of .txt and following the Uniform English Writing Style Guide (UEWSG) format. Diagrams and other documents are saved in a format suitable for their purpose.
+The other collaboration tool that TEAM is using, is a popular version control system named GitHub. It is used to make updates to files, merge and upload files based on the project requirements. Narratives are saved on GitHub in plain text using the extension of .txt and following the UEWSG format. Diagrams and other documents are saved in a format suitable for their purpose.
 
 Each group member has posted their preferred work hours in the availability.txt document on GitHub, based on which meeting times of 8 PM every Tuesday and Thursday were decided. The members of TEAM have tasks and other assignments that are listed in the master branch in the readme document that are added by the project manager.
 
@@ -102,7 +102,7 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 ===
 3.1. Security
 
-MHC deals with documents and records that must remain confidential due to HIPAA regulations. All data transfers are handled using an HTTPS server. HTTPS encrypts the data and stops potential hackers from being able to understand any data that they were able to intercept during a transfer to the database. The company network is private and only connected to the internet through a firewall, which forces hackers to try to find direct access the network. The physical security of the building will provide further protection and deny unauthorized personnel direct access to the network or server.
+MHC deals with documents and records that must remain confidential due to HIPAA regulations. All data transfers will be handled using an HTTPS server. HTTPS will encrypt the data and stops potential hackers from being able to understand any data that they were able to intercept during a transfer to the database. The company network is private and only connected to the internet through a firewall, which forces hackers to try to find direct access the network. The physical security of the building will provide further protection and deny unauthorized personnel direct access to the network or server.
 
 ===
 3.2. Hardware
@@ -114,7 +114,10 @@ Required hardware for this project includes the following: a server for the tag 
 
 The GUI of TagIt.FM will initialize as a window in the middle of the screen and can be resized and dragged to where the user wants it. A login screen will appear when the application starts, and the employee must enter their username and password to log in the application. 
 
-After a successful login, the GUI will display three separated areas. One side will be a panel where the employee can navigate their file tree and select a folder or file that they want to add or remove tags from. On the other side of the screen, there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to create new tags and delete existing tags from the database. In the middle of the screen there will be a search bar where the employee will be able to search for files by entering the associated tags, and this is also where the returned files will be displayed. There will also be a button that the employee can click to display their personal history of what files they have recently searched.
+After a successful login, the GUI will display three separated areas. One side will be a panel where the employee can navigate their file tree and select a folder or file that they want to add or remove tags from. On the other side of the screen, there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to create new tags and delete existing tags from the database. In the middle of the screen there will be a search bar where the employee will be able to search for files by entering the associated tags, and this is also where the returned files will be displayed.
+
+---
+3.3.1. TagIt.FM Concept UI Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/ui_mockup.png
 
@@ -131,8 +134,10 @@ There will be two external interfaces involved the TagIt.FM. The first external 
 ===
 3.6. Architecture
 
-The architecture being used for this project is a client/server model. Our client will have many different instances of the TagIt.FM GUI open on different employee computers. All these separate instances will be simultaneously communicating over the established company LAN and routed into the database using an HTTPS server. This architecture will support constant updates of the GUI based on any changes made to the data on the server side, when created by a different employee and instance of the program. This ensures that all the information remains constant and reliable for the employees who need to use it.
+The architecture that will be used for this project is a client/server model. The client will have many different instances of the TagIt.FM GUI open on different employee computers. All these separate instances will be simultaneously communicating over the established company LAN and routed into the database using an HTTPS server. This architecture will support constant updates of the GUI based on any changes made to the data on the server side, when created by a different employee and instance of the program. This ensures that all the information remains constant and reliable for the employees who need to use it.
 
+---
+3.6.1. Software Architecture Diagram
 https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 
 ===
@@ -149,25 +154,47 @@ This project only requires the use of one RDBMS for the storage and management o
 ===
 3.10. Top-Level Classes (Class Hierarchy)
 
-• Client main class - This class will handle the classes for the client side of the application. It will call the GUI class and handle all interaction between the user inputs and the GUI. This will be a separate class from the server main class.
+3.10.1. Client Main Class
 
-• Server main class - This class will handle the server and DBhelper side classes. It will handle the data for authentication purposes of the clients requests. 
+This class will handle the classes for the client side of the application. It will call the GUI class and handle all interaction between the user inputs and the GUI. This will be a separate class from the server main class.
 
-• GUI class - This will be the class that contains and displays the objects for the user interface.
+3.10.2. Server Main Class
 
-• User class - This class will contain usernames and passwords and will let the employee interact with the GUI. This class will also have two subclasses representing the level of the employee.
+This class will handle the server and DBhelper side classes. It will handle the data for authentication purposes of the client's requests. 
 
-• Tags class - This class will be responsible for holding all of the created tags and displaying them for the employee.
+3.10.3. GUI Class
 
-• Server class - This class will be used for setting up our server and defining the requests for sending and retrieving data.
+This will be the class that contains and displays the objects for the user interface.
 
-• DBhelper class - This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables
+3.10.4. User Class
 
-• History class - This class will hold a list of the users recent actions, such as creating a tag, adding a tag to a file, or searching for a file by its tags.
+This class will contain usernames and passwords and will let the employee interact with the GUI. This class will also have two subclasses representing the level of the employee.
 
-• FileManagerHelper class - This class will be responsible for retrieveing the computers file hierarchy from the file manager for display in the GUI
+3.10.5 Tags Class
+
+This class will be responsible for holding all the created tags and displaying them for the employee.
+
+3.10.6. Server Class
+
+This class will be used for setting up our server and defining the requests for sending and retrieving data.
+
+3.10.7. DBhelper Class
+
+This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables
+
+3.10.8. History Class
+
+This class will hold a list of the user's recent actions, such as creating a tag, adding a tag to a file, or searching for a file by its tags.
+
+3.10.9. FileManagerHelper Class
+
+This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI.
+
+3.10.10. HLD Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
+
+3.10.11. User Authetication Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
@@ -177,5 +204,9 @@ https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 ===
 3.12. Data Flows And States
 
+3.12.1. Data Flow Diagram 1
+
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
+
+3.12.2. Data Flow Diagram 2
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
