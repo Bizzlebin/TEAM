@@ -226,10 +226,6 @@ Tags shall not allow users to access documents that they do not have permissions
 
 Relevant employee logins will be required to create, update, and delete tags.
 
-===
-4.8. F8
-
-Files that have been returned from a tag search will have additional methods available to sort based on filetype.
 
 +++
 5. Interface Requirements
