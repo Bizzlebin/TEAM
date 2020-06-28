@@ -70,6 +70,11 @@ HLD
 ••• Report types (audting for confidentiality - cradle to grave analysis?, removal of unused tags)
 ••• Create UML Behavior Diagram (required): 2 h
 ••• Create UML Structure Diagram (required): 2 h
+•• Copyedit:
+•• Template:
+•• Final acceptance edit
+
+• HLD (final)
 
 ===
 LLD
