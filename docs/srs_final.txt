@@ -215,34 +215,14 @@ Customer hold times during peak hours shall be 5 minutes or less.
 Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
 
 ===
-4.2. F2
-
-Insurance agents shall be able to log in to the system and find related documents by using keywords associated with the client or project.
-
-===
-4.3. F3
-
-Managers shall be able to create additional tags that their group requires.
-
-===
 4.4. F4
 
 Tags shall not allow users to access documents that they do not have permissions to access.
 
 ===
-4.5. F5
-
-Administrator logins shall be required to manage the tag database.
-
-===
 4.6. F6
 
 Relevant employee logins will be required to create, update, and delete tags.
-
-===
-4.7. F7
-
-System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by agent.
 
 ===
 4.8. F8
