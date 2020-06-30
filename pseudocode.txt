@@ -26,18 +26,20 @@ class Main()
 
 	- gui: obj
 	- https_client: obj
+	- user: obj
 
 	- init(): no returns
 	+ create_gui(): gui: obj
 	+ create_https_client(): https_client: obj
+	+ create_user(): user: obj
 	+ read_gui(): gui: obj
 	+ read_https_client(): https_client: obj
-	+ read_user(gui: obj): user: obj
+	+ read_user(): user: obj
 	'''
 
 	function init()
 		'''
-		Initialize the GUI and HTTPS server on creation.
+		Initialize the GUI, HTTPS server, and user on instantiation.
 
 		No returns
 		'''
@@ -84,38 +86,46 @@ class User()
 	- id: int
 	- name: str
 
-	- init(id: int): no returns
-	- create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj): no returns
-	- delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj): no returns
-	- read_file_tags(file_path: str, subdir: bool, tag: obj): no returns
+	- init(): no returns
+	- login(name: str, password: str): no returns
+	- create_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj): no returns
+	- delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj): no returns
+	- read_file_tags(id: int, file_path: str, subdir: bool, tag: obj): no returns
 	- read_history(id: int): no returns
 	'''
 	'''
 	All display will be handled by the GUI, hence nothing needs to be returned directly by/to the user.
 	'''
 
-	function init(id: int)
+	function init()
 		'''
-		Initialize the user's ID and name.
+		Initialize the user object, calling login().
 
 		No returns
 		'''
 
-	function create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+	function login(name: str, password: str)
+		'''
+		Log the user in with a given name and password, else destroy the user object.
+
+		No returns
+		'''
+
+	function create_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
 		Create a file tag on a given file using a valid tag object.
 
 		No returns
 		'''
 
-	function delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+	function delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
 		Delete a file tag on a given file using a valid tag object.
 
 		No returns
 		'''
 
-	function read_file_tags(file_path: str, subdir: bool, tag: obj)
+	function read_file_tags(id: int, file_path: str, subdir: bool, tag: obj)
 		'''
 		Read the file tags in a given dir, including or excluding subdirs, using a valid tag object.
 
@@ -133,21 +143,21 @@ class Mid_user(User)
 	'''
 	The mid-level user, with additional methods.
 
-	- create_tag(name: str; description: str): no returns
-	- delete_tag(tag: obj): no returns
+	- create_tag(id: int, name: str; description: str): no returns
+	- delete_tag(id: int, tag: obj): no returns
 	'''
 	'''
 	All tag objects are handled by the GUI, too, hence nothing needs to be returned directly by/to the user.
 	'''
 
-	function create_tag(name: str; description: str = 'NULL')
+	function create_tag(id: int, name: str; description: str = 'NULL')
 		'''
 		Create a tag object with a name and optional description.
 
 		No returns
 		'''
 
-	function delete_tag(tag: obj)
+	function delete_tag(id: int, tag: obj)
 		'''
 		Delete a valid tag object.
 
@@ -158,26 +168,26 @@ class High_user(Mid_user)
 	'''
 	The high-level user, with additional methods.
 
-	- create_user(name: str; password: str): no returns
-	- delete_user(user: obj): no returns
-	- update_user_level(user: obj; level: str): no returns
+	- create_user(id: int, name: str; password: str): no returns
+	- delete_user(id: int, user: obj): no returns
+	- update_user_level(id: int, user: obj; level: str): no returns
 	'''
 
-	function create_user(name: str; password: str)
+	function create_user(id: int, name: str; password: str)
 		'''
 		Create a user with a given name and password.
 
 		No returns
 		'''
 
-	function delete_user(user: obj)
+	function delete_user(id: int, user: obj)
 		'''
 		Delete a valid user object.
 
 		No returns
 		'''
 
-	function update_user_level(user: obj; level: str)
+	function update_user_level(id: int, user: obj; level: str)
 		'''
 		Update a valid user object up or down to a given level (class).
 
