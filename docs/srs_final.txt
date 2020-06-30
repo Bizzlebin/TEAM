@@ -534,19 +534,19 @@ During the next team meeting, the change control board must vote on all active i
 """
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By
 
-B3       User                 Enter valid tag and verify if    Null         AM-DS
+B3       Client               Enter valid tag and verify if    Null         AM-DS
                               expected results are returned
-B4       User                 Enter valid tag and verify if    Null         AM-DS
+B4       Client               Enter valid tag and verify if    Null         AM-DS
                               all returned results are within
                               the scope of the current user's
                               permissions
 
-F1       User                 Enter valid tag and check if     Null         JT-PM
+F1       Client               Enter valid tag and check if     Null         JT-PM
                               results are returned.
-F4       User                 Enter valid tag in restricted    Null         JT-PM
+F4       Client               Enter valid tag in restricted    Null         JT-PM
                               directory and check if no
                               results are returned.
-F6       User                 Attempt to create, update, and   Null         JT-PM
+F6       Client               Attempt to create, update, and   Null         JT-PM
                               delete a tag while not logged in
                               to ensure it is not possible.
 
