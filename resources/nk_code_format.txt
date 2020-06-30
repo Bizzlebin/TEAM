@@ -10,7 +10,7 @@ By JBT
 
 Created on 2019-08-25
 
-Updated on 2020-06-20
+Updated on 2020-06-29
 
 ***
 
@@ -178,7 +178,7 @@ Note: Any code of unknown type (eg, markup) goes into Output by default.
 	**arg_2**: bool = True: value of ... # Default values come before the explanation
 	**arg_3**: list: of ints representing...
 
-	Returns tuple (hashes of list), int (number of ...) # If there are no returns, write "No returns"
+	Return tuple (hashes of list), int (number of ...) # If there are no returns, write "No returns"
 	'''
 	'''
 	A second docstring, directly after the first, may be used to document the unexposed *design* of the function and issues related to the development and testing, particularly if there are concerns which cannot be adequately addressed by inline comments.
