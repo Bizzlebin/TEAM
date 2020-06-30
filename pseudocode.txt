@@ -115,12 +115,13 @@ class User()
 	- delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj): no returns
 	- read_file_tags(id: int, file_path: str, subdir: bool, tag: obj): no returns
 	- read_history(id: int): no returns
+	- read_id() id: int
 	'''
 	'''
 	All display will be handled by the GUI, hence nothing needs to be returned directly by/to the user.
 	'''
-
-	function init()
+		
+	function init(name: str, password: str)
 		'''
 		Initialize the user object, calling login().
 
@@ -129,8 +130,11 @@ class User()
 
 		name = prompt('Username: ')
 		password = prompt('Password: ').censor
-
-		login(name, password)
+		
+		if name = None or password = None
+			return 
+		else:
+			login(name, password)
 
 	function login(name: str, password: str)
 		'''
@@ -158,7 +162,7 @@ class User()
 		gui = main.read_gui()
 
 		if id
-			gui.create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+			gui.create_file_tag(file_path, file_name, file_ext, tag)
 
 	function delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
@@ -170,7 +174,7 @@ class User()
 		gui = main.read_gui()
 
 		if id
-			gui.delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+			gui.delete_file_tag(file_path, file_name, file_ext, tag)
 
 	function read_file_tags(id: int, file_path: str, tag: obj)
 		'''
@@ -182,7 +186,7 @@ class User()
 		gui = main.read_gui()
 
 		if id
-			gui.read_file_tags(file_path: str, tag: obj)
+			gui.read_file_tags(file_path, tag)
 
 	function read_history(id: int)
 		'''
@@ -194,7 +198,16 @@ class User()
 		gui = main.read_gui()
 
 		if id
-			gui.read_history(id: int)
+			gui.read_history(int)
+			
+	function read_id()
+		'''
+		Read the user ID from the user object.
+
+		Return id: int
+		'''
+		
+		return id
 
 class Mid_user(User)
 	'''
@@ -219,7 +232,7 @@ class Mid_user(User)
 		if id
 			name = prompt('Tag name: ')
 			description = prompt('Tag description: ') OR 'NULL'
-			gui.create_tag(name: str; description: str)
+			gui.create_tag(name, description)
 
 	function delete_tag(id: int, tag: obj)
 		'''
@@ -231,7 +244,7 @@ class Mid_user(User)
 		gui = main.read_gui()
 
 		if id
-			gui.delete_tag(tag: obj)
+			gui.delete_tag(tag)
 
 class High_user(Mid_user)
 	'''
@@ -248,17 +261,30 @@ class High_user(Mid_user)
 
 		No returns
 		'''
-
+		
+		User(name, password)
+		 
 	function delete_user(id: int, user: obj)
 		'''
 		Delete a valid user object.
 
 		No returns
 		'''
+		
+		client = main.read_https_client()
 
+		if id
+			client.send_request(delete_user, (user))
+					
 	function update_user_level(id: int, user: obj; level: str)
 		'''
 		Update a valid user object up or down to a given level (class).
 
 		No returns
 		'''
+		
+		client = main.read_https_client()
+		
+		if id
+			client.send_request(update_user_level, (user, level))
+						
