@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-06-27
+Updated on 2020-06-29
 
 +++
 
@@ -131,5 +131,17 @@ Updated on 2020-06-27
 **Requester**: Jeremiah Thomas
 **Reason**: No need to lock us into a pane-based design
 **Open date**: 2020-06-26
+**Close date**: 
+**Result**: 
+
+===
+10. Update System Demand
+
+**Status**: Open
+**Requirement ID**: P2
+**Requirement text**: Software must not lock directories while searches are being performed.
+**Requester**: Jeremiah Thomas
+**Reason**: It is better to have something testable, addressing a real performance concern.
+**Open date**: 2020-06-29
 **Close date**: 
 **Result**: 
