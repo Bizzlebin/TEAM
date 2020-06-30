@@ -534,34 +534,43 @@ During the next team meeting, the change control board must vote on all active i
 """
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By
 
-B3       User                 Enter valid tag and verify if    Null         Null
+B3       User                 Enter valid tag and verify if    Null         AM-DS
                               expected results are returned
-B4       User                 Enter valid tag and verify if    Null         Null
+B4       User                 Enter valid tag and verify if    Null         AM-DS
                               all returned results are within
                               the scope of the current user's
                               permissions
 
-F1       User                 Enter valid tag and check if     Null         Null
+F1       User                 Enter valid tag and check if     Null         JT-PM
                               results are returned.
-F4       User                 Enter valid tag in restricted    Null         Null
+F4       User                 Enter valid tag in restricted    Null         JT-PM
                               directory and check if no
                               results are returned.
-F6       User                 Attempt to create, update, and   Null         Null
+F6       User                 Attempt to create, update, and   Null         JT-PM
                               delete a tag while not logged in
                               to ensure it is not possible.
 
-I1       Client               Validate if the search bar can   True|False   SB-LT
+I1       Client               Validate if the search bar can   Null         SB-LT
                               be seen and allow the user to
                               search
-I2       Server               Validate if the change target    True|False   SB-LT
+I2       Server               Validate if the change target    Null         SB-LT
                               target direction button accepts
                               the request of the user and
                               switches the directory
-I3       Client               Validate if the user type        True|False   SB-LT
+I3       Client               Validate if the user type        Null         SB-LT
                               account has been created to
                               manage tags
-I6       Client               Validate whether user type has   True|False   SB-LT
+I4	     Server		            Validate if the user can access  Null	        SB-LT
+			                        the history data
+I5	     Client		            Validate if the user can process Null	        SB-LT
+			                        the option in the pane
+I6       Client               Validate whether user type has   Null         SB-LT
                               the required computer system
+I7       Server               Validate if any requests to the  Null         SB-LT
+		 	                        server did not successfully pass                               
+I8       Client               Validate whether usertype has    Null         SB-LT
+                              the required filesystem
+                              
 """
 
 ===
