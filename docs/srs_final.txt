@@ -12,7 +12,6 @@ Created on 2020-06-04
 
 Updated on 2020-06-29
 
-
 +++
 Table Of Contents
 
@@ -533,8 +532,17 @@ During the next team meeting, the change control board must vote on all active i
 11.4. Requirements Traceability Matrix
 
 """
-
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By
+
+F1       User                 Enter valid tag and check if     Null         Null
+                              results are returned.
+F4       User                 Enter valid tag in restricted    Null         Null
+                              directory and check if no
+                              results are returned.
+F6       User                 Attempt to create, update, and   Null         Null
+                              delete a tag while not logged in
+                              to ensure it is not possible.
+
 I1       Client               Validate if the search bar can   True|False   SB-LT
                               be seen and allow the user to
                               search
@@ -547,8 +555,7 @@ I3       Client               Validate if the user type        True|False   SB-L
                               manage tags
 I6       Client               Validate whether usertype has    True|False   SB-LT
                               the required computer system
-
 """
-	 
+
 ===
 11.5. Verification And Validation Testing Document
