@@ -44,6 +44,10 @@ class Main()
 		No returns
 		'''
 
+		create_gui()
+		create_https_client()
+		create_user()
+
 	function create_gui()
 		'''
 		Create the app's GUI and update the associated private variable.
@@ -51,12 +55,25 @@ class Main()
 		No returns
 		'''
 
-	function https_client()
+		gui = new Gui()
+
+	function create_https_client()
 		'''
 		Create the app's HTTPS client and update the associated private variable.
 
 		No returns
 		'''
+
+		https_client = new Https_client()
+
+	function create_user()
+		'''
+		Create the app's user and update the associated private variable.
+
+		No returns
+		'''
+
+		user = new User()
 
 	function read_gui()
 		'''
@@ -65,6 +82,8 @@ class Main()
 		Return gui: obj
 		'''
 
+		return gui
+
 	function read_https_client()
 		'''
 		Read the memory location of the HTTPS client object.
@@ -72,12 +91,16 @@ class Main()
 		Return https_client: obj
 		'''
 
+		return https_client
+
 	function read_user(gui: obj)
 		'''
 		Read the memory location of the user object from the GUI.
 
 		Return user: obj
 		'''
+
+		return user
 
 class User()
 	'''
@@ -104,12 +127,26 @@ class User()
 		No returns
 		'''
 
+		name = prompt('Username: ')
+		password = prompt('Password: ').censor
+
+		login(name, password)
+
 	function login(name: str, password: str)
 		'''
 		Log the user in with a given name and password, else destroy the user object.
 
 		No returns
 		'''
+
+		client = main.read_https_client()
+
+		response = client.send_request(login, (name, password))
+
+		if response = int
+			id = response
+		else
+			self.destroy
 
 	function create_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
@@ -118,6 +155,11 @@ class User()
 		No returns
 		'''
 
+		gui = main.read_gui()
+
+		if id
+			gui.create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+
 	function delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
 		Delete a file tag on a given file using a valid tag object.
@@ -125,12 +167,22 @@ class User()
 		No returns
 		'''
 
-	function read_file_tags(id: int, file_path: str, subdir: bool, tag: obj)
+		gui = main.read_gui()
+
+		if id
+			gui.delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+
+	function read_file_tags(id: int, file_path: str, tag: obj)
 		'''
-		Read the file tags in a given dir, including or excluding subdirs, using a valid tag object.
+		Read the file tags in a given dir using a valid tag object.
 
 		No returns
 		'''
+
+		gui = main.read_gui()
+
+		if id
+			gui.read_file_tags(file_path: str, tag: obj)
 
 	function read_history(id: int)
 		'''
@@ -138,6 +190,11 @@ class User()
 
 		No returns
 		'''
+
+		gui = main.read_gui()
+
+		if id
+			gui.read_history(id: int)
 
 class Mid_user(User)
 	'''
@@ -157,12 +214,24 @@ class Mid_user(User)
 		No returns
 		'''
 
+		gui = main.read_gui()
+
+		if id
+			name = prompt('Tag name: ')
+			description = prompt('Tag description: ') OR 'NULL'
+			gui.create_tag(name: str; description: str)
+
 	function delete_tag(id: int, tag: obj)
 		'''
 		Delete a valid tag object.
 
 		No returns
 		'''
+
+		gui = main.read_gui()
+
+		if id
+			gui.delete_tag(tag: obj)
 
 class High_user(Mid_user)
 	'''
