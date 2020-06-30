@@ -560,14 +560,14 @@ I2       Server               Validate if the change target    Null         SB-L
 I3       Client               Validate if the user type        Null         SB-LT
                               account has been created to
                               manage tags
-I4	     Server		            Validate if the user can access  Null	        SB-LT
-			                        the history data
-I5	     Client		            Validate if the user can process Null	        SB-LT
-			                        the option in the pane
+I4	 Server		      Validate if the user can access  Null	    SB-LT
+			      the history data
+I5	 Client		      Validate if the user can process Null	    SB-LT
+			      the option in the pane
 I6       Client               Validate whether user type has   Null         SB-LT
                               the required computer system
 I7       Server               Validate if any requests to the  Null         SB-LT
-		 	                        server did not successfully pass                               
+		 	      server did not successfully pass                               
 I8       Client               Validate whether usertype has    Null         SB-LT
                               the required filesystem
                               
