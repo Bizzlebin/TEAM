@@ -537,7 +537,7 @@ During the next team meeting, the change control board must vote on all active i
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By    
 I1       Client               Validate if the search bar can   True|False   SB-LT        
                               be seen and allow the user to                              
-							  search
+							  search                                                     
 I2       Server               Validate if the change target    True|False   SB-LT        
                               target direction button accepts                            
 							  the request of the user and                                
