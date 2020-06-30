@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-06-28
+Updated on 2020-06-29
 
 
 +++
@@ -533,8 +533,13 @@ During the next team meeting, the change control board must vote on all active i
 11.4. Requirements Traceability Matrix
 
 """
-Req ID   Applicable Role   Testcase Desc   Status       Tested By
-[ID]     [user role]       [description]   True|False   [initials]
+
+Req ID   Applicable Role   Testcase Desc                                                                                                Status       Tested By
+I1       Client		         Validate if the search bar can be seen and allow the user to search                                          True|False       SB-LT
+I2	     Server            Validate if the change target direction button accepts the request of the user and switches the directory	  True|False	     SB-LT
+I3	     Client	           Validate if the user type account has been created to manage tags	                                          True|False	     SB-LT
+I6       Client		         Validate whether usertype has the required computer system    	                                              True|False   		 SB-LT
+
 """
 
 ===
