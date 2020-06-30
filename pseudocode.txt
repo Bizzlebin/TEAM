@@ -1,0 +1,185 @@
+Pseudocode
+
+https://github.com/bizzlebin/team/blob/master/pseudocode.txt
+
+***
+
+By Jeremiah Thomas, et al
+
+***
+
+Created on 2020-06-29
+
+Updated on 2020-06-30
+
++++
+
+///
+I've removed the usual containing preformatted blockquotes around the code in order to trigger syntax highlighting. In a proper, finished document, the quotes must be added back in.
+
+—Jeremiah
+\\\
+
+class Main()
+	'''
+	The main controller, which initializes the app and calls other class constructors.
+
+	- gui: obj
+	- https_client: obj
+
+	- init(): no returns
+	+ create_gui(): gui: obj
+	+ create_https_client(): https_client: obj
+	+ read_gui(): gui: obj
+	+ read_https_client(): https_client: obj
+	+ read_user(gui: obj): user: obj
+	'''
+
+	function init()
+		'''
+		Initialize the GUI and HTTPS server on creation.
+
+		No returns
+		'''
+
+	function create_gui()
+		'''
+		Create the app's GUI and update the associated private variable.
+
+		No returns
+		'''
+
+	function https_client()
+		'''
+		Create the app's HTTPS client and update the associated private variable.
+
+		No returns
+		'''
+
+	function read_gui()
+		'''
+		Read the memory location of the gui object.
+
+		Return gui: obj
+		'''
+
+	function read_https_client()
+		'''
+		Read the memory location of the HTTPS client object.
+
+		Return https_client: obj
+		'''
+
+	function read_user(gui: obj)
+		'''
+		Read the memory location of the user object from the GUI.
+
+		Return user: obj
+		'''
+
+class User()
+	'''
+	The basic user, with methods shared by higher-privileged users.
+
+	- id: int
+	- name: str
+
+	- init(id: int): no returns
+	- create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj): no returns
+	- delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj): no returns
+	- read_file_tags(file_path: str, subdir: bool, tag: obj): no returns
+	- read_history(id: int): no returns
+	'''
+	'''
+	All display will be handled by the GUI, hence nothing needs to be returned directly by/to the user.
+	'''
+
+	function init(id: int)
+		'''
+		Initialize the user's ID and name.
+
+		No returns
+		'''
+
+	function create_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+		'''
+		Create a file tag on a given file using a valid tag object.
+
+		No returns
+		'''
+
+	function delete_file_tag(file_path: str, file_name: str, file_ext: str; tag: obj)
+		'''
+		Delete a file tag on a given file using a valid tag object.
+
+		No returns
+		'''
+
+	function read_file_tags(file_path: str, subdir: bool, tag: obj)
+		'''
+		Read the file tags in a given dir, including or excluding subdirs, using a valid tag object.
+
+		No returns
+		'''
+
+	function read_history(id: int)
+		'''
+		Read the user's history.
+
+		No returns
+		'''
+
+class Mid_user(User)
+	'''
+	The mid-level user, with additional methods.
+
+	- create_tag(name: str; description: str): no returns
+	- delete_tag(tag: obj): no returns
+	'''
+	'''
+	All tag objects are handled by the GUI, too, hence nothing needs to be returned directly by/to the user.
+	'''
+
+	function create_tag(name: str; description: str = 'NULL')
+		'''
+		Create a tag object with a name and optional description.
+
+		No returns
+		'''
+
+	function delete_tag(tag: obj)
+		'''
+		Delete a valid tag object.
+
+		No returns
+		'''
+
+class High_user(Mid_user)
+	'''
+	The high-level user, with additional methods.
+
+	- create_user(name: str; password: str): no returns
+	- delete_user(user: obj): no returns
+	- update_user_level(user: obj; level: str): no returns
+	'''
+
+	function create_user(name: str; password: str)
+		'''
+		Create a user with a given name and password.
+
+		No returns
+		'''
+
+	function delete_user(user: obj)
+		'''
+		Delete a valid user object.
+
+		No returns
+		'''
+
+	function update_user_level(user: obj; level: str)
+		'''
+		Update a valid user object up or down to a given level (class).
+
+		No returns
+		'''
