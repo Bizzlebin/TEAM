@@ -534,19 +534,19 @@ During the next team meeting, the change control board must vote on all active i
 
 """
 
-Req ID   Applicable Role      Testcase Desc                    Status       Tested By
-I1       Client               Validate if the search bar can   True|False   SB-LT
-                              be seen and allow the user to
+Req ID   Applicable Role      Testcase Desc                    Status       Tested By    
+I1       Client               Validate if the search bar can   True|False   SB-LT        
+                              be seen and allow the user to                              
 							  search
-I2       Server               Validate if the change target    True|False   SB-LT
-                              target direction button accepts
-							  the request of the user and
-							  switches the directory
-I3       Client               Validate if the user type        True|False   SB-LT
-                              account has been created to
-							  manage tags
-I6       Client               Validate whether usertype has    True|False   SB-LT
-                              the required computer system
+I2       Server               Validate if the change target    True|False   SB-LT        
+                              target direction button accepts                            
+							  the request of the user and                                
+							  switches the directory                                     
+I3       Client               Validate if the user type        True|False   SB-LT        
+                              account has been created to                                
+							  manage tags                                                
+I6       Client               Validate whether usertype has    True|False   SB-LT        
+                              the required computer system                               
 
 """
 	 
