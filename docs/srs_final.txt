@@ -580,7 +580,10 @@ I7       Server               Validate if any requests to the  Null         SB-L
                               server did not successfully pass
 I8       Client               Validate whether usertype has    Null         SB-LT
                               the required filesystem
-                              
+P1       Client               Validate that average search     Null         ZW-LSD
+                              times remain below five seconds
+P2       Client               Validate that directories can    Null         ZW-LSD
+                              still be accessed during searches
 """
 
 ===
