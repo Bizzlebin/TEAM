@@ -1,0 +1,61 @@
+Meeting Minutes 6.1
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_6.1.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-06-30
+
++++
+Summary
+
+Tuesday meeting on 2020-06-30 of TEAM Exists As Metonym, to discuss progress on LLD and release of HLD Draft. LLD Draft freeze to go into effect on Thursday. TEAM received a 100% on the SRS Draft.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Jeremiah**: Wrote large part of the pseudo code, added some change requests, added test cases for functional requirements, made edit to NKCF. Prepared to release week 7 schedule.
+**Anna**: Reviewed HLD Draft and transferred to Word deliverable format, added two test cases for business requirements, updated and added user stories to match updated requirements
+**Sandhya**: Updated change requests document and SRS final, tried to find things that need updates, planned to work on RTM for SRS Final
+**Stavros**: Worked on pseudocode, planned on working on some more section of LLD. Completed test scenarios for section 5, still need to work on 7
+**Zach**: No updates since Thursday, planned to work on sections 2.4 and 3.1 of LLD
+ 
++++
+Round Table Discussion Regarding LLD
+
+**Anna**: Planned to use the SRS template for LLD deliverable
+**Jeremiah**: Likes the idea of using the SRS template
+**Sandhya**: Reviewed LLD and pseudocode and likes it
+**Stavros**: Likes the RTM, reminder for everyone sign int-role and put status as null
+**Jeremiah**: Wants to see more of the data from the LLD Ideas in the plain text table code for the LLD
+**Anna**: Volunteer to write 3.1
+**Jeremiah**: Would like to see some graphics in the LLD
+**Sandhya**: Volunteer to help with LLD as needed
+**Zach**: Can modify SQLite information to work for LLD
+**Anna**: Would like some graphics
+
++++
+Vote On Change Control Requests
+
+**7**: accept
+**8**: accept
+**9**: accept
+**10**: accept
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:24
+**Next Meeting Scheduled** 2020-07-02 20:00
