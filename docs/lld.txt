@@ -77,6 +77,10 @@ The scope of this document is to outline all of the low level details that will 
 ===
 3.1. Chosen Database
 
+TagIt.FM will be designed to run with the SQLite database. The SQLite database engine is small and fast, which makes it unlikely to impact any business critical functions or slow down the LAN. SQLite works across a wide variety of operating systems, making it possible for MHC to use the application on any existing hardware. The database content will be updated continously and automatically, which helps protect the database against losses in the event of a power outage or crash.
+
+The SQLite database will store user identification parameters, group permissions, filename and tag relations and user histories for TagIt.FM.
+ 
 ===
 3.2. Tables And Relationships
 
