@@ -140,6 +140,7 @@ The architecture that will be used for this project is a client/server model. Th
 
 ---
 3.6.1. Software Architecture Diagram
+
 https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 
 ===
@@ -211,4 +212,5 @@ https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
 
 3.12.2. Data Flow Diagram 2
+
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
