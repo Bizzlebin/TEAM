@@ -10,7 +10,9 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-03
 
-Updated on 2020-06-28
+Updated on 2020-06-30
+
+Released on 2020-07-01
 
 +++
 1. Introduction
