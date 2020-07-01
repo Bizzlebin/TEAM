@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-03
 
-Updated on 2020-06-30
+Updated on 2020-07-01
 
 Released on 2020-07-01
 
@@ -59,7 +59,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 2. Design Summary
 
 ===
-2.1. Overview of Design
+2.1. Overview Of Design
 
 The design of this project will be based around two main classes, the client main class and the server main class. These two classes will manage the interactions between the GUI class, the user classes, and the database. 
 
@@ -196,7 +196,7 @@ This class will be responsible for retrieving the computers file hierarchy from 
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
-3.10.11. User Authetication Diagram
+3.10.11. User Authentication Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
