@@ -12,7 +12,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-06-21
+Updated on 2020-06-30
 
 ***
 
@@ -256,6 +256,44 @@ Due By Saturday (2020-07-04)
 9. First draft of SRS requirements traceability matrix (LT only).
 10. Check formatting on all documents *and* reach out to anyone who is still having trouble with any formatting (DS only).
 
+===
+Week 7 (2020-07-05)
+
+---
+Due By Tuesday (2020-07-07)
+
+1. Template LLD, including all graphics (DS only).
+2. SRS (CA only).
+2.1. Validate all requirements meet the 5 Ws and H; create change requests to address shortcomings.
+2.2. Use consistent language, including "must", in all requirements.
+3. HLD *Final* (LSD, LT only).
+3.1. Add all Python modules (HLD 2.4).
+3.2. Update chapters 1 and 2 to reflect LLD and SRS and for flow/quality.
+4. Meeting prep.
+
+---
+Due By Thursday (2020-07-09)
+
+5. Read LLD to familiarize yourself with it and look for inconsistencies with HLD, SRS.
+6. SRS (CA only).
+6.1. Reorder all M[o]SC[o]W divisions by priority (change numbering).
+6.2. Reorder main reqs by priority, division by division (do not change numbering).
+7. Meeting prep.
+7.1. Group activity: roundtable: what did you notice from the LLD?
+
+---
+Due By Saturday (2020-07-11)
+
+8. SRS.
+8.1. Link all functional requirements to at least 1 business requirement (CA only).
+8.2. Link all non-functional requirements to at least 1 functional requirement (CA only).
+8.3. Finish project schedule (PM only).
+9. HLD (LSD, LT only).
+9.1. Update chapter 3 to reflect LLD.
+9.2. Add reports section (HLD 3.7).
+9.3. Add other output section (HLD 3.8).
+10. Check formatting on all documents, *including* CR + LF and encoding issues (DS only).
+
 +++
 Ground Rules
 
@@ -275,4 +313,4 @@ Metametadata
 **meta_author**: Jeremiah Thomas
 **meta_generator**: Notepad++
 **meta_created**: 2020-05-24
-**meta_updated**: 2020-06-23
+**meta_updated**: 2020-06-30
