@@ -68,8 +68,12 @@ The scope of this document is to outline all of the low level details that will 
 ===
 2.3. Refinement Of Parent Classes To Subclasses
 
+There are 4 classes in the design of this application for the User. The main Client class being one of them is used to run the user classes that deal with the client side of the application. If the classes have a need to create more Inheritance related tasks to the applications design then it will be developed in future iterations. Each class will have a super class that primarily will run the sub classes that deal with that specific class in the application. Since there are 3 classes in this applications design that deal with the users, the structure is designed to use the User class as the Super class to the child class mid_user that will than primarily deal with the high_level_user class, this means that mid_user now will become primarily the other Super class that is in then in charge of the high_level_user so it can inherit the child class. The reason why this was done is because the users were primarily designed to be split into categories that give them a certain set of permissions to then use for the application, so that means User had to become the parent class of mid level user because the first user class has all the neccessary object components needed to transfer the flow of data to transfer information because without inheriting User class the mid user would not have the basic requirements. The mid user class that gets inherited from user now becomes the the subclass of User because this is what is necessary to provide additional methods that deal with the permissions to create and delete tags, which is why the mid level class becomes a parent and the reason why its sub class High level is important. Following the mid user is the high level user class which is primarily an administrative type of level, it primarily deals with creating users, deleting users and updating the users level so its relationship with mid level user is needed due to it being a class that handles crud tasks. 
+
 ===
 2.4. Object Composition
+
+Dealing with object composition was not a part of this projects design, it mainly deals with inheritance but does not have classes that are instances of each other, and the only deletion of a container would be the user which would delete its contents. This project wanted to take a different route to its development design, there are no instances of Team re using their code. 
 
 +++
 3. Database Design
