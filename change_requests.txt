@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-06-29
+Updated on 2020-06-30
 
 +++
 
@@ -101,47 +101,50 @@ Updated on 2020-06-29
 ===
 7. Update Search Functionality
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I1
 **Requirement text**: GUI must feature a conspicuous search feature for the searching of tags.
 **Requester**: Jeremiah Thomas
 **Reason**: No reason to limit the search to a bar or a "central" location
 **Open date**: 2020-06-26
-**Close date**: 
-**Result**: 
+**Close date**: 2020-06-30
+**Result**:Accepted: Agreed by team members.
+
 
 ===
 8. Update Search Directory Switching
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I2
 **Requirement text**: GUI must be able to change target search directory.
 **Requester**: Jeremiah Thomas
 **Reason**: Generalizing the targeting functionality will provide more flexibility in the GUI design
 **Open date**: 2020-06-26
-**Close date**: 
-**Result**: 
+**Close date**: 2020-06-30
+**Result**:  Accepted: Agreed by team members.
+
 
 ===
 9. Update Subdirectory Option
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I5
 **Requirement text**: GUI must contain an option to allow/disallow searching subdirectories.
 **Requester**: Jeremiah Thomas
 **Reason**: No need to lock us into a pane-based design
 **Open date**: 2020-06-26
-**Close date**: 
-**Result**: 
+**Close date**: 2020-06-30
+**Result**:  Accepted: Agreed by team members.
+
 
 ===
 10. Update System Demand
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: P2
 **Requirement text**: Software must not lock directories while searches are being performed.
 **Requester**: Jeremiah Thomas
 **Reason**: It is better to have something testable, addressing a real performance concern.
 **Open date**: 2020-06-29
-**Close date**: 
-**Result**: 
+**Close date**: 2020-06-30
+**Result**:  Accepted: Agreed by team members.
