@@ -260,10 +260,14 @@ GUI will include history tab for recently searched and accessed tags/files.
 GUI must contain an option to allow/disallow searching subdirectories.
 
 ---
-5.1.2. CLI
+5.1.2. CLI  -- N/A
+Description : To make it user friendly, this software is using GUI as a primary interface. This software is not be using CLI at this time.
+
 
 ---
-5.1.3. API
+5.1.3. API - N/A
+Decription : This software is not using API because all the features are exposed in GUI and no ability to support third-party add-ons at this time.
+
 
 ===
 5.2. Hardware Interfaces
