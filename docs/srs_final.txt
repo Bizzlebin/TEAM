@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-06-30
+Updated on 2020-07-01
 
 +++
 Table Of Contents
@@ -535,20 +535,21 @@ During the next team meeting, the change control board must vote on all active i
 
 """
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By
-B1	 Client 	      Enter the valid tagand check     Null 	    SJ-CA
-		              to see if the results returned 
-			      within expected time.
-B2 	 Client 	      Validate if all file tags are    Null 	    SJ-CA
-                              searched within expected time     	     
-B3 	 Client               Enter the valid tag and check    Null	    SJ-CA
+B1       Client               Enter the valid tag and check    Null         SJ-CA
+                              to see if the results returned 
+                              within expected time.
+B2       Client               Validate if all file tags are    Null         SJ-CA
+                              searched within expected time 
+B3       Client               Enter the valid tag and check    Null         SJ-CA
                               to see if the results
-			      are returned 
-B3       Client               Enter valid tag and verify if    Null         AM-DS
-                              expected results are returned
+                              are returned 
 B4       Client               Enter valid tag and verify if    Null         AM-DS
                               all returned results are within
                               the scope of the current user's
                               permissions
+B5       Client               Study duration of customer calls Null         AM-DS
+                              when employees use TagIt.FM
+                              during staged deployment phase
 
 F1       Client               Enter valid tag and check if     Null         JT-PM
                               results are returned.
@@ -557,7 +558,7 @@ F4       Client               Enter valid tag in restricted    Null         JT-P
                               results are returned.
 F6       Client               Attempt to create, update, and   Null         JT-PM
                               delete a tag while not logged in
-                              to ensure it is not possible.
+                              to ensure it is not possible
 
 I1       Client               Validate if the search bar can   Null         SB-LT
                               be seen and allow the user to
@@ -569,14 +570,14 @@ I2       Server               Validate if the change target    Null         SB-L
 I3       Client               Validate if the user type        Null         SB-LT
                               account has been created to
                               manage tags
-I4	 Server		      Validate if the user can access  Null	    SB-LT
-			      the history data
-I5	 Client		      Validate if the user can process Null	    SB-LT
-			      the option in the pane
+I4       Server               Validate if the user can access  Null         SB-LT
+                              the history data
+I5       Client               Validate if the user can process Null         SB-LT
+                              the option in the pane
 I6       Client               Validate whether user type has   Null         SB-LT
                               the required computer system
 I7       Server               Validate if any requests to the  Null         SB-LT
-		 	      server did not successfully pass                               
+                              server did not successfully pass
 I8       Client               Validate whether usertype has    Null         SB-LT
                               the required filesystem
                               
