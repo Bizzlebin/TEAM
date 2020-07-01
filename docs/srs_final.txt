@@ -531,7 +531,14 @@ During the next team meeting, the change control board must vote on all active i
 
 """
 Req ID   Applicable Role      Testcase Desc                    Status       Tested By
-
+B1	 Client 	      Enter the valid tagand check     Null 	    SJ-CA
+		              to see if the results returned 
+			      within expected time.
+B2 	 Client 	      Validate if all file tags are    Null 	    SJ-CA
+                              searched within expected time     	     
+B3 	 Client               Enter the valid tag and check    Null	    SJ-CA
+                              to see if the results
+			      are returned 
 B3       Client               Enter valid tag and verify if    Null         AM-DS
                               expected results are returned
 B4       Client               Enter valid tag and verify if    Null         AM-DS
