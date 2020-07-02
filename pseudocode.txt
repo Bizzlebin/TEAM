@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-29
 
-Updated on 2020-06-30
+Updated on 2020-07-02
 
 +++
 
@@ -35,6 +35,9 @@ class Main()
 	+ read_gui(): gui: obj
 	+ read_https_client(): https_client: obj
 	+ read_user(): user: obj
+	'''
+	'''
+	The methods (besides """init()""") are public so if an error occurs—or a user logs out and wants to log back in—they can be restarted individually.
 	'''
 
 	function init()
@@ -109,7 +112,7 @@ class User()
 	- id: int
 	- name: str
 
-	- init(): no returns
+	- init(name: str, password: str): no returns
 	- login(name: str, password: str): no returns
 	- create_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj): no returns
 	- delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj): no returns
@@ -118,22 +121,21 @@ class User()
 	- read_id() id: int
 	'''
 	'''
-	All display will be handled by the GUI, hence nothing needs to be returned directly by/to the user.
+	All display will be handled by the GUI, hence nothing needs to be returned directly by/to the user. The methods are private because the User class retains control of the main non-GUI thread, only passing control when necessary.
 	'''
-		
-	function init(name: str, password: str)
+
+	function init(name: str = None, password: str = None)
 		'''
 		Initialize the user object, calling login().
 
 		No returns
 		'''
 
-		name = prompt('Username: ')
-		password = prompt('Password: ').censor
-		
-		if name = None or password = None
-			return 
-		else:
+		if name AND password # Handle users who are created by an admin but are not actually logging in
+			return
+		else
+			name = prompt('Username: ')
+			password = prompt('Password: ').censor
 			login(name, password)
 
 	function login(name: str, password: str)
@@ -147,10 +149,10 @@ class User()
 
 		response = client.send_request(login, (name, password))
 
-		if response = int
+		if response = int # A user's ID (UUID) is always an int so this is an easy test to see if login was successful
 			id = response
 		else
-			self.destroy
+			self.destroy() # This isn't an app-defined method but should be part of the language
 
 	function create_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
 		'''
@@ -161,7 +163,7 @@ class User()
 
 		gui = main.read_gui()
 
-		if id
+		if id # All methods that require login require an ID, hence the check; without the check and some separate login system, a user could potentially call methods before their """login()""" function returned
 			gui.create_file_tag(file_path, file_name, file_ext, tag)
 
 	function delete_file_tag(id: int, file_path: str, file_name: str, file_ext: str; tag: obj)
@@ -199,14 +201,14 @@ class User()
 
 		if id
 			gui.read_history(int)
-			
+
 	function read_id()
 		'''
 		Read the user ID from the user object.
 
 		Return id: int
 		'''
-		
+
 		return id
 
 class Mid_user(User)
@@ -250,41 +252,43 @@ class High_user(Mid_user)
 	'''
 	The high-level user, with additional methods.
 
-	- create_user(id: int, name: str; password: str): no returns
+	- create_user(id: int): no returns
 	- delete_user(id: int, user: obj): no returns
 	- update_user_level(id: int, user: obj; level: str): no returns
 	'''
 
-	function create_user(id: int, name: str; password: str)
+	function create_user(id: int)
 		'''
 		Create a user with a given name and password.
 
 		No returns
 		'''
-		
-		User(name, password)
-		 
+
+		if id
+			name = prompt('Username: ')
+			password = prompt('Password: ').censor
+			User(name, password)
+
 	function delete_user(id: int, user: obj)
 		'''
 		Delete a valid user object.
 
 		No returns
 		'''
-		
+
 		client = main.read_https_client()
 
 		if id
 			client.send_request(delete_user, (user))
-					
+
 	function update_user_level(id: int, user: obj; level: str)
 		'''
 		Update a valid user object up or down to a given level (class).
 
 		No returns
 		'''
-		
+
 		client = main.read_https_client()
-		
+
 		if id
 			client.send_request(update_user_level, (user, level))
-						
