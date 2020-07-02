@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-06-24
+Updated on 2020-07-02
 
 +++
 
@@ -70,8 +70,8 @@ HLD
 ••• Report types (audting for confidentiality - cradle to grave analysis?, removal of unused tags)
 ••• Create UML Behavior Diagram (required): 2 h
 ••• Create UML Structure Diagram (required): 2 h
-•• Copyedit:
-•• Template:
+•• Copyedit: 4 h
+•• Template: 2 h
 •• Final acceptance edit
 
 • HLD (final)
