@@ -62,8 +62,16 @@ The scope of this document is to outline all of the low level details that will 
 ===
 2.1. Classes
 
+The psuedo code below provides details on how our Main class, User class and User subclasses will be set up including their purpose, properties, constructors and methods.
+
+https://github.com/Bizzlebin/TEAM/blob/master/pseudocode.txt
+
 ===
 2.2. Detailed Inheritance Hierarchies
+
+Pictured below is an inheritance hierarchy for our application with details for the main and user class leg. It also displays how the rest of our classes and database will  interact with eachother. 
+
+https://github.com/Bizzlebin/TEAM/blob/master/lld_class_diagram.PNG
 
 ===
 2.3. Refinement Of Parent Classes To Subclasses
