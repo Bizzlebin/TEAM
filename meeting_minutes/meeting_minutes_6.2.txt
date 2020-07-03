@@ -1,0 +1,39 @@
+Meeting Minutes 6.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_6.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-02
+
++++
+Summary
+
+Thursday meeting on 2020-07-02 of TEAM Exists As Metonym, to discuss progress on LLD. LLD Draft freeze to go into effect on Thursday. HLD Draft submitted 2020-07-01.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Anna**: Finalized HLD draft for submission, started creating a LLD template for the deliverable, planned to work on editing the plaintext LLD Friday. Added RTM for B4, B5 (addendum).
+**Sandhya**: Added 5.1.2 on SRS Final, added RTM for B1,B2,B3, checked the HLD draft requirements match SRS, worked on narrowing down the requirements list for SRS Final.
+**Stavros**: Worked on section 2.3 and 2.4 of the LLD. Planned on finishing writing the testing tomorrow
+**Zach**: Created hld_final.txt with all the content from the draft. Created a class diagram for LLD, wrote texts for for pseudo code and diagram for LLD. Planned to help Stavros finish tests for the RTM, and to read through all three documents to make sure HLD is up to date. Planned to add a couple Python libraries for 2.4 HLD final
+**Jeremiah**: Wrote some of the pseudo code and put out the week 7 schedule. Planned to work on LLD and the final deliverables for the HLD and SRS
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:07
+**Next Meeting Scheduled** 2020-07-07 20:00
