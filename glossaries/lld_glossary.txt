@@ -31,7 +31,7 @@ B
 ===
 C
 
-**Term**: 
+**CRUD**: Create, read, update and delete
 
 ===
 D
@@ -46,7 +46,7 @@ E
 ===
 F
 
-**Term**: 
+**Foreign key**: A set of attributes that references a primary key.
 
 ===
 G
@@ -86,7 +86,7 @@ M
 ===
 N
 
-**Term**: 
+**Normalization**: Database normalization is the process of structuring a relational database in accordiance with a seres of so-called normal forms in order to reduce data redundancy and improve data integrity
 
 ===
 O
@@ -96,7 +96,8 @@ O
 ===
 P
 
-**Term**: 
+**Pseudocode**: Informal high-level description of the operating pronciple of a computer program using the structural convention of a programming language but intended for human reading
+**Primary key**: A specific choice of attributes that uniquely specify a tuple in a relation
 
 ===
 Q
