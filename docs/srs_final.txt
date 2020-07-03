@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-01
+Updated on 2020-07-02
 
 +++
 Table Of Contents
@@ -585,6 +585,19 @@ P1       Client               Validate that average search     Null         ZW-L
                               times remain below five seconds
 P2       Client               Validate that directories can    Null         ZW-LSD
                               still be accessed during searches
+
+N1       Client               Compare file pre and post-       Null         JT-PM
+                              tagging; are hashes the same?
+N2       Server               Record downtime over an          Null			JT-PM
+                              arbitrary period; was it 0 s?
+N4       Client/Server        Regex all imported modules; is   Null         JT-PM
+                              the set of modules a subset of
+                              Python standard library modules?
+N5       Server               Does server pass I/O stress test Null         JT-PM
+                              simulating 200 users?
+N6       Client               Does the client have a method to Null         JT-PM
+                              fetch current tag data before
+                              every search executes?
 """
 
 ===
