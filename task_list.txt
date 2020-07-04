@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-07-02
+Updated on 2020-07-04
 
 +++
 
@@ -89,6 +89,9 @@ LLD
 •• Introduction (LLD 1)
 •• Object Oriented Design (LLD 2)
 •• Database Design (LLD 3): 3 h
+•• Copyedit:
+•• Template:
+•• Final acceptance edit
 
 ===
 Development
@@ -104,7 +107,7 @@ Development
 ••• Groups
 
 ===
-Testing 
+Testing
 
 • Interface
 • Performance
