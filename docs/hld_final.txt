@@ -10,6 +10,8 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
+Updated on 2020-07-04
+
 +++
 1. Introduction
 
@@ -153,46 +155,57 @@ This project only requires the use of one RDBMS for the storage and management o
 ===
 3.10. Top-Level Classes (Class Hierarchy)
 
+---
 3.10.1. Client Main Class
 
 This class will handle the classes for the client side of the application. It will call the GUI class and handle all interaction between the user inputs and the GUI. This will be a separate class from the server main class.
 
+---
 3.10.2. Server Main Class
 
 This class will handle the server and DBHelper side classes. It will handle the data for authentication purposes of the client's requests.
 
+---
 3.10.3. GUI Class
 
 This will be the class that contains and displays the objects for the user interface.
 
+---
 3.10.4. User Class
 
 This class will contain usernames and passwords and will let the employee interact with the GUI. This class will also have two subclasses representing the level of the employee.
 
-3.10.5 Tags Class
+---
+3.10.5. Tags Class
 
 This class will be responsible for holding all the created tags and displaying them for the employee.
 
+---
 3.10.6. Server Class
 
 This class will be used for setting up our server and defining the requests for sending and retrieving data.
 
+---
 3.10.7. DBHelper Class
 
 This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables.
 
+---
 3.10.8. History Class
 
 This class will hold a list of the user's recent actions, such as creating a tag, adding a tag to a file, or searching for a file by its tags.
 
+---
 3.10.9. FileManagerHelper Class
 
 This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI.
 
+---
 3.10.10. HLD Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
+---
 3.10.11. User Authentication Diagram
 
 https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
@@ -203,10 +216,12 @@ https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 ===
 3.12. Data Flows And States
 
+---
 3.12.1. Data Flow Diagram 1
 
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
 
+---
 3.12.2. Data Flow Diagram 2
 
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
