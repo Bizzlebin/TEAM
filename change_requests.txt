@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-07-02
+Updated on 2020-07-04
 
 +++
 
@@ -110,7 +110,6 @@ Updated on 2020-07-02
 **Close date**: 2020-06-30
 **Result**:Accepted: Agreed by team members.
 
-
 ===
 8. Update Search Directory Switching
 
@@ -121,8 +120,7 @@ Updated on 2020-07-02
 **Reason**: Generalizing the targeting functionality will provide more flexibility in the GUI design
 **Open date**: 2020-06-26
 **Close date**: 2020-06-30
-**Result**:  Accepted: Agreed by team members.
-
+**Result**: Accepted: Agreed by team members.
 
 ===
 9. Update Subdirectory Option
@@ -134,8 +132,7 @@ Updated on 2020-07-02
 **Reason**: No need to lock us into a pane-based design
 **Open date**: 2020-06-26
 **Close date**: 2020-06-30
-**Result**:  Accepted: Agreed by team members.
-
+**Result**: Accepted: Agreed by team members.
 
 ===
 10. Update System Demand
@@ -147,81 +144,76 @@ Updated on 2020-07-02
 **Reason**: It is better to have something testable, addressing a real performance concern.
 **Open date**: 2020-06-29
 **Close date**: 2020-06-30
-**Result**:  Accepted: Agreed by team members.
+**Result**: Accepted: Agreed by team members.
 
 ===
-11. Update Business requirement-B2
+11. Update Business Requirement - B2
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: B2
 **Requirement text**: MHC wants to search the files with filename, filetype, and/or location efficiently.
 **Requester**: Sandhya Joshi
 **Reason**: B2 and B3 combined to make new buisness requirement
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
+**Close date**:
+**Result**:
 
 ===
-12. Remove B3
+12. Delete B3
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: B3
 **Requirement text**: Software must find files when filename, filetype, and/or location are unknown.
 **Requester**: Sandhya Joshi
 **Reason**: B2 and B3 combined to make new buisness requirement
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
+**Close date**:
+**Result**:
 
 ===
-12. Remove B5
+12. Delete B5
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: B5
 **Requirement text**: Customer hold times during peak hours shall be 5 minutes or less.
 **Requester**: Sandhya Joshi
 **Reason**: Not a testable requirement.
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
- 
-===
-13. REMOVE F1
+**Close date**:
+**Result**:
 
-**Status**: Open 
+===
+13. Delete F1
+
+**Status**: Open
 **Requirement ID**: F1
 **Requirement text**: Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
 **Requester**: Sandhya Joshi
-**Reason**: Redudant requirement - UPDATED B2 already covers that.
+**Reason**: Redundant requirement, updated: B2 already covers that.
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
-
+**Close date**:
+**Result**:
 
 ===
-14. REMOVE N3
+14. Delete N3
 
  **Status**: Open 
 **Requirement ID**: N3
 **Requirement text**: Database system should perform database maintenance every midnight.
 **Requester**: Sandhya Joshi
-**Reason**: Non-functional requirement- This requirement is not a must requirement
+**Reason**: Non-functional requirement. This requirement is not a must requirement.
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
+**Close date**:
+**Result**:
 
 ===
-15. REMOVE N7
- 
-**Status**: Open 
+15. Delete N7
+
+**Status**: Open
 **Requirement ID**: N7
 **Requirement text**: Tags must be able to be removed without side effects.
 **Requester**: Sandhya Joshi
 **Reason**: Non-functional requirement
 **Open date**: 2020-07-02
-**Close date**: 
-**Result**:  
-
-
-
-
+**Close date**:
+**Result**:
