@@ -42,7 +42,7 @@ The database component of TagIt.FM is described in the last section of the low-l
 **Library**: Reusable code, including functions, that can be used for common programming tasks
 **Normalization**: Database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity
 **Object**: An abstract data type that contain multiple properties and methods, or even other objects as defined by its class
-**Parent**: The top level class from which a child class inherits attributes and methods
+**Parent**: The top-level class from which a child class inherits attributes and methods
 **Primary key**: A specific choice of attributes that uniquely specify a tuple in a relation
 **Pseudocode**: Informal high-level description of the operating principle of a computer program using the structural convention of a programming language but intended for human reading
 **SQL**: Structured query language: a language used in programming that is designed for data held in a relational database management system
@@ -56,9 +56,7 @@ The database component of TagIt.FM is described in the last section of the low-l
 ===
 2.1. Classes
 
-The pseudocode illustrated in the following diagram, provides details on how the Main class, the User class and the User child classes will be set up, including their purpose, properties, constructors, and methods.
-
-https://github.com/Bizzlebin/TEAM/blob/master/pseudocode.txt
+The pseudocode illustrated in the following diagram, provides details on how the Main class, the User class and the User child classes will be set up, including their purpose, properties, constructors, and methods. See Appendix A for pseudocode details.
 
 ===
 2.2. Detailed Inheritance Hierarchies
@@ -85,7 +83,7 @@ The principles of object composition were not a part of this project's design pr
 ===
 3.1. Chosen Database
 
-TagIt.FM will be designed to run using a SQLite database. The SQLite database engine is small and fast, which makes it unlikely to impact any business-critical functions, or slow down the LAN. SQLite works across a wide variety of operating systems, making it possible for MHC to use the application on any existing hardware. The database content will be updated continuously and automatically, which helps protect the database against losses in the event of a power outage or crash.
+TagIt.FM will be designed to run using a SQLite database. The SQLite database engine is small and fast, which makes it unlikely to impact any business-critical functions or slow down the LAN. SQLite works across a wide variety of operating systems, making it possible for MHC to use the application on any existing hardware. The database content will be updated continuously and automatically, which helps protect the database against losses in the event of a power outage or crash.
 
 The SQLite database will store the user identification parameters, group permissions, filename and tag relations, and user histories for TagIt.FM.
 
@@ -104,7 +102,7 @@ The primary key of the User table will be id(int). It will be in charge of trans
 ---
 3.2.2. User History
 
-The User History table will have a primary key of id(int). This table will save modifications to tags and its responsibilities will include data per user based on when a tag was created, assigned, or deleted. The User History table will include the count(int) attribute, which will be in charge of keeping track of changes in the user history. This data table will include two foreign keys which are user.id(int) and tag.id(int). These foreign keys will be connected to the User table and the Tag table, respectively. The user.id foreign key will be used when a new username and password are created and the table stores the user history table data. Additionally, each user's tag information will be related with the Tag table through the tag.id(int) foreign key.
+The User History table will have a primary key of id(int). This table will save modifications to tags and its responsibilities will include data per user based on when a tag was created, assigned, or deleted. The User History table will include the count(int) attribute, which will be in charge of keeping track of changes in the user history. This data table will include two foreign keys which are user.id(int) and tag.id(int). These foreign keys will be connected to the User table and the Tag table, respectively. The user.id foreign key will be used when a new username and password are created, and the table stores the user history table data. Additionally, each user's tag information will be related with the Tag table through the tag.id(int) foreign key.
 
 ---
 3.2.3. File Tag
@@ -120,3 +118,8 @@ The Tag table will contain id(int) primary key, which will connect to the File T
 3.2.5. Group
 
 The Group table will be primarily involved with the CURD roles. The primary key of the Group table is id(int). The Group table includes the name(str) attribute that will hold the name of created user groups. It will handle all the CURD modifications to tags, like updating the tags, reading, and deleting the tags in relation to each user. The table will handle these tasks using Boolean logic in order to make it more efficient when someone is trying to find specific information in the database. The Group table will handle the different user levels within the application. The application will include a regular user, a mid-level user and a high-level user and the Group table will confirm what access level a user has before authorizing changes to tags.
+
++++
+Appendix A
+
+https://github.com/Bizzlebin/TEAM/blob/master/pseudocode.txt
