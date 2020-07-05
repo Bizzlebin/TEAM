@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-15
 
-Updated on 2020-07-04
+Updated on 2020-07-05
 
 +++
 1. Introduction
@@ -20,28 +20,29 @@ Updated on 2020-07-04
 
 The client, MHC, is an insurance company and they need an application that can quickly locate important medical and financial documents of varying filetype. Customer service representatives, especially, will benefit from TagIt.FM because it will both simplify the search process and reduce the amount of time that they need to keep a customer on hold. This in turn can improve the mood of the customer and decrease frustrations for the employee.
 
-The purpose of this project is to improve and accelerate the process of searching for files on a computer file directory, using the new, and intuitive TagIt.FM application. This document will describe the detailed, low-level design (LLD) of TagIt.FM, including the basic structure of the involved database classes, and their attributes and functions. The LLD document will be used by the developers to guide the design and development process of the application.
+The purpose of this project is to improve and accelerate the process of searching for files in a computer file directory, using the new, and intuitive TagIt.FM application. This document will describe the detailed, low-level design (LLD) of TagIt.FM, including the basic structure of the involved database classes, and their attributes and functions. The LLD document will be used by the developers to guide the design and development process of the application.
 
 ===
 1.2. Scope Of This Document
 
-The scope of this document is to outline the low-level design details that will be used to develop the concept of the application into a fully functioning product. The document will include all the object-oriented design details, like determining what the classes will do, and using pseudocode to illustrate the basic high-level details. It will discuss the inheritance hierarchies that will be involved with the classes, like what the parent, or super-classes, will oversee, and what the sub-classes are inheriting from them.
+The scope of this document is to outline the low-level design details that will be used to develop the application concept into a fully functioning product. The document will include all the object-oriented design details, like determining what the classes will do, and using pseudocode to help illustrate some of the basic coding constructs. It will discuss the inheritance hierarchies that will be involved with the classes, like what the parent classes will oversee, and what the child classes will inherit from them.
 
-There will be a database component to this project that is described in the last section of the low-level design document. This section will include the pseudocode, database tables and their relationships, and the functions  of the database tables. There will also be a description of the normalization process of the application database, that will ensure that there are no redundancies in the database.
+The database component of TagIt.FM is described in the last section of the low-level design document. This section will include the pseudocode, database tables and their relationships, and the functions of the database tables. There will also be a description of the normalization process of the application database, that will ensure that there are no redundancies in the database.
 
 ===
 1.3. Definitions, Acronyms, And Abbreviations
 
 **3NF**: Third normal form
+**Child**: A class that inherits attributes and/or methods
 **Class*: A user-defined blueprint or prototype from which all objects are created that contains the set of properties and methods that an object of that type has
 **CURD**: Create, update, read, and delete
-**FK**: Foreign key
 **Foreign key**: A set of attributes that references a primary key
+**Inheritance**: A mechanism where a class is derived from another class 
 **LAN**: Local area network
 **Library**: Reusable code, including functions, that can be used for common programming tasks
 **Normalization**: Database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity
 **Object**: An abstract data type that contain multiple properties and methods, or even other objects as defined by its class
-**PK**: Primary key
+**Parent**: The top level class from which a child class inherits attributes and methods
 **Primary key**: A specific choice of attributes that uniquely specify a tuple in a relation
 **Pseudocode**: Informal high-level description of the operating principle of a computer program using the structural convention of a programming language but intended for human reading
 **SQL**: Structured query language: a language used in programming that is designed for data held in a relational database management system
@@ -55,7 +56,7 @@ There will be a database component to this project that is described in the last
 ===
 2.1. Classes
 
-The pseudocode illustrated in the following diagram, provides details on how the Main class, the User class and the User subclasses will be set up, including their purpose, properties, constructors, and methods.
+The pseudocode illustrated in the following diagram, provides details on how the Main class, the User class and the User child classes will be set up, including their purpose, properties, constructors, and methods.
 
 https://github.com/Bizzlebin/TEAM/blob/master/pseudocode.txt
 
@@ -67,11 +68,11 @@ Pictured below is an inheritance hierarchy for the application with details for 
 https://github.com/Bizzlebin/TEAM/blob/master/lld_class_diagram.PNG
 
 ===
-2.3. Refinement Of Parent Classes To Subclasses
+2.3. Refinement Of Parent Classes To Child Classes
 
-TagIT.FM will make use of four parent classes and two subclasses. The Main class is used to run the User classes for the client side of the application. If there is a need for the classes to create more inheritance related tasks to the application design, it may be developed in future iterations.
+TagIT.FM will make use of four parent classes and two child classes. The Main class is used to run the User classes for the client side of the application. If there is a need for the classes to create more inheritance related tasks to the application design, they may be developed in future iterations.
 
-There are three levels of classes in the application design that handle users, therefore the structure is designed to use the User class as the parent class. The subclass Mid_user will inherit directly from User, and High_user will inherit from Mid_user. The purpose of this inheritance is splitting the users into categories depending on their job roles. This will give them certain role dependent permissions in the application. The User class, as the parent class, contains the basic attributes and methods that are inherited by the two subclasses. The Mid_user class, inherits from the User class and adds new methods for creating and deleting tags. Finally, the High_user class inherits from the Mid_user class and adds new methods for creating and deleting user accounts, and changing the current permission level on accounts.
+There are three levels of classes in the application design that handle users, therefore the structure is designed to use the User class as the parent class. The child class Mid_user will inherit directly from User, and High_user will inherit from Mid_user. The purpose of this inheritance is splitting the users into categories depending on their job roles, creating certain roles with dependent permissions within the application. The User class, as the parent class, contains the basic attributes and methods that are inherited by the two child classes. The Mid_user class, inherits from the User class and adds new methods for creating and deleting tags. Finally, the High_user class inherits from the Mid_user class and adds new methods for creating and deleting user accounts and for changing the current permission level on accounts.
 
 ===
 2.4. Object Composition
@@ -91,31 +92,31 @@ The SQLite database will store the user identification parameters, group permiss
 ===
 3.2. Tables And Relationships
 
-The database table is set up in 3NF through only using primary keys and foreign keys as the functional dependencies in the database. There are no other transitive dependencies in the table as the five related tables were kept separated to achieve 3NF.
+The database table is set up in 3NF using primary keys and foreign keys as the functional dependencies in the database. There are no other transitive dependencies in the table as the five related tables were kept separated to achieve 3NF.
 
-The User History table will be separated from the User table. The User History table will organize the user history and put it into a separate table that has two foreign keys that follow 3NF. The User History table can then add users separately from the tags and delete tags without affecting the users. The User table will be normalized into columns containing the user information, that is, names, dates, and password cryptography. This table will connect to the User History table and the Group table using foreign keys. The Group table will include information that involves CURD tasks for tags, users, and groups. The Tag table will only have a primary key and no foreign keys, however, there are relations that follow 3NF with the File Tag table. The File Tag table will include one primary key and one foreign key. The File Tag table will contain all the file information that is used to organize the tags based on the file path, the name, and the extension type. This table will allow administrators to delete a tag without affecting the other tables.
+The User History table will be separated from the User table. The User History table will organize the user history and put it into a separate table that has two foreign keys that follow 3NF. The User History table can then add users separately from the tags and delete tags without affecting the users. The User table will be normalized into columns containing the user information, that is, names, dates, and password cryptography. This table will connect to the User History table and the Group table using foreign keys. The Group table will include information that involves CURD tasks for tags, users, and groups. The Tag table will only have a primary key and no foreign keys. The File Tag table will include one primary key and one foreign key. The File Tag table will contain all the file information that is used to organize the tags based on the file path, the name, and the extension type. This table will allow administrators to delete a tag without affecting the other tables.
 
 ---
 3.2.1. User
 
-The PK of the User table will be id(int). It will be in charge of transferring data when the other tables are joined. The main purpose of the User table will be to store information for the user, which will consist of six attributes that handle data. The data attributes in the User table will be name(str), creation_date(date), salt(str), hash(str), update_date(date) as well as the FK group.id(int). The username of the user will be assigned to name, and the account creation date to creation_date. The salt cryptography and hash attributes will be used to handle password encryption. Each password will have a unique hash to handle the encoding, which will provide a more secure profile. The update_date attribute will modify the date that the user modified a tag. The FK used in the User table will be group.id, which is the relation between the user and the group tables that will handle CURD tasks of the tags, users, and groups. The FK will connect to the Boolean values in the Group table and will handle the AND, OR, NOT or AND NOT values that are utilized in the search feature of the database.
+The primary key of the User table will be id(int). It will be in charge of transferring data when the other tables are joined. The main purpose of the User table will be to store information for the user in six attributes that handle the account data. The data attributes in the User table will be name(str), creation_date(date), salt(str), hash(str), update_date(date) as well as the foreign key group.id(int). The username of the user will be assigned to name, and the account creation date to creation_date. The salt and hash cryptography attributes will be used to handle password encryption. Each password will have a unique hash to handle the encoding, which will provide a more secure profile. The update_date attribute will record when the user modified a tag. The foreign key used in the User table will be group.id, which is the relation between the user table and the group table that will handle CURD tasks of the tags, users, and groups. The foreign key will connect to the Boolean values in the Group table and will handle the AND, OR, NOT or AND NOT values that are utilized in the search feature of the application.
 
 ---
 3.2.2. User History
 
-The User History table will have a PK of id(int). This table saves modifications to tags and its responsibilities will include data per user based on when a tag was created, assigned, or deleted. The User History table will have count(int), which will be in charge of keeping track of the user history of when anything gets modified. This data table wioll include two foreign keys which are user.id(int) and tag.id(int). These FK's will be connected to the User table and the Tag table, respectively. The user.id FK will be used when a new username and password are created, and the table stores the user history table data. Additionally, each users' tag information will be related with the Tag table through the tag.id(int) FK.
+The User History table will have a primary key of id(int). This table will save modifications to tags and its responsibilities will include data per user based on when a tag was created, assigned, or deleted. The User History table will include the count(int) attribute, which will be in charge of keeping track of changes in the user history. This data table will include two foreign keys which are user.id(int) and tag.id(int). These foreign keys will be connected to the User table and the Tag table, respectively. The user.id foreign key will be used when a new username and password are created and the table stores the user history table data. Additionally, each user's tag information will be related with the Tag table through the tag.id(int) foreign key.
 
 ---
 3.2.3. File Tag
 
-The primary responsibility of the File Tag table will be to handle the technical information that will be associated with any given tag. It will join with the Tag table, which then relates to the User and User History tables. The table will include four attributes, including one FK. The attributes will be file_path(str), file_name(str), file_ext(str), and tag.id(int) FK. The file_path attribute will include the directory path to a tagged the file and the file_name(str) will contain the name of the file. The file_ext attribute will organize the extensions associated with the tagged file. The FK connects to the File Tag table to the Tag table.
+The primary responsibility of the File Tag table will be to handle the meta data that will be associated with any given tag. It will join with the Tag table, which then relates to the User and User History tables. The table will include four attributes, including one foreign key. The attributes will be file_path(str), file_name(str), file_ext(str), and the tag.id(int) foreign key. The file_path attribute will include the directory path to a tagged the file and the file_name(str) will contain the name of the file. The file_ext attribute will organize the extensions associated with the tagged file. The foreign key connects to the File Tag table to the Tag table.
 
 ---
 3.2.4. Tag
 
-The Tag table will contain name(str), which will connect to the File Tag table for specific tag information, and description(str) which will detail what the tag's purpose is. The Tag table has one PK and no FK because this table will not be modified by other database objects, rather it will be used in relation to the User History and File Tag tables. Its primary relation will be to the File Tag table. The File Tag table will rely on the Tag table to transfer information that is included in the tag, ie the file extension, the file name, or the file location in the directory. This table will also update and delete tags in 3NF format, so that any tags undergoing CURD tasks will not be removed entirely from the Tag table rather only removed from the joined table.
+The Tag table will contain id(int) primary key, which will connect to the File Tag table for specific tag information, name(str) and description(str), which will contain the name and detailed description of the tag. The Tag table has one primary key and no foreign key because this table will not be modified by other database objects, rather it will be used in relation to the User History and File Tag tables. Its primary relation will be to the File Tag table. The File Tag table will rely on the Tag table to transfer information regarding each tag, ie the file extension, the file name, or the file location in the directory. This table will also update and delete tags in 3NF format, so that any tags undergoing CURD tasks will not be removed entirely from the Tag table rather only removed from the joined table.
 
 ---
 3.2.5. Group
 
-The Group table will be primarily involved with the CURD roles, the primary key is id(int). The Group table includes name(str) attribute that will hold a description of created user groups. It will handle all the modifications involved like updating the tag, reading, and deleting the tags involved with the user. The table will handle these tasks using Boolean logic in order to make it more efficient when someon is trying to find specific information in the database. All of the Group table's responsibilities will deal with handling multiple users within the application. The application will include a regular user, a mid-level user and a high-level user and the Group table will confirm what access level a user has before authorizing changes to tags.
+The Group table will be primarily involved with the CURD roles. The primary key of the Group table is id(int). The Group table includes the name(str) attribute that will hold the name of created user groups. It will handle all the CURD modifications to tags, like updating the tags, reading, and deleting the tags in relation to each user. The table will handle these tasks using Boolean logic in order to make it more efficient when someone is trying to find specific information in the database. The Group table will handle the different user levels within the application. The application will include a regular user, a mid-level user and a high-level user and the Group table will confirm what access level a user has before authorizing changes to tags.
