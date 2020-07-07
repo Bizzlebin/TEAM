@@ -10,7 +10,9 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-15
 
-Updated on 2020-07-05
+Updated on 2020-07-07
+
+Released on 2020-07-10
 
 +++
 1. Introduction
@@ -56,7 +58,7 @@ The database component of TagIt.FM is described in the last section of the low-l
 ===
 2.1. Classes
 
-The pseudocode illustrated in the following diagram, provides details on how the Main class, the User class and the User child classes will be set up, including their purpose, properties, constructors, and methods. See Appendix A for pseudocode details.
+The classes are illustrated using pseudocode in Appendix A. This provides details on how the Main class, the User class and the User child classes will be set up, including their purpose, properties, constructors, and methods. 
 
 ===
 2.2. Detailed Inheritance Hierarchies
