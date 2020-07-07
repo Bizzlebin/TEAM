@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-06-12
 
-Updated on 2020-07-06
+Updated on 2020-07-07
 
 +++
 
@@ -373,3 +373,16 @@ Updated on 2020-07-06
 **Open date**: 2020-07-06
 **Close date**: 
 **Result**: 
+
+===
+30. Update B4
+
+**Status**: Open 
+**Requirement ID**: B4
+**Requirement text**:  Software must not have direct access to any confidential data or documents; rather, 
+                       tags should be attached to files in a way that does not require read permissions.
+**Requester**: Sandhya Joshi
+**Reason**: Use consistent language, including "must", in all requirements.
+**Open date**: 2020-07-07
+**Close date**: 
+**Result**:  
