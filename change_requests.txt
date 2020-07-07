@@ -33,7 +33,7 @@ Updated on 2020-07-06
 **Requirement ID**: F2
 **Requirement text**: [Request to Remove F2]
 **Requester**: Sandhya Joshi
-**Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system. 
+**Reason**: Not a business or functional requirement. Insurance agent will not login the internal employee database system.
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
 **Result**: Accepted: Voted by majority members, it is not a required business requirement or functional requirement.
@@ -57,7 +57,7 @@ Updated on 2020-07-06
 **Requirement ID**: F4
 **Requirement text**: [Request to Remove F4]
 **Requester**: Sandhya Joshi
-**Reason**: Redundant requirement 
+**Reason**: Redundant requirement
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
 **Result**: Rejected: This functionality enhances the file security and confidentiality, so it should not be removed.
@@ -93,7 +93,7 @@ Updated on 2020-07-06
 **Requirement ID**: F8
 **Requirement text**: [Request to Remove F8]
 **Requester**: Sandhya Joshi
-**Reason**: Sorting method is never implemented 
+**Reason**: Sorting method is never implemented
 **Open date**: 2020-06-25
 **Close date**: 2020-06-25
 **Result**: Accepted: Agreed by team members.
@@ -163,7 +163,7 @@ Updated on 2020-07-06
 
 **Status**: Open
 **Requirement ID**: B3
-**Requirement text**: Software must find files when filename, filetype, and/or location are unknown.
+**Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: B2 and B3 combined to make new buisness requirement
 **Open date**: 2020-07-02
@@ -175,7 +175,7 @@ Updated on 2020-07-06
 
 **Status**: Open
 **Requirement ID**: B5
-**Requirement text**: Customer hold times during peak hours shall be 5 minutes or less.
+**Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Not a testable requirement.
 **Open date**: 2020-07-02
@@ -185,9 +185,9 @@ Updated on 2020-07-06
 ===
 14. Delete N3
 
- **Status**: Open 
+ **Status**: Open
 **Requirement ID**: N3
-**Requirement text**: Database system should perform database maintenance every midnight.
+**Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Non-functional requirement. This requirement is not a must requirement.
 **Open date**: 2020-07-02
@@ -199,7 +199,7 @@ Updated on 2020-07-06
 
 **Status**: Open
 **Requirement ID**: N7
-**Requirement text**: Tags must be able to be removed without side effects.
+**Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Non-functional requirement
 **Open date**: 2020-07-02
@@ -207,117 +207,117 @@ Updated on 2020-07-06
 **Result**:
 
 ===
-16. Update F1 
+16. Update F1
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: F1
 **Requirement text**: Customer care representatives must be able to retrieve the policy holder information using a keyword from their database.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 17. Update F4
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: F4
-**Requirement text**:  Tags must not allow users to access documents that they do not have permissions to access.
+**Requirement text**: Tags must not allow users to access documents that they do not have permissions to access.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 18. Update F6
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: F6
-**Requirement text**:  Relevant employee logins must be required to create, update, and delete tags.
+**Requirement text**: Relevant employee logins must be required to create, update, and delete tags.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 19. Update I3
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: I3
-**Requirement text**:  User interface for managing personal tags must require log in.
+**Requirement text**: User interface for managing personal tags must require log in.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 20. Update I4
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: I4
-**Requirement text**:  GUI must include history tab for recently searched and accessed tags/files.
+**Requirement text**: GUI must include history tab for recently searched and accessed tags/files.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 21. Update I6
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: I6
-**Requirement text**:  The application must be available on x86 systems.
+**Requirement text**: The application must be available on x86 systems.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 22. Update I7
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: I7
-**Requirement text**:  The application must use local area network access to facilitate communication between the clients and server.
+**Requirement text**: The application must use local area network access to facilitate communication between the clients and server.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 23. Update I8
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: I8
-**Requirement text**:   The application must need to interface with the filesystem of Microsoft Windows and Linux.
+**Requirement text**:  The application must need to interface with the filesystem of Microsoft Windows and Linux.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 24. Update P1
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: P1
 **Requirement text**: Software must be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 25. Update N1
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: N1
 **Requirement text**: The application must not make changes to any file or file's metadata.
 **Requester**: Sandhya Joshi
@@ -325,51 +325,51 @@ Updated on 2020-07-06
 **Open date**: 2020-07-06
 **Close date**: 
 **Result**: 
- 
+
 ===
 26. Update N2
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: N2
 **Requirement text**: System must be available 24 × 7 for all users.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 27. Update N4
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: N4
-**Requirement text**:  System must not have any external dependencies.
+**Requirement text**: System must not have any external dependencies.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 28. Update N5
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: N5
-**Requirement text**:  Software must be able to support several hundred users's/employees's ability to create, access, and modify tags simultaneously.
+**Requirement text**: Software must be able to support several hundred users's/employees's ability to create, access, and modify tags simultaneously.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
 
 ===
 29. Update N6
 
-**Status**: Open 
+**Status**: Open
 **Requirement ID**: N6
-**Requirement text**:  Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
+**Requirement text**: Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
 **Close date**: 
-**Result**:  
+**Result**: 
