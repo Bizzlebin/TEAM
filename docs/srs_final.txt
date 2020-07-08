@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-04
+Updated on 2020-07-07
 
 +++
 Table Of Contents
@@ -190,22 +190,13 @@ MHC wants to maintain its quality of service by providing the best customer care
 ===
 3.2. B2
 
-MHC wants to maintain all its customer data so that it can be searched efficiently and effectively.
-
-===
-3.3. B3
-
-Software must find files when filename, filetype, and/or location are unknown.
+MHC wants to search the files with filename, filetype, and/or location efficiently.
 
 ===
 3.4. B4
 
-Software shall not have direct access to any confidential data or documents; rather, tags shall be attached to files in a way that does not require read permissions.
+Software must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that does not require read permissions.
 
-===
-3.4. B5
-
-Customer hold times during peak hours shall be 5 minutes or less.
 
 +++
 4.Functional Requirements
@@ -213,17 +204,17 @@ Customer hold times during peak hours shall be 5 minutes or less.
 ===
 4.1. F1
 
-Customer care representatives shall be able to retrieve the policy holder information using a keyword from their database.
+Customer care representatives must be able to retrieve the policy holder information using a keyword from their database.
 
 ===
 4.4. F4
 
-Tags shall not allow users to access documents that they do not have permissions to access.
+Tags must not allow users to access documents that they do not have permissions to access.
 
 ===
 4.6. F6
 
-Relevant employee logins will be required to create, update, and delete tags.
+Relevant employee logins must be required to create, update, and delete tags.
 
 +++
 5. Interface Requirements
@@ -247,12 +238,12 @@ GUI must be able to change target search directory.
 ~~~~~
 5.1.1.3. I3
 
-User interface for managing personal tags shall require log in.
+User interface for managing personal tags must require log in.
 
 ~~~~~
 5.1.1.4. I4
 
-GUI will include history tab for recently searched and accessed tags/files.
+GUI must include history tab for recently searched and accessed tags/files.
 
 ~~~~~
 5.1.1.1. I5
@@ -275,7 +266,7 @@ Decription : This software is not using API because all the features are exposed
 ---
 5.2.1. I6
 
-The application will be available on x86 systems.
+The application must be available on x86 systems.
 
 ===
 5.3. Communication Interfaces
@@ -283,7 +274,7 @@ The application will be available on x86 systems.
 ---
 5.3.1 I7
 
-The application will use local area network access to facilitate communication between the clients and server.
+The application must use local area network access to facilitate communication between the clients and server.
 
 ===
 5.4. Software Interfaces
@@ -299,7 +290,7 @@ The application will need to interface with the filesystem of Microsoft Windows 
 ===
 6.1. P1
 
-Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+Software must be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
 
 ===
 6.2. P2
@@ -315,7 +306,7 @@ Software must not lock directories while searches are being performed.
 ---
 7.1.1. N1
 
-The application shall make no changes to any file or file's metadata.
+The application must make no changes to any file or file's metadata.
 
 ===
 7.2. Reliability
@@ -323,19 +314,16 @@ The application shall make no changes to any file or file's metadata.
 ---
 7.2.1. N2
 
-System should be available 24 × 7 for all users.
+System must be available 24 × 7 for all users.
 
 ===
 7.3. Maintainability
 
----
-7.3.1. N3
-
-Database system should perform database maintenance every midnight.
+===
 
 7.3.2. N4
 
-System should not have any external dependencies.
+System must not have any external dependencies.
 
 ===
 7.4. Portability
@@ -356,10 +344,6 @@ Software must keep all tags up to date in real time as they are created, updated
 ===
 7.6. Serviceability
 
----
-7.6.1. N7
-
-Tags must be able to be removed without side effects.
 
 +++
 8. Operational Scenarios
@@ -540,16 +524,11 @@ B1       Client               Enter the valid tag and check    Null         SJ-C
                               within expected time.
 B2       Client               Validate if all file tags are    Null         SJ-CA
                               searched within expected time 
-B3       Client               Enter the valid tag and check    Null         SJ-CA
-                              to see if the results
-                              are returned 
+
 B4       Client               Enter valid tag and verify if    Null         AM-DS
                               all returned results are within
                               the scope of the current user's
                               permissions
-B5       Client               Study duration of hold times     Null         AM-DS
-                              when employees use TagIt.FM
-                              during staged deployment phase
 
 F1       Client               Enter valid tag and check if     Null         JT-PM
                               results are returned.
@@ -588,7 +567,7 @@ P2       Client               Validate that directories can    Null         ZW-L
 
 N1       Client               Compare file pre and post-       Null         JT-PM
                               tagging; are hashes the same?
-N2       Server               Record downtime over an          Null			JT-PM
+N2       Server               Record downtime over an          Null			    JT-PM
                               arbitrary period; was it 0 s?
 N4       Client/Server        Regex all imported modules; is   Null         JT-PM
                               the set of modules a subset of
