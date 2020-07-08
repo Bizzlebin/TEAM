@@ -127,12 +127,12 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 ===
 3.1. Security
 
-MHC deals with documents and records that must remain confidential due to HIPAA regulations. All data transfers will be handled using an HTTPS server. HTTPS will encrypt the data and stop potential hackers from being able to understand any data that they are able to intercept during a transfer to the database. The company network is private and only connected to the internet through a firewall, which forces hackers to try to find direct access to the network. The physical security of the building will provide further protection and deny unauthorized personnel direct access to the network or server.
+MHC deals with documents and records that must remain confidential due to HIPAA regulations. Therefore, all data transfers will be handled using an HTTPS server, that HTTPS server will then encrypt the data and stop potential intruders from being able to understand any data that they are able to intercept during a transfer to the database that is hosted by the server. The company network runs on a private setup and mandates the use of firewalls when connecting to the internet, which reduces the potential of DDOS attacks or hackers trying to find direct access to the servers. The physical security of the building will provide further protection and deny unauthorized personnel direct access to the network or server.
 
 ===
 3.2. Hardware
 
-Required hardware for this project includes the following: a server for the tag database to be hosted on, a private LAN to facilitate communication between the employees computers which will host the GUI, and the database. Cables and routers will also be necessary to connect the tag database server to the LAN. The entire LAN should be hardwired for increased security. The TagIt.FM application will be able to run on any computer or laptop that is provided for the employees that is connected to the LAN.
+Required hardware for this project includes the following: A server that will host the database for handling tags, a private LAN to facilitate communication between the employees computers which will host the GUI for requesting tasks to be completed. Cables and routers will also be necessary to connect the server to the LAN that runs the database of the application. The TagIt.FM application will be able to run on any computer or laptop that is provided for the employees that is connected to the LAN with the required operating system which is windows and linux and specifications that fit the needs of the applications standards which are x86, without these specifications of specific hardware the application will be impractical and provide no use to the user. 
 
 ===
 3.3. User Interfaces
@@ -213,7 +213,7 @@ This class will be used for setting up our server and defining the requests for 
 ---
 3.10.7. DBHelper Class
 
-This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables.
+This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables. This will then provide the use of queries to use sql functions and statements within the programming language.
 
 ---
 3.10.8. History Class
