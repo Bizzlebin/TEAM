@@ -1,0 +1,63 @@
+Meeting Minutes 7.1
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_7.1.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-07
+
++++
+Summary
+
+Thursday meeting on 2020-07-07 of TEAM Exists As Metonym, focus on finishing up LLD for submission, beginning final steps for SRS and HLD. LLD to be submitted by 2020-07-10
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Jeremiah**: Helped with the SRS, added some test cases and formatted the change request.
+**Zach**: Fixed LLD class diagram, added libraries section to 2.4 in HLD, planned edit HLD to better match up with SRS and LLD
+**Stavros**: Modified HLD, planned to continue working on HLD
+**Sandhya**: Checked functional requirements against business requirements, made change requests, reworded requirements for consistent language, compared SRS to LLD and HLD, planned to update SRS final and change request document after meeting
+**Anna**: Worked on finalizing LLD and transferring it to Word deliverable
+
++++
+Vote On Change Control Requests
+
+**11**: Accept
+**12**: Accept
+**13**: Accept
+**14**: Accept
+**15**: Accept
+**16**: Accept
+**17**: Accept
+**18**: Accept
+**19**: Accept
+**20**: Accept
+**21**: Accept
+**22**: Accept
+**23**: Reject
+**24**: Accept
+**25**: Accept
+**26**: Accept
+**27**: Accept
+**28**: Accept
+**29**: Accept
+**30**: Accept
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:16
+**Next Meeting Scheduled** 2020-07-09 20:00
