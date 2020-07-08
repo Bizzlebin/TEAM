@@ -97,15 +97,30 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 
 ===
 2.4. Libraries
+---
 
-http.client
-ssl
-os
-tkinter
-path
-sys
-timeit
+2.4.1 HTTP.client
+---
 
+2.4.2 SSL
+---
+
+2.4.3 OS
+---
+
+2.4.4 tkinter
+---
+
+2.4.5 PATH
+---
+
+2.4.6 SYS
+---
+
+2.4.7 TIMEIT
+---
+
+===
 +++
 3. Design Details
 
