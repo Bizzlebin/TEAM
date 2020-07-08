@@ -149,98 +149,100 @@ Updated on 2020-07-07
 ===
 11. Update Business Requirement - B2
 
-**Status**: Open
+**Status**:  Closed
 **Requirement ID**: B2
 **Requirement text**: MHC wants to search the files with filename, filetype, and/or location efficiently.
 **Requester**: Sandhya Joshi
 **Reason**: B2 and B3 combined to make new buisness requirement
 **Open date**: 2020-07-02
-**Close date**:
-**Result**:
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
+
 
 ===
 12. Delete B3
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: B3
 **Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: B2 and B3 combined to make new buisness requirement
 **Open date**: 2020-07-02
-**Close date**:
-**Result**:
+**Close date**:2020-07-07
+**Result**: Accepted: Agreed by team members.
+
 
 ===
 13. Delete B5
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: B5
 **Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Not a testable requirement.
 **Open date**: 2020-07-02
-**Close date**:
-**Result**:
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 14. Delete N3
 
- **Status**: Open
+ **Status**: Closed
 **Requirement ID**: N3
 **Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Non-functional requirement. This requirement is not a must requirement.
 **Open date**: 2020-07-02
-**Close date**:
-**Result**:
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 15. Delete N7
 
-**Status**: Open
+**Status**:Closed
 **Requirement ID**: N7
 **Requirement text**: [None]
 **Requester**: Sandhya Joshi
 **Reason**: Non-functional requirement
 **Open date**: 2020-07-02
-**Close date**:
-**Result**:
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 16. Update F1
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: F1
 **Requirement text**: Customer care representatives must be able to retrieve the policy holder information using a keyword from their database.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 17. Update F4
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: F4
 **Requirement text**: Tags must not allow users to access documents that they do not have permissions to access.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 18. Update F6
 
-**Status**: Open
+**Status**:Closed
 **Requirement ID**: F6
 **Requirement text**: Relevant employee logins must be required to create, update, and delete tags.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 19. Update I3
@@ -251,104 +253,105 @@ Updated on 2020-07-07
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 20. Update I4
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I4
 **Requirement text**: GUI must include history tab for recently searched and accessed tags/files.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 21. Update I6
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I6
 **Requirement text**: The application must be available on x86 systems.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 22. Update I7
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I7
 **Requirement text**: The application must use local area network access to facilitate communication between the clients and server.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 23. Update I8
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: I8
 **Requirement text**:  The application must need to interface with the filesystem of Microsoft Windows and Linux.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**:  Reject - unclear descripton
+
 
 ===
 24. Update P1
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: P1
 **Requirement text**: Software must be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 25. Update N1
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: N1
 **Requirement text**: The application must not make changes to any file or file's metadata.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 26. Update N2
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: N2
 **Requirement text**: System must be available 24 × 7 for all users.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 27. Update N4
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: N4
 **Requirement text**: System must not have any external dependencies.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 28. Update N5
@@ -359,30 +362,43 @@ Updated on 2020-07-07
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07 
+**Result**: Accepted: Agreed by team members.
 
 ===
 29. Update N6
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: N6
 **Requirement text**: Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-06
-**Close date**: 
-**Result**: 
+**Close date**: 2020-07-07
+**Result**: Accepted: Agreed by team members.
 
 ===
 30. Update B4
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: B4
 **Requirement text**:  Software must not have direct access to any confidential data or documents; rather, 
                        tags should be attached to files in a way that does not require read permissions.
 **Requester**: Sandhya Joshi
 **Reason**: Use consistent language, including "must", in all requirements.
 **Open date**: 2020-07-07
-**Close date**: 
+**Close date**: 2020-07-07
+**Result**:  Accepted: Agreed by team members.
+
+===
+31. Update I8
+
+**Status**: Open 
+**Requirement ID**: I8
+**Requirement text**:  The application must interface with the filesystem of Microsoft Windows and Linux
+**Requester**: Sandhya Joshi
+**Reason**: Use consistent language, including "must", in all requirements.
+**Open date**: 2020-07-07
+**Close date**:
 **Result**:  
+
