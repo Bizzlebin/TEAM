@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-07
+Updated on 2020-07-08
 
 +++
 1. Introduction
@@ -154,7 +154,7 @@ There will be a few internal interfaces at work in TagIt.FM due to several class
 ===
 3.5. External Interfaces
 
-There will be two external interfaces involved the TagIt.FM. The first external interface will be needed to communicate with the computer's built-in file manager and pull the file hierarchy of the local computer into the application. The file hierarchy will maintain full functionality and navigability while being displayed within the GUI. The second external interface will be for communicating with the SQLite tag database. It will be responsible for reformatting transfer requests on both ends so that the database and the application can understand and utilize the information.
+TagIt.FM will feature 2 external interfaces: one on the client side and one on the server side. On the client side, the app will interact with the local filesystem in order to provide an up-to-date listing of the computer's files and directories; this will occur without any filesystem locking or other interference which would infringe upon normal filesystem operations. On the server side, the application will interact with an SQLite database, which will hold everything from the tag information to the user permissions. This interface will be responsible for encapsulating all requests into discrete SQL statements and deencapsulating all responses back into standard datatypes recognized by the app.
 
 ===
 3.6. Architecture
