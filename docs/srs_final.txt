@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-07
+Updated on 2020-07-08
 
 +++
 Table Of Contents
@@ -394,22 +394,20 @@ Manager wants to pull data of people who have recently ordered prescription for 
 
 **B1US01**: As a customer care representative, I need quick access to policy information, benefits and estimates to share with the customer.
 **B2US01**: As a customer care representative, I want to access all case related documents while on the phone with the customer.
-**B3US01**: As a manager, I want my employees to be able to find training documents and report templates when they need them.
 **B4US01**: As legal counsel, I need to be able to audit the software to ensure confidentiality of all customer records.
-**B5US01**: As a customer care representative, I want all case related documents to be easy to organize and view.
 
 ---
 9.1.2. User Stories Per Functional Requirement
 
 **F1US01**: As a customer care representative, I need to find information using a simple search, so I can quickly relay the information to the customer.
-**F4US01**: As legal counsel, I need to be able to audit employee permissions to ensure nobody has received access past their clearance level.
+**F4US01**: As legal counsel, I need to be able to confirm that tags do not allow employees access to documents past their clearance level.
 **F6US01**: As a manager, I need to create specialized tags for my employees to ensure they can find all documents that they need.
 
 +++
 10. Sequence Diagrams
 
 ===
-10.1. Sequence Diagram Of Requirements I1 And P6
+10.1. Sequence Diagram Of Requirements I1 And N6
 
 ===
 10.2. Sequence Diagram Of Requirement N2
