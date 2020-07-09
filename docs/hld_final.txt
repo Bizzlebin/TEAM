@@ -63,7 +63,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 
 The design of this project will be based around two main classes, the Client Main Class and the Server Main Class. The Client Main Class will mostly manage the relationships between the GUI class which has its own Super and sub classes, and the user class which has no inheritances. The Server Main will be in charge of handling the Server Class and the database. 
 
-The Client Main Class will handle interactions between the user inputs and how the GUI will react. The Server Main Class will handle interactions between the DBHelper and Server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The GUI class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags.
+The Client Main Class will handle interactions between the user inputs and how the GUI will react. The Server Main Class will handle interactions between the DBHelper and Server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The GUI class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags. The GUI will also have a tab available to display reports for the total amount of user, total amount of tags, a demonstration report that shows none of the tags are directly linked to confidential data and a report showing each user and their current level of permissions. 
 
 To access the application the User will need to log in through the GUI with a Username with the given User Type that they are associated with that will be stored in the database, the password will be stored in the database using only salt and hash for authentication purposes. There will be three different levels of users, based on subclasses, where the increased level of user indicates increased privileges and gives them access to more methods that they can execute.
 
@@ -97,30 +97,15 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 
 ===
 2.4. Libraries
----
 
-2.4.1 HTTP.client
----
+http.client
+ssl
+os
+tkinter
+path
+sys
+timeit
 
-2.4.2 SSL
----
-
-2.4.3 OS
----
-
-2.4.4 tkinter
----
-
-2.4.5 PATH
----
-
-2.4.6 SYS
----
-
-2.4.7 TIMEIT
----
-
-===
 +++
 3. Design Details
 
@@ -168,6 +153,8 @@ https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 
 ===
 3.7. Reports
+
+Reports will be able to display total count of users, total count of tags. Another report will also be available that will allow a user to select a tag and it will display all of the files it is associated with, this will occurr without revealing any confidential information included in those files. A final report that can retrieved will display a database view that allows the user to view each user's current level of permissions.    
 
 ===
 3.8. Other Output
