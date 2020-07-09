@@ -10,9 +10,9 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-06-15
 
-Updated on 2020-07-07
+Updated on 2020-07-08
 
-Released on 2020-07-10
+Released on 2020-07-08
 
 +++
 1. Introduction
@@ -20,9 +20,9 @@ Released on 2020-07-10
 ===
 1.1. Purpose
 
-The client, MHC, is an insurance company and they need an application that can quickly locate important medical and financial documents of varying filetype. Customer service representatives, especially, will benefit from TagIt.FM because it will both simplify the search process and reduce the amount of time that they need to keep a customer on hold. This in turn can improve the mood of the customer and decrease frustrations for the employee.
+The client, MHC, is an insurance company and they need an application that can quickly locate important medical and financial documents of varying filetype. Customer service representatives, especially, need a way to simplify the search process and reduce the amount of time that they must keep a customer on hold. This, in turn, improves the mood of the customer and decreases frustrations for the employee.
 
-The purpose of this project is to improve and accelerate the process of searching for files in a computer file directory, using the new, and intuitive TagIt.FM application. This document will describe the detailed, low-level design (LLD) of TagIt.FM, including the basic structure of the involved database classes, and their attributes and functions. The LLD document will be used by the developers to guide the design and development process of the application.
+The purpose of this project, therefore, is to address those concerns: the new, intuitive TagIt.FM application will improve and accelerate the process of searching for files in a computer's file directory. This document will describe the detailed, low-level design (LLD) of TagIt.FM, including the basic structure of the database tables, the class methods, and the program flow as it pertains to the user side of the program. The LLD document will be used by the developers to guide the development process of the application.
 
 ===
 1.2. Scope Of This Document
