@@ -356,7 +356,7 @@ Updated on 2020-07-09
 ===
 28. Update N5
 
-**Status**: Open
+**Status**: Closed
 **Requirement ID**: N5
 **Requirement text**: Software must be able to support several hundred users's/employees's ability to create, access, and modify tags simultaneously.
 **Requester**: Sandhya Joshi
@@ -393,232 +393,232 @@ Updated on 2020-07-09
 ===
 31. Update B2
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: B2
 **Requirement text**:  Employees at MHC want to search the files with filename, filetype, and/or location efficiently so that they can answer the customers effectively.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements to  meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 ===
 32. Update B4
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: B4
 **Requirement text**:  The application must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that employee does not                        require read permissions to access the file tags.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements to meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 
 ===
 33. Update F4
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: F4
 **Requirement text**:  The file Tags must not allow employees to access documents that they do not have permissions to access.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements to meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 ===
 34. Update F6
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: F6
 **Requirement text**:  The application must require a relevent employee to login in order to create, update and delete tags.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 ===
 35. Update I1
 
-**Status**: Open 
+**Status**: Closed 
 **Requirement ID**: I1
 **Requirement text**: The GUI must have a conspicuous search feature for searching the tags for employees to use.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 ===
 36. Update I2
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I2
 **Requirement text**: Employees must be able to change the target search directory via the GUI before any search so they can expand or narrow the results.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
 **Close date**:
-**Result**:  
+**Result**: Accepted: Agreed by team members. 
 
 ===
 37. Update I3
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I3
 **Requirement text**: The employee at MHC must log in via GUI in order to manage tags.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 
 ===
 38. Update I4
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I4
 **Requirement text**: The GUI must include a history option for recently searched tags so that employees do not need to remember their past searches. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**: 
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members.
 
 === 
 39. Update I5
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I5
 **Requirement text**: The GUI must provide an option to allow/disallow employees from searching within subdirectories. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**: 
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members.
  
 === 
 40. Update I6
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I6
 **Requirement text**: The application must be available on x86 systems because this is the most common instruction set on computers at MHC. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 41. Update I7
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I7
 **Requirement text**: The application must use Local Area Network Access to facilitate the software communication between the clients  
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 42. Update I8
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: I8
 **Requirement text**: The application must interface with the filesystem of Microsoft Windows and Linux because it is commonly used by employees at MHC. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 44. Update P1
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: P1
-**Requirement text**: The application must be able to pull and display files based on search criteria in a reasonable amount of time to provide information to the customers                           efficiently and effectively.
+**Requirement text**: The application must be able to pull and display files based on search criteria—with a base time of no more than 2 seconds and 0.5 seconds extra allowed                         for each tag used in the search—in order to provide information to the customers efficiently and effectively.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 45. Update P2
 
-**Status**: Open 
+**Status**: Closed 
 **Requirement ID**: P2
 **Requirement text**: The application must not lock directories while employees are performing the searches because it reduces their ability to provide quality service.  
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 === 
 46. Update N1
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: N1
 **Requirement text**: The application must not make changes to any file or file's metadata because it violates data Confidentiality and Integrity. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 47. Update N2
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: N2
 **Requirement text**: The employees at MHC must be able to access the application 24 x7 because the company provides service to customers at all hours.
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 === 
 48. Update N4
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: N4
 **Requirement text**: The application must have not any external dependencies because the company wants to maintain the security of customer data and the ability to safely updgrade the application in the future. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 49. Update N5
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: N5
 **Requirement text**: The application must be able to support several hundred employees' abilities to create, access, and modify file tags simultaneously because it increases their efficiency. 
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**:  Accepted: Agreed by team members.
 
 === 
 50. Update N6
 
-**Status**: Open 
+**Status**: Closed
 **Requirement ID**: N6
 **Requirement text**:The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search                           results.  
 **Requester**: Sandhya Joshi
 **Reason**: Changing all requirements meet the 5 Ws and H
 **Open date**: 2020-07-09
-**Close date**:
-**Result**:  
+**Close date**:2020-07-09
+**Result**: Accepted: Agreed by team members. 
 
 
 
