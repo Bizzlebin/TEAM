@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-09
+Updated on 2020-07-10
 
 +++
 Table Of Contents
@@ -196,7 +196,6 @@ Employees at MHC want to search the files with filename, filetype, and/or locati
 
 The application must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that employee does not require read permissions to access the file tags.
 
-
 +++
 4.Functional Requirements
 
@@ -210,12 +209,10 @@ Customer care representatives must be able to retrieve the policy holder informa
 
 The file Tags must not allow employees to access documents that they do not have permissions to access.
 
-
 ===
 4.6. F6
 
 The application must require a relevent employee to login in order to create, update and delete tags.
-
 
 +++
 5. Interface Requirements
@@ -239,7 +236,7 @@ The GUI must have a conspicuous search feature for searching the tags for employ
 ~~~~~
 5.1.1.1. I5
 
-The GUI must provide an option to allow/disallow employees from searching within subdirectories. 
+The GUI must provide an option to allow/disallow employees from searching within subdirectories.
 
 ~~~~~
 5.1.1.2. I2
@@ -249,18 +246,17 @@ Employees must be able to change the target search directory via the GUI before 
 ~~~~~
 5.1.1.4. I4
 
-The GUI must include a history option for recently searched tags so that employees do not need to remember their past searches. 
-
+The GUI must include a history option for recently searched tags so that employees do not need to remember their past searches.
 
 ---
-5.1.2. CLI  -- N/A
+5.1.2. CLI - N/A
 
-Description : To make it user friendly, this software is using GUI as a primary interface. This software is not be using CLI at this time.
+Description: To make it user friendly, this software is using GUI as a primary interface. This software is not be using CLI at this time.
 
 ---
 5.1.3. API - N/A
 
-Decription : This software is not using API because all the features are exposed in GUI and no ability to support third-party add-ons at this time.
+Decription: This software is not using API because all the features are exposed in GUI and no ability to support third-party add-ons at this time.
 
 ===
 5.2. Hardware Interfaces
@@ -283,7 +279,7 @@ The application must use Local Area Network Access to facilitate the software co
 ---
 5.4.1. I8
 
-The application must interface with the filesystem of Microsoft Windows and Linux because it is commonly used by employees at MHC. 
+The application must interface with the filesystem of Microsoft Windows and Linux because it is commonly used by employees at MHC.
 
 +++
 6. Performance Requirements
@@ -296,7 +292,8 @@ The application must be able to pull and display files based on search criteriaâ
 ===
 6.2. P2
 
-The application must not lock directories while employees are performing the searches because it reduces their ability to provide quality service.  
+The application must not lock directories while employees are performing the searches because it reduces their ability to provide quality service.
+
 +++
 7. Other Non-Functional Attributes
 
@@ -337,10 +334,10 @@ The application must be able to support several hundred employees' abilities to 
 ---
 7.5.1. N6
 
-The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.  
+The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.
+
 ===
 7.6. Serviceability
-
 
 +++
 8. Operational Scenarios
@@ -435,6 +432,7 @@ Manager wants to pull data of people who have recently ordered prescription for 
 **M15**: The application will need to interface with the filesystem of Microsoft Windows and Linux.
 **M16**: Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.
 **M17*: Tags must be able to be removed without side effects.
+
 ---
 11.1.2. Should
 
@@ -561,7 +559,7 @@ P2       Client               Validate that directories can    Null         ZW-L
 
 N1       Client               Compare file pre and post-       Null         JT-PM
                               tagging; are hashes the same?
-N2       Server               Record downtime over an          Null			    JT-PM
+N2       Server               Record downtime over an          Null         JT-PM
                               arbitrary period; was it 0 s?
 N4       Client/Server        Regex all imported modules; is   Null         JT-PM
                               the set of modules a subset of
