@@ -190,12 +190,11 @@ MHC wants to maintain its quality of service by providing the best customer care
 ===
 3.2. B2
 
-MHC wants to search the files with filename, filetype, and/or location efficiently.
-
+Employees at MHC want to search the files with filename, filetype, and/or location efficiently so that they can answer the customers effectively.
 ===
 3.4. B4
 
-Software must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that does not require read permissions.
+The application must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that employee does not require read permissions to access the file tags.
 
 
 +++
@@ -209,12 +208,14 @@ Customer care representatives must be able to retrieve the policy holder informa
 ===
 4.4. F4
 
-Tags must not allow users to access documents that they do not have permissions to access.
+The file Tags must not allow employees to access documents that they do not have permissions to access.
+
 
 ===
 4.6. F6
 
-Relevant employee logins must be required to create, update, and delete tags.
+The application must require a relevent employee to login in order to create, update and delete tags.
+
 
 +++
 5. Interface Requirements
@@ -226,29 +227,30 @@ Relevant employee logins must be required to create, update, and delete tags.
 5.1.1. GUI
 
 ~~~~~
-5.1.1.1. I1
-
-GUI must feature a conspicuous search feature for the searching of tags.
-
-~~~~~
-5.1.1.2. I2
-
-GUI must be able to change target search directory.
-
-~~~~~
 5.1.1.3. I3
 
-User interface for managing personal tags must require log in.
+The employee at MHC must log in via GUI in order to manage tags.
 
 ~~~~~
-5.1.1.4. I4
+5.1.1.1. I1
 
-GUI must include history tab for recently searched and accessed tags/files.
+The GUI must have a conspicuous search feature for searching the tags for employees to use.
 
 ~~~~~
 5.1.1.1. I5
 
-GUI must contain an option to allow/disallow searching subdirectories.
+The GUI must provide an option to allow/disallow employees from searching within subdirectories. 
+
+~~~~~
+5.1.1.2. I2
+
+Employees must be able to change the target search directory via the GUI before any search so they can expand or narrow the results.
+
+~~~~~
+5.1.1.4. I4
+
+The GUI must include a history option for recently searched tags so that employees do not need to remember their past searches. 
+
 
 ---
 5.1.2. CLI  -- N/A
@@ -266,7 +268,7 @@ Decription : This software is not using API because all the features are exposed
 ---
 5.2.1. I6
 
-The application must be available on x86 systems.
+The application must be available on x86 systems because this is the most common instruction set on computers at MHC. 
 
 ===
 5.3. Communication Interfaces
@@ -274,15 +276,14 @@ The application must be available on x86 systems.
 ---
 5.3.1 I7
 
-The application must use local area network access to facilitate communication between the clients and server.
-
+The application must use Local Area Network Access to facilitate the software communication between the clients. 
 ===
 5.4. Software Interfaces
 
 ---
 5.4.1. I8
 
-The application will need to interface with the filesystem of Microsoft Windows and Linux.
+The application must interface with the filesystem of Microsoft Windows and Linux because it is commonly used by employees at MHC. 
 
 +++
 6. Performance Requirements
@@ -290,13 +291,12 @@ The application will need to interface with the filesystem of Microsoft Windows 
 ===
 6.1. P1
 
-Software must be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
+The application must be able to pull and display files based on search criteria—with a base time of no more than 2 seconds and 0.5 seconds extra allowed for each tag used in the search—in order to provide information to the customers efficiently and effectively.
 
 ===
 6.2. P2
 
-Software must not lock directories while searches are being performed.
-
+The application must not lock directories while employees are performing the searches because it reduces their ability to provide quality service.  
 +++
 7. Other Non-Functional Attributes
 
@@ -306,7 +306,7 @@ Software must not lock directories while searches are being performed.
 ---
 7.1.1. N1
 
-The application must make no changes to any file or file's metadata.
+The application must not make changes to any file or file's metadata because it violates data Confidentiality and Integrity. 
 
 ===
 7.2. Reliability
@@ -314,8 +314,7 @@ The application must make no changes to any file or file's metadata.
 ---
 7.2.1. N2
 
-System must be available 24 × 7 for all users.
-
+The employees at MHC must be able to access the application 24 x7 because the company provides service to customers at all hours.
 ===
 7.3. Maintainability
 
@@ -323,7 +322,7 @@ System must be available 24 × 7 for all users.
 
 7.3.2. N4
 
-System must not have any external dependencies.
+The application must have not any external dependencies because the company wants to maintain the security of customer data and the ability to safely updgrade the application in the future. 
 
 ===
 7.4. Portability
@@ -331,16 +330,14 @@ System must not have any external dependencies.
 ---
 7.4.1. N5
 
-Software must be able to support several hundred users's/employees's ability to create, access, and modify tags simultaneously.
-
+The application must be able to support several hundred employees' abilities to create, access, and modify file tags simultaneously because it increases their efficiency. 
 ===
 7.5. Resource Utilization
 
 ---
 7.5.1. N6
 
-Software must keep all tags up to date in real time as they are created, updated, and/or deleted.
-
+The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.  
 ===
 7.6. Serviceability
 
