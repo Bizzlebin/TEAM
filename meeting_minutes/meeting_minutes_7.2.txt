@@ -1,0 +1,80 @@
+Meeting Minutes 7.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_7.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-09
+
++++
+Summary
+
+Thursday meeting on 2020-07-09 of TEAM Exists As Metonym, focus beginning final steps for SRS and HLD. LLD submitted 2020-07-08.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Anna**: Verified that user stories match up with current requirements, proposed a report to fill one requirement. Updated verbiage on F4US01 so it does not require a report using the user lag. Planned to do some formatting to SRS/HLD over the weekend so they are cleaned up for final tweaks next weekend.
+**Sandhya**: Rewrote all requirements to meat 5W and H, submitted change requests, re-arranged MoSCoW requirements. Planned to update change requests and SRS after meeting.
+**Stavros**: Edited some parts of section 3 of HLD to match better with SRS and LLD, planned to continue working on it. Planned to work on V&V section next week.
+**Zach**: Added section regarding reports to HLD, made changes to libraries section. Planned to continue comparing SRS and LLD to make sure the HLD is consistent.
+**Jeremiah**: Helped working with the SRS, made final updates to LLD before submission. Planned to add some more tasks for next week.
+
++++
+Round Table Discussion Regarding LLD
+
+**Anna**: No specific feedback on LLD, liked addition of database diagram
+**Sandhya**: No specific comments on LLD, liked pseudocode section
+**Stavros**: Learned a lot about the specifics of the design from working on the LLD
+**Zach**: Thinks LLD looks great
+**Jeremiah**: Learned there was some confusion about how the database is supposed to work, what it stores and the scope of what we are tracking it with
+**Stavros**: Learned how to design diagrams
+**Zach**: Learned how to build a database diagram for the tables and how they link together
+
++++
+Vote On Change Control Requests
+
+**31**: Accept
+**32**: Accept
+**33**: Accept
+**34**: Accept
+**35**: Accept
+**36**: Accept
+**37**: Accept
+**38**: Accept
+**39**: Accept
+**40**: Accept
+**41**: Accept
+**42**: Accept
+**44**: Accept, with discussion to follow
+**45**: Accept
+**46**: Accept
+**47**: Accept
+**48**: Accept
+**49**: Accept
+**50**: Accept
+
++++
+Closing remarks from Project Manager
+
+• Check all material related to SRS and HLD are consistent
+• Make improvements to ensure quality of final deliverables
+• Ask for help if you need it
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:43
+**Next Meeting Scheduled** 2020-07-14 20:00
