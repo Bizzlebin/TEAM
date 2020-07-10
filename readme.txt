@@ -12,7 +12,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-07-07
+Updated on 2020-07-08
 
 ***
 
@@ -301,11 +301,11 @@ Week 8 (2020-07-12)
 Due By Tuesday (2020-07-14)
 
 1. SRS.
-2.1. Cleanup of SRS: all additions and edits for quality must be complete (CA only).
+2.1. Cleanup of SRS: all additions and edits for quality must be complete; this includes a *cover to cover* review (CA only).
 2.2. Graphics check: all graphics must match current state of SRS, HLD, and LLD (DS only).
 2.3. Finish V&V (LT only; SRS 11.5).
 3. HLD (LSD, LT only).
-3.1. Cleanup of HLD: all additions and edits for quality must be complete.
+3.1. Cleanup of HLD: all additions and edits for quality must be complete; this includes a *cover to cover* review.
 3.2. Graphics check: all graphics must match current state of SRS, HLD, and LLD.
 3.3. Class check: all top-level classes must be fully described, including core methods.
 4. Meeting prep.
@@ -323,7 +323,9 @@ Due By Thursday (2020-07-16)
 Due By Saturday (2020-07-18)
 
 8. Template SRS, including all graphics (DS only).
+8.1. Sign the "High-Level Design Document Review History" for version 2 (CA, DS only).
 9. Template HLD, including all graphics (DS only).
+9.1. Sign the "Requirements Document Review History" for version 2 (LSD, LT, and DS only).
 
 +++
 Ground Rules
@@ -344,4 +346,4 @@ Metametadata
 **meta_author**: Jeremiah Thomas
 **meta_generator**: Notepad++
 **meta_created**: 2020-05-24
-**meta_updated**: 2020-07-07
+**meta_updated**: 2020-07-09
