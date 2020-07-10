@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-08
+Updated on 2020-07-10
 
 +++
 1. Introduction
@@ -185,7 +185,7 @@ This will be the class that contains and displays the objects for the user inter
 ---
 3.10.4. User Class
 
-This class will contain usernames and passwords and will let the employee interact with the GUI. This class will also have two subclasses representing the level of the employee.
+This class will contain usernames and passwords and will let the employee interact with the GUI. This class will also have two super classes that both are in charge of two subclasses representing the level of the employee. The reason why TEAM had to setup its classes in this format was for authentication purposes that meet the requirements of the SRS document, each user will be assigned a role that gives them the specified access in that given super or sub class by which then they will use to complete a task given by their role.  
 
 ---
 3.10.5. Tags Class
@@ -200,7 +200,9 @@ This class will be used for setting up our server and defining the requests for 
 ---
 3.10.7. DBHelper Class
 
-This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables. This will then provide the use of queries to use sql functions and statements within the programming language.
+This class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables. This will then provide the use of queries to use sql functions and statements within the programming language. TEAM has implemented The normalization of this class to follow third normalization form standards, because of this the database will feature less dependencies on the tables that are created. For that reason this means that the tables have to be organized to a level where there is no data duplication in the same tables that are redundant and can be created onto another table seperating the need for dependencies in one table. 
+
+This class will also have the responsibility of handling errors that may come across the databases source, it will spot dirty data so that any redundancies can be removed.  
 
 ---
 3.10.8. History Class
@@ -214,6 +216,8 @@ This class will be responsible for retrieving the computers file hierarchy from 
 
 ---
 3.10.10. HLD Diagram
+
+This diagram explains the classes that will implemented in the lower level part of the project, it has two main classes. The diagram displays the Client Main on the left being responsible for handling five classes in its hierarchy the GUI, User, History, Tags, FileManagerHelper, and on the right the Server Main is only responsible for two classes named Server and DBHelper. 
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
