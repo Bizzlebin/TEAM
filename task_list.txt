@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-07-07
+Updated on 2020-07-09
 
 +++
 
@@ -48,12 +48,16 @@ SRS
 ••• M[o]SC[o]W (SRS 10.1): 1 h
 ••• Procedures (SRS 10.2): 1 h
 ••• Schedule (SRS 10.3)
-••• RTM (SRS 10.4)
+••• RTM (SRS 10.4) : 0 h
 •• Copyedit: 4 h
 •• Template: 2 h
 •• Final acceptance edit
 
 • SRS (final)
+•• Change Requests : 5 h
+•• Requirements-Adding 5W's and H : 5 h
+••• M[o]SC[o]W (SRS 10.1): 1 h
+
 
 ===
 HLD
