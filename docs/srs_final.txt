@@ -425,13 +425,13 @@ Manager wants to pull data of people who have recently ordered prescription for 
 **M8**: Tags shall not allow users to access documents that they do not have permissions to access.
 **M9**: Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
 **M10**: The application shall make no changes to any file or file's metadata.
-**M11**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
-**M12**: Main pane must be able to change target directory.
+**M11**: *GUI will include a centralized (easily spotted) search bar for the searching of tags.*
+**M12**: *Main pane must be able to change target directory.*
 **M13**: The application will be available on x86 systems.
 **M14**: The application will use local area network access to facilitate communication between the clients and server.
-**M15**: The application will need to interface with the filesystem of Microsoft Windows and Linux.
-**M16**: Software will be relatively lightweight and not affect other business-necessary operations that must also be performed.
-**M17*: Tags must be able to be removed without side effects.
+**M15**: The application will need to interface with the filesystems of Microsoft Windows and Linux.
+**M16**: Software will be relatively lightweight and will not affect other business-necessary operations that must also be performed.
+**M17*: Tags must be able to be removed without unintended side effects.
 
 ---
 11.1.2. Should
@@ -439,7 +439,7 @@ Manager wants to pull data of people who have recently ordered prescription for 
 **S1**: Administrator login shall be required to manage the tag database.
 **S2**: Relevant employee login will be required to create, update, and delete tags.
 **S3**: System-assigned tags shall only be deleted by managers, while agent-assigned tags may be deleted by agent.
-**S4**: User interface for managing personal tags shall require log in.
+**S4**: Access to user interface for managing personal tags shall require log in.
 **S5**: GUI will include history tab for recently searched and accessed tags/files.
 **S6**: Secondary pane must contain an option to allow/disallow searching subdirectories.
 **S7**: System should be available 24 x 7 for all users.
@@ -454,7 +454,7 @@ Manager wants to pull data of people who have recently ordered prescription for 
 11.1.3. Could
 
 **C1**: System shall always cross-reference customer ID before assigning customer specific tags to any documents.
-**C2**: Start searching within 2 seconds after a tag match is guessed but the user is still typing.
+**C2**: The system shall start searching within 2 seconds after a tag match is guessed but the user is still typing.
 **C3**: Customers shall not be able to access the tag system.
 **C4**: Windows login shall be recognized when adding tags to shared files or folders.
 **C5**: Customer care representative shall be able to retrieve all the case history by searching caseId or tag number.
