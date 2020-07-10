@@ -1,0 +1,73 @@
+Calendar
+
+https://github.com/bizzlebin/team/blob/master/calendar.txt
+
+***
+
+By Jeremiah Thomas, et al
+
+***
+
+Created on 2020-07-09
+
+Updated on 2020-07-10
+
++++
+Description
+
+An example project calendar for the full SDLC, detailing the time each major project task is expected to take. Times are rounded into 4-hour (half-day) blocks. Subtasks are not broken out in this version, however.
+
++++
+
+===
+1. Planning
+
+**Identification**: 4 h
+**Pitch**: 4 h
+**Formation**: 8 h
+
+===
+2. Analysis
+
+**Gathering**: 8 h
+**Sorting**: 8 h (includes later changes and votes)
+**Drafting**: 4 h
+**Finalizing**: 4 h
+
+===
+3. Design
+
+**Overview**: 4 h (every step doubles in complexity)
+**Details**: 8 h
+**Modules**: 16 h
+**Pseudocode**: 32 h
+
+===
+4. Building
+
+**Graphics**: 8 h
+**DB**: 4 h
+**Exceptions**: 4 h
+**Classes**: 48 h (12 × 4 h)
+**Integration**: 8 h
+
+===
+5. Testing
+
+**Interface**: 4 h
+**Performance**: 8 h (unattended)
+**Recovery**: 4 h
+**Usability**: 8 h
+**Alpha**: 4 h
+
+===
+6. Installation
+
+**Marketing**: 4 h (mirrors alpha)
+**Manuals**: 8 h (mirrors usability)
+**Deployment**: 8 h
+
+===
+7. Maintenance
+
+[Ongoing]
