@@ -10,7 +10,7 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-26
 
-Updated on 2020-07-09
+Updated on 2020-07-10
 
 +++
 
@@ -100,7 +100,7 @@ LLD
 ===
 Development
 
-• Server 
+• Server
 •• Networking
 •• Database
 
