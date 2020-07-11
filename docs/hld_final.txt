@@ -184,7 +184,7 @@ This class will handle the server and DBHelper side classes. It will handle the 
 ---
 3.10.3. GUI Class
 
-This will be the class that contains and displays the objects for the user interface.
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the File Manager class through the FileManagerHelper class.
 
 ---
 3.10.4. User Class
@@ -196,7 +196,7 @@ Each level of the user classes will be set up in this format due to the authenti
 ---
 3.10.5. Tags Class
 
-This class will be responsible for holding all the created tags and displaying them for the employee.
+This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will communicate any changes in tags to the tags database, ensuring that the database stays up-to-date.
 
 ---
 3.10.6. Server Class
@@ -250,6 +250,6 @@ https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
 ---
 3.12.2. Data Flow Diagram 2
 
-Data flow diagram 2, illustrates some of the functions that may be available to a user depending on their level, and how they will interact with the database tables. The login function as well as the create/delete user fuctions will interact with the User table. The create/delete tag functions interact with the Tag table, and the update or clear history functions with the User History table.
+Data flow diagram 2, illustrates some of the functions that will be available to a user depending on their level, and how they will interact with the database tables. The login function as well as the create/delete user fuctions will interact with the User table. The create/delete tag functions will interact with the Tag table, and the update or clear history functions will interact with the User History table.
 
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
