@@ -10,10 +10,12 @@ By Anna Malmberg, et al
 
 Created on 2020-07-07
 
+Updated on 2020-07-11
+
 +++
 Summary
 
-Thursday meeting on 2020-07-07 of TEAM Exists As Metonym, focus on finishing up LLD for submission, beginning final steps for SRS and HLD. LLD to be submitted by 2020-07-10
+Tuesday meeting on 2020-07-07 of TEAM Exists As Metonym, focus on finishing up LLD for submission, beginning final steps for SRS and HLD. LLD to be submitted by 2020-07-10
 
 **Call To Order**: Jeremiah Thomas 20:00
 

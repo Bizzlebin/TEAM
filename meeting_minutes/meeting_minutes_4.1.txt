@@ -10,10 +10,12 @@ By Anna Malmberg, et al
 
 Created on 2020-06-16
 
+Updated on 2020-07-11
+
 +++
 Summary
 
-Thursday meeting on 2020-06-16 of TEAM Exists As Metonym, to discuss progress, focus on SRS, HLD and LLD progress and new releases. Text version of SRS is now frozen for finalization.
+Tuesday meeting on 2020-06-16 of TEAM Exists As Metonym, to discuss progress, focus on SRS, HLD and LLD progress and new releases. Text version of SRS is now frozen for finalization.
 
 **Call To Order**: Jeremiah Thomas 20:00
 

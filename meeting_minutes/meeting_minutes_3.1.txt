@@ -10,12 +10,12 @@ By Anna Malmberg, et al
 
 Created on 2020-06-09
 
-Updated on 2020-06-12
+Updated on 2020-07-11
 
 +++
 Summary
 
-Thursday meeting on 2020-06-09 of TEAM Exists As Metonym, to discuss progress, focus on SRS, HLD progress and new releases. Vote on LLD detail to focus on.
+Tuesday meeting on 2020-06-09 of TEAM Exists As Metonym, to discuss progress, focus on SRS, HLD progress and new releases. Vote on LLD detail to focus on.
 
 **Call To Order**: Jeremiah Thomas 20:00
 
