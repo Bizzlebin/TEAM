@@ -428,6 +428,8 @@ https://github.com/Bizzlebin/TEAM/blob/master/wk_4_uml_diagram_loopfragment2.vpd
 ===
 11.1. M[o]SC[o]W
 
+The M[o]SC[o]W method is a system commonly used to prioritize requirements for features in a software application. The requirements listed in the following sections are a historical reference of requirements and features suggested during an initial brainstorming session for TEAM. Most of the following requirements were not chosen to be included in the finalized requirements document for TagIt.FM as they would not meet the needs of the client.
+
 ---
 11.1.1. Must
 
