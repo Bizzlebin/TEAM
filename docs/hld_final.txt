@@ -179,7 +179,7 @@ This class will handle the classes for the client side of the application. It wi
 ---
 3.10.2. Server Main Class
 
-This class will handle the server and DBHelper side classes. It will handle the data for authentication purposes of the client's requests.
+This class will handle the server and DBHelper side classes. It will handle the data for authentication purposes of the client's requests. 
 
 ---
 3.10.3. GUI Class
@@ -231,6 +231,8 @@ https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
 ---
 3.10.11. User Authentication Diagram
+
+The Authentication diagram below explains the process of when a Client will login with the User Type that they are given by requesting to logon to the servers that includes the database. The arrows represent that the Client will type in the Username and Password information and inside the loop will validate the name and pass to the servers and check if the Username is inside the database. The arrows switch directions after grabbing the userType inside the database hosted by the server then continue to validate and display the LoginScreen. Alternatively, there are three options displayed under the loop that determine what the userTypes level is and when determined displays the userType. 
 
 https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
