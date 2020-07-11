@@ -225,7 +225,7 @@ This class will be responsible for retrieving the computers file hierarchy from 
 ---
 3.10.10. HLD Diagram
 
-The following HLD diagram explains the classes that will implemented during the design phase of the project. It contains two main classes, Client Main and Server Main. The diagram displays the Client Main on the left as being responsible for handling the five classes in its hierarchy: GUI, User, History, Tags, FileManagerHelper, and on the right side the Server Main is only responsible for two classes: Server and DBHelper.
+The following diagram explains the classes that will implemented during the design phase of the project. It contains two main classes, Client Main and Server Main. The diagram displays the Client Main on the left as being responsible for handling the five classes in its hierarchy: GUI, User, History, Tags, FileManagerHelper, and on the right side the Server Main is only responsible for two classes: Server and DBHelper.
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
@@ -243,9 +243,13 @@ https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 ---
 3.12.1. Data Flow Diagram 1
 
+Data flow diagram 1, illustrates the functions that will be available to the High_user class. This class will be able to change the level of users, in addition to the tag creation and deletion functions inherited from the Mid_user class, and the search function inherited for the User class.
+
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
 
 ---
 3.12.2. Data Flow Diagram 2
+
+Data flow diagram 2, illustrates some of the functions that may be available to a user depending on their level, and how they will interact with the database tables. The login function as well as the create/delete user fuctions will interact with the User table. The create/delete tag functions interact with the Tag table, and the update or clear history functions with the User History table.
 
 https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
