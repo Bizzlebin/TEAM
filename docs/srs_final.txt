@@ -411,10 +411,14 @@ https://github.com/Bizzlebin/TEAM/blob/master/use_case.png
 ===
 10.1. Sequence Diagram Of Requirements I1 And N6
 
+The following sequence diagram describes an employee using the TagIt.FM application search feature to find files that contain associated with specific tags. The employee enters the desired tag(s) into the GUI search feature and the information is relayed to the database, which locates the associated files and returns them to the GUI to be displayed as a list to the employee. The employee can then view any of the files that matched the entered tag criteria.
+
 https://github.com/Bizzlebin/TEAM/blob/master/wk_4_uml_diagram.vpd.png
 
 ===
 10.2. Sequence Diagram Of Requirement N2
+
+The N2 requirement states that the application must be available 24 x 7. The following sequence diagram is an excerpt of the search process showing how the TagIt.FM server will contiuously communicate with the database containing the tag information, in order to satisfy the N2 requirement.
 
 https://github.com/Bizzlebin/TEAM/blob/master/wk_4_uml_diagram_loopfragment2.vpd.png
 
