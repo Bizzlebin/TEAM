@@ -289,7 +289,7 @@ The application must interface with the filesystems of Microsoft Windows and Lin
 ===
 6.1. P1
 
-For the employee to provide information to the customers efficiently and effectively, the application must be able to pull and display files based on search criteria in less than 2 seconds +/- 0.5 seconds per additional tag used in the search.
+The application must be able to pull and display files based on search criteria—with a base time of no more than 2 seconds and 0.5 seconds extra allowed for each tag used in the search—in order to provide information to the customers efficiently and effectively.
 
 ===
 6.2. P2
@@ -429,8 +429,8 @@ Manager wants to pull data of people who have recently ordered prescription for 
 **M8**: Tags shall not allow users to access documents that they do not have permissions to access.
 **M9**: Software will be able to pull and display files based on search criteria in a reasonable amount of time: less than 5 seconds.
 **M10**: The application shall make no changes to any file or file's metadata.
-**M11**: *GUI will include a centralized (easily spotted) search bar for the searching of tags.*
-**M12**: *Main pane must be able to change target directory.*
+**M11**: GUI will include a centralized (easily spotted) search bar for the searching of tags.
+**M12**: Main pane must be able to change target directory.
 **M13**: The application will be available on x86 systems.
 **M14**: The application will use local area network access to facilitate communication between the clients and server.
 **M15**: The application will need to interface with the filesystems of Microsoft Windows and Linux.
