@@ -191,6 +191,7 @@ MHC wants to maintain its quality of service by providing the best customer care
 3.2. B2
 
 Employees at MHC want to search the files with filename, filetype, and/or location efficiently so that they can answer the customers effectively.
+
 ===
 3.4. B4
 
@@ -207,7 +208,7 @@ Customer care representatives must be able to retrieve the policy holder informa
 ===
 4.4. F4
 
-The file Tags must not allow employees to access documents that they do not have permissions to access.
+The file tags must not allow employees to access documents that they do not have permissions to access.
 
 ===
 4.6. F6
@@ -226,7 +227,7 @@ The application must require a relevent employee to login in order to create, up
 ~~~~~
 5.1.1.3. I3
 
-The employee at MHC must log in via GUI in order to manage tags.
+The employees at MHC must log to TagIt.FM in via it's GUI in order to manage tags.
 
 ~~~~~
 5.1.1.1. I1
@@ -251,12 +252,12 @@ The GUI must include a history option for recently searched tags so that employe
 ---
 5.1.2. CLI - N/A
 
-Description: To make it user friendly, this software is using GUI as a primary interface. This software is not be using CLI at this time.
+Description: To make it user friendly, TagIt.FM will be using GUI as a primary interface. The software will not be using a CLI at this time.
 
 ---
 5.1.3. API - N/A
 
-Decription: This software is not using API because all the features are exposed in GUI and no ability to support third-party add-ons at this time.
+Decription: TagIt.FM will not use an API because all the features are exposed in GUI and support for third-party add-ons will not be available at this time.
 
 ===
 5.2. Hardware Interfaces
@@ -272,14 +273,15 @@ The application must be available on x86 systems because this is the most common
 ---
 5.3.1 I7
 
-The application must use Local Area Network Access to facilitate the software communication between the clients. 
+The application must use Local Area Network Access to facilitate the software communication between the clients.
+
 ===
 5.4. Software Interfaces
 
 ---
 5.4.1. I8
 
-The application must interface with the filesystem of Microsoft Windows and Linux because it is commonly used by employees at MHC.
+The application must interface with the filesystems of Microsoft Windows and Linux because they are commonly used by employees at MHC.
 
 +++
 6. Performance Requirements
@@ -287,12 +289,12 @@ The application must interface with the filesystem of Microsoft Windows and Linu
 ===
 6.1. P1
 
-The application must be able to pull and display files based on search criteria—with a base time of no more than 2 seconds and 0.5 seconds extra allowed for each tag used in the search—in order to provide information to the customers efficiently and effectively.
+For the employee to provide information to the customers efficiently and effectively, the application must be able to pull and display files based on search criteria in less than 2 seconds +/- 0.5 seconds per additional tag used in the search.
 
 ===
 6.2. P2
 
-The application must not lock directories while employees are performing the searches because it reduces their ability to provide quality service.
+The application must not lock directories while employees are performing searches because it would reduce their ability to provide quality service.
 
 +++
 7. Other Non-Functional Attributes
@@ -303,7 +305,7 @@ The application must not lock directories while employees are performing the sea
 ---
 7.1.1. N1
 
-The application must not make changes to any file or file's metadata because it violates data Confidentiality and Integrity. 
+The application must not make changes to any file or file's metadata because it violates data confidentiality and integrity.
 
 ===
 7.2. Reliability
@@ -311,7 +313,8 @@ The application must not make changes to any file or file's metadata because it 
 ---
 7.2.1. N2
 
-The employees at MHC must be able to access the application 24 x7 because the company provides service to customers at all hours.
+The employees at MHC must be able to access the application 24 x 7 because the company provides service to customers at all hours.
+
 ===
 7.3. Maintainability
 
@@ -319,7 +322,7 @@ The employees at MHC must be able to access the application 24 x7 because the co
 
 7.3.2. N4
 
-The application must have not any external dependencies because the company wants to maintain the security of customer data and the ability to safely updgrade the application in the future. 
+The application must have not any external dependencies because the company wants to maintain the security of customer data and the ability to safely upgrade the application in the future.
 
 ===
 7.4. Portability
@@ -327,7 +330,8 @@ The application must have not any external dependencies because the company want
 ---
 7.4.1. N5
 
-The application must be able to support several hundred employees' abilities to create, access, and modify file tags simultaneously because it increases their efficiency. 
+The application must be able to support several hundred employees' abilities to create, access, and modify file tags simultaneously because it increases their efficiency.
+
 ===
 7.5. Resource Utilization
 
