@@ -129,6 +129,8 @@ After a successful login, the GUI will display three separated areas. One side w
 ---
 3.3.1. TagIt.FM Concept UI Diagram
 
+The following diagram illustrates the basic GUI layout that will be used in the TagIt.FM application. It features the three main panels, including the account login panel, the control panel with a search feature as well as a list of recently used tags, and the folders panel, which shows the currently selected directory. Additionally, there is the main search bar for finding files by their associated tags.
+
 https://github.com/Bizzlebin/TEAM/blob/master/ui_mockup.png
 
 ===
@@ -148,6 +150,8 @@ The architecture that will be used for this project is a client/server model. Th
 
 ---
 3.6.1. Software Architecture Diagram
+
+This diagram illustrates the client/server model architecture that will be used for the TagIt.FM application. The clients are show on the left, connecting through the LAN to the server on the right side of the diagram.
 
 https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 
