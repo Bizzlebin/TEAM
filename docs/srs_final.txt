@@ -371,18 +371,20 @@ Manager wants to pull data of people who have recently ordered prescription for 
 9.1.1. B1 UC01
 
 **Title**: Customer interaction
-**Primary actor**: Customer service representative
-**Success scenario**: Customer service representative receives call from customer. Customer is identified and poses question. Customer service representative locates applicable plan and benefits. Customer service representative provides estimate to customer.
+**Primary actor**: Employee
+**Success scenario**: An employee, in this case, a customer service representative receives call from customer. The customer is identified and poses a question to the representative. The customer service representative locates applicable plans and benefits. Customer service representative provides estimate to customer.
 
 ---
 9.1.2. B2 UC01
 
 **Title**: Employee file search
 **Primary actor**: Employee
-**Success scenario**: Employee logs in to PC. Employee logs in to tag system. Employee starts search. Application suggests results based on history. Application creates list of results based on finalized search. Employee views found records.
+**Success scenario**: An employee logs in to a PC, and subsequently logs in to TagIt.FM. The employee starts a tag search. The application suggests results based on history. The application creates a list of results based on finalized search. Employee views found records.
 
 ---
 9.1.3. Use Case Diagram
+
+The following diagram illustrates the use cases described in the previous two sections. The first use case shows a customer service representative interacting with a customer, and the second shows an employee searching TagIt.FM for specific tags.
 
 https://github.com/Bizzlebin/TEAM/blob/master/use_case.png
 
