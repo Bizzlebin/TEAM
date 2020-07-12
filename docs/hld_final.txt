@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-11
+Updated on 2020-07-12
 
 +++
 1. Introduction
@@ -178,12 +178,18 @@ This project only requires the use of one RDBMS for the storage and management o
 ---
 3.10.1. Client Main Class
 
-This class will handle the classes for the client side of the application. It will call the GUI class and handle all interaction between the user inputs and the GUI. This will be a separate class from the server main class.
+This class will handle the classes for the client side of the application, it will be a separate class from the Server Main Class. The class will primarily be responsible for handling five classes that branch off into their own respective Hierarchies. It will call the GUI class and handle all interaction between the user inputs and the GUI. 
+
+The Client Main will initially have 8 Functions that it will use to structure the data for the MHC Employees. The init function will initialize the GUI, HTTPS Server, and the user on instantiation which will be responsible for creating the next three functions that create the GUI, HTTPS Client and the User objects. This method is kept private while the rest of the functions are public to detect if an error occurs or a User logs out and wants to log back in, they can be restarted individually. 
+
+The create_gui function is primarily involved in creating the applications GUI and then update the associated private variables required for that function, the create_https_client and create_user serve the same purpose as the create_gui function, so nothing has changed. These functions store variables that will be used in the process of the User Super and Sub-Classes to handle any tasks that require a need to be fulfilled, so if the User would like to create a file tag to the GUI they can call the create_gui function. The last three functions: read_gui, read_https_client and read_user are primarily in charge of reading the memory locations of the objects inside the function so information can be gathered. 
 
 ---
 3.10.2. Server Main Class
 
-This class will handle the server and DBHelper side classes. It will handle the data for authentication purposes of the client's requests. 
+This class will handle 2 classes and they are the Server and DBHelper classes, these do not have any Inheritance hierarchies built into the design as of now but future versions may call for Sub-Classes. The number of functions are undetermined but there will be an init function as a standard to this class to handle the instantiation, the DBHelper and the Server objects will be created in this section. There must be a need to create the Server and DBHelper functions after creating the objects so that the private variables can be declared. 
+
+This main also needs to create functions based on reading the memory locations of the Server and DBHelper objects so that tasks can be completed from the requests coming in. It will handle the data for authentication purposes of the client's requests. 
 
 ---
 3.10.3. GUI Class
@@ -197,7 +203,7 @@ The basic User class will contain usernames and passwords and will let the emplo
 
 Each level of the user classes will be set up in this format due to the authentication requirements outlined in the SRS document. User accounts will be assigned either as High_user, Mid_user or User, depending on their job duties at MHC. The level of the account will give the employee access to specific functions within the TagIt.FM application, so that they will be able to complete the tasks as required by their role.
 
-The basic User class will primarily involve seven different functions to create the structure for the remaining two classes following it, they are: init, login, create_file_tag, delete_file_tag, read_file_tags, read_history, and read_id. There will be the init function that handles initializing the user object, which creates the Username and Password while calling the login function. The login function is now responsible for handling the Clients response from sending a request to login with the given Username and Password. The create_file_tag, delete_file_tag, and read_file_tags are all designed in a way where the user cannot handle the tasks given to them without identifying the users ID first, then quickly completes its task using the given parameters and arguments to complete the task. The read_history is primarily responsible for gathering the information from the Users history that stores the actions and readin git and read_id will read the Users ID. 
+The basic User class will primarily involve seven different functions to create the structure for the remaining two classes following it, they are: init, login, create_file_tag, delete_file_tag, read_file_tags, read_history, and read_id. There will be the init function that handles initializing the user object, which creates the Username and Password while calling the login function. The login function is now responsible for handling the Clients response from sending a request to login with the given Username and Password. The create_file_tag, delete_file_tag, and read_file_tags are all designed in a way where the user cannot handle the tasks given to them without identifying the users ID first, then quickly completes its task using the given parameters and arguments to complete the task. The read_history is primarily responsible for gathering the information from the Users history that stores the actions and the read_id will primarily read the Users ID. 
 
 ---
 3.10.5. Tags Class
