@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-10
+Updated on 2020-07-12
 
 +++
 Table Of Contents
@@ -86,12 +86,11 @@ Table Of Contents
 ===
 1.1. Purpose
 
-The purpose of this document is to describe what a tag-based file manager system will do. The tag-based file manager system stores metadata in the form of custom tags in a separate database instead of working directly in an operating system's limited file manager. The program searches tags and displays the most recent searches to ensure continuity and clarity. This product will be used to enhance the search capabilities in the user's database system.
-
+The purpose of this document is to build an application system called Tagit.FM, that will enhance the search capabilities in MHC’s database system. The tag-based file manager stores metadata in the form of custom tags in a separate database instead of working directly in an operating system’s limited file manager. The program searches tags and displays the most recent searches to ensure continuity and clarity.
 ===
 1.2. Scope Of This Document
 
-The intended readers of this document are current and future developers working on "Team Exists As Metonym", hereafter referred to as the team, and the sponsors of the project. The plan will include, but is not restricted to, a summary of the system functionality, the scope of the project from the perspective of the team, scheduling and delivery estimates, project risks and how those risks will be mitigated, the processes by which the project will be developed, and metrics and measurements that will be recorded throughout the project.
+The intended readers of this document are current and future developers working on “Tagit.FM”, hereafter referred to as the TEAM,  and the developers at MHC. The plan will include but is not restricted to, a summary of the system functionality, the scope of the project from the perspective of the team. This document specifies the Business requirements, functional and non- functional requirements, interface requirements, operational Scenarios, user stories, sequence diagrams, scheduling and delivery estimates, project risks and how those risks will be mitigated, the processes by which the project will be developed, and metrics and measurements that will be recorded throughout the project.
 
 ===
 1.3. Definitions, Acronyms, And Abbreviations
@@ -122,9 +121,11 @@ Our tag-based file manager, TagIt.FM, stores the metadata in the form of custom 
 ===
 1.5. Business Context
 
-In today's world, providing the best customer experience is as important as getting a new customer. To achieve this goal every business needs to maintain its customer data and to keep records of all customers who interact with the company. Our software can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent searches the employee has performed online. TagIt.FM can be used to retrieve any information quickly and effectively.
+In today's world, providing the best customer experience is as important as getting a new customer. MHC is serving millions of people serve millions of people from their earlier years through their working lives into retirement. To achieve this goal MHC needs to maintain its customer data and to keep records of all customers who interact with the company. Our software can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent searches the employee has performed online. TagIt.FM can be used to retrieve any information quickly and effectively.
 
 The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that is stored in the database. Another employee can obtain the same information if he or she wants to access the same customer's medical history using any of the tags associated with the customer's file. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive.
+
+
 
 +++
 2. General Description
@@ -136,14 +137,19 @@ TagIt.FM creates a tag-based file manager that stores metadata, in the form of c
 
 The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse. Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID. Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
 
-TagIt.FM will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with legacy file managing systems, which simplifies administration. In short, the tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive.
+TagIt.FM will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with legacy file managing systems, which simplifies administration. In short, the tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive. This product will help employees at MHC to search for any customer records accurately. This product/feature will be extremely beneficial for the customer care representative who needs to find out the customer information quickly so that they can server the customer efficiently. 
+
 
 ===
 2.2. User Characteristics
 
-The client, MHC, is an insurance company that maintains its data for each policy member in a database. According to HIPAA, each policy holder's data must be kept confidential. Policy holder data contains personal information like social security number and date of birth. Additionally, the database contains information about a policy holder's medical history, hospital visits, prescription medications, surgeries, etc. This information gets updated at minimum annually, or as the policy holder medical information changes. The data is stored internally at the organization in a database and policy holders are only allowed to access their own information. As this information would be used by the employees at MHC, the business needs to keep track of all these records.
+Our client, MHC serves millions of people from early ages to the retirement age. Their mission is helping people live healthier and make the health system work better for everyone. They follow  HIPPA regulations to protect customer’s data and privacy. They value customer satisfaction and quality customer experience. 
 
-Most of the policy members call the customer care line with questions regarding their benefits, claims, and billing or with questions regarding specialists who are members of the insurance network. The employee needs to provide this information within a certain time frame. According to company customer service policy, they cannot keep the customer on hold for more than 3 min. The employee must be able to access this information in a fast and accurate manner. They need technology that can pull information based on a person's recent medical history changes or on other recent inquiries. MHC will benefit from an application that creates file tags based on custom criteria and search history so that the information can be accessed quickly.
+Policy holder data contains their personal information like social security no and birthdate. Along with that information they have all information about person’s medical history, recent hospital visits. Prescription medication ,any medical surgeries etc. This information gets updated every year as the policy holder/patient medical information changes.
+  
+This data is stored internally for the organization. This data is not available for the customers. The healthcare system needs to keep track of these records. This information would be used by the employees at MHC. Most of the policy member call the customer care with questions regards  to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network. 
+  
+Employees,especially the customer care representatives need to provide these information within certain time frame. They cannot keep the customer on hold more than 3 mins. The employee has to get this information fast and accurate. They need some technology which pulls the information based on person’s recent medical history changes. Or even based on the recent enquires. Based on these logs the customer care employee can provide the information efficiently and effectively.
 
 ===
 2.3. General Constraints
@@ -178,6 +184,12 @@ GitHub and Slack are for project management. The readme document on GitHub conta
 2.4.5. Version Control For Your Documents
 
 As progress is made to the project, all the members keep updating their files in the GitHub repository. GitHub allows for reverting documents back to previous versions and to see changes that have been made.
+
+2.4.6  Strengths and Weaknesses
+The biggest Strength of our group is constant communication and updates. Everyone in the team is extremely responsible for their work. Our Slack communication channel is always open 24 x7 for this continuous discussion and exchange of thoughts. Although this is an asynchronous communication, very able to collaborate methodically.
+
+As far as the weakness of the collaboration is concerned, our team does not do synchronous communication like video chat or conference. We will get instant feedback while using video chat. Sometimes, we will not be able to analyze what is another person’s reaction to our thoughts. Although each team member conveys their feelings through the emoji’s, it is not as effective as watching the person’s reaction. It can leave some emotional distance. This is might be the only weakness we could find in collaboration concerned with our team.
+
 
 +++
 3. Business Requirements
