@@ -10,7 +10,7 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-12
+Updated on 2020-07-14
 
 +++
 Table Of Contents
@@ -123,9 +123,15 @@ Our tag-based file manager, TagIt.FM, stores the metadata in the form of custom 
 ===
 1.5. Business Context
 
-In today's world, providing the best customer experience is as important as getting a new customer. MHC is serving millions of people from infancy, throughout their working lives, and into retirement. To achieve this goal MHC needs to maintain its customer data and keep records of all customers who interact with the company. Our software can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent searches the employee has performed online. TagIt.FM can be used to retrieve any information quickly and effectively.
+In today's world, providing the best customer experience is as important as getting a new customer. MHC is serving millions of people from their earlier years through their working lives into retirement. Their mission is to help people live healthier and make the health system work better for everyone. They follow HIPPA regulations to protect customer’s data and privacy. They value customer satisfaction and the quality of customer experience.
 
-The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that is stored in the database. Another employee can obtain the same information if he or she wants to access the same customer's medical history using any of the tags associated with the customer's file. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive.
+Policyholder data contains their personal information like social security no and birthdate. Along with that information they have all information about a person’s medical history, recent hospital visits. Prescription medication, any medical surgeries, etc. This information gets updated every year as the policyholder/patient medical information changes.
+
+This data is stored internally for the organization. This data is not available for the customers. The healthcare system needs to keep track of these records. This information would be used by the employees at MHC.
+
+Our software can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent searches the employee has performed online. TagIt.FM can be used to retrieve any information quickly and effectively. medical history, personal data, or even recent searches the employee has performed in the database.TagIt.FM can be used to retrieve any information quickly and effectively.
+
+The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that are stored in the database. Another employee can obtain the same information if he or she wants to access the same customer's medical history using any of the tags associated with the customer's file. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive
 
 +++
 2. General Description
@@ -142,15 +148,13 @@ TagIt.FM will address the shortcomings of other solutions. Business-critical fil
 ===
 2.2. User Characteristics
 
-Our client, MHC serves millions of people from infancy to retirement age. Their mission is helping people live healthier and make the health system work better for everyone. They follow HIPAA regulations to protect customer’s data and privacy. They value customer satisfaction and quality customer experience.
+Our client, MHC serves millions of people from an early age to the retirement age. They store customer’s information internally for the organization. Most of the policy members call the customer care with questions regards to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network.
 
-Policy holder data contains personal information like social security number and date of birth. Additionally, the database contains information about a person’s medical history, recent hospital visits, prescription medication, surgeries etc. This information gets updated every year as the policy holder's/patient's medical information changes.
+This information would be used by the employees at MHC. Most of the policy members call the customer care with questions regard to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network.
 
-This data is stored internally for the organization and is not available for the customers. The healthcare system needs to keep track of these records as this information will be used by the employees at MHC. Most of the policy members call the customer care with questions regarding to their benefits, claims, billing, or with questions regarding specialists who are members of the insurance network.
+Employees,especially the customer care representatives need to provide this information within a certain time frame. They cannot keep the customer on hold for more than 3 mins. The employee has to get this information fast and accurate. They need some technology that pulls the information based on a person’s recent medical history changes. Or even based on the recent enquires. Based on these logs the customer care employee can provide the information efficiently and effectively.
 
-Employees, especially the customer care representatives, need to be ablet o provide information to the customer within certain time frame. The customer service policy at MHC states that a representative may not keep the customer on hold for more than 3 minutes. The employee has to be able to access this information in a quick and accurate manner. They need technology which pulls the information based on a person’s recent medical history changes, or sometimes other recent inquires. Based on these historical logs the customer care employee can provide the information efficiently and effectively to the customer.
 
-===
 2.3. General Constraints
 
 1. The software must be operated on Windows or Linux operating systems.
