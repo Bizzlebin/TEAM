@@ -117,7 +117,7 @@ MHC deals with documents and records that must remain confidential due to HIPAA 
 
 To provide another layer of security to TagIT.FM, MHC Employees will be provided an account that is based off their responsibilites in the company. Since every user will have the ability to complete tasks in this application, there will be access to log in to a Mid_level User if that employee has the restrictions cut off and can gain access to create or delete tags within TagIT.FM. There also must be direct access to administrate the maintainability of the application, meaning it has a High_level access role that will provide the employee with the ability to create a username and password making the application more secure since the Users information will only be accessed by the High-level and User if the account was meant to be created, or else the Client will create it themselves. It will also provide the ability to delete a Users account when it's neccessary, and update a default User role up or down to a specific role.
 
-By choosing a variety of layers in this application it will in return provide higher security practices that provide the Client with a sense of comfort about how their data is handled. It will also organize the structure to prevent any confusion in power about who handles the higher administrative roles which will not interfere with the daily operations. 
+By choosing a variety of layers in this application it will in return provide higher security practices that provide the client with a sense of comfort about how their data is handled. It will also organize the structure to prevent any confusion in power about who handles the higher administrative roles which will not interfere with the daily operations.
 
 ===
 3.2. Hardware
@@ -147,7 +147,7 @@ There will be a few internal interfaces at work in TagIt.FM due to several class
 
 The Main class will also create an instance of the Http_client class which will communicate data retrieved from the server side of the network through the Main class to the rest of the classes.
 
-There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server Class and a Db_helper class. The Db_helper class is responsible for the encapsulation of data being sent to the database as well as the de-encapsulation of data retrieved from the database that will be sent through the Server_main Class and over the server to the client side. The Https_server class will handle the transfer of data to and from the Http_client Class. The data retrieved from the Main class will be used to update the database whereas the data sent back to the client will be used to update the Tags and History Classes.
+There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server class and a Db_helper class. The Db_helper class will be responsible for the encapsulation of data that will be be sent to the database, as well as the de-encapsulation of data retrieved from the database that will be sent through the Server_main Class and over the server to the client side. The Https_server class will handle the transfer of data to and from the Http_client class. The data retrieved from the Main class will be used to update the database whereas the data sent back to the client will be used to update the Tags and History Classes.
 
 ===
 3.5. External Interfaces
@@ -169,12 +169,12 @@ https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 ===
 3.7. Reports
 
-Reports will be able to display total count of users and the total count of tags available for use. Another report will also be available that will allow a user to select a tag and it will display all of the files it is associated with that the user could normally access, this will occurr without revealing any confidential information included in those files. A final report that can retrieved will display a database view that allows the user to view each user's current level of permissions.
+Reports will be able to display total count of users and the total count of tags available for use. Another report will also be available that will allow a user to select a tag and it will display all of the files it is associated with that the user could normally access, this will occur without revealing any confidential information included in those files. A final report that can retrieved will display a database view that allows the user to view each user's current level of permissions.
 
 ===
 3.8. Other Output
 
-Other information that will be available for the user to view will include the last modified date and current size of the file selected. There will also be a small area to display the current user's username so that they are able to know they are logged in under the correct account.  
+Other information that will be available for the user to view will include the last modified date and current size of the file selected. There will also be a small area to display the current user's username so that they are able to know they are logged in under the correct account.
 
 ===
 3.9. Databases
@@ -203,7 +203,7 @@ This main also needs to create functions based on reading the memory locations o
 ---
 3.10.3. Gui Class
 
-This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. This allows for the retrieval of the computers entire file hierarchy and that same file hierarchy will be displayed to the user within the GUI so they can navigate through it and select the files they want to tag or interact with. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7 in a separate area. The Gui class will also provide information about the creation date and current size of the file selected in the file hierarchy area of the window, as well as displaying the user's username next to the logout function so they can confirm they are logged in under the correct account.  
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. This allows for the retrieval of the computers entire file hierarchy and that same file hierarchy will be displayed to the user within the GUI so they can navigate through it and select the files they want to tag or interact with. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7 in a separate area. The Gui class will also provide information about the creation date and current size of the file selected in the file hierarchy area of the window, as well as displaying the user's username next to the logout function so they can confirm they are logged in under the correct account.
 
 ---
 3.10.4. User Class
@@ -217,12 +217,12 @@ The User class will primarily involve seven different functions to create the st
 ---
 3.10.5. Tags Class
 
-This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will recieve constant updates from the database aided by the Db_helper class and will take into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags Class stay up-to-date. 
+This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will receive constant updates from the database aided by the Db_helper class and it will take into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags Class stay up-to-date.
 
 ---
 3.10.6. Https_server Class
 
-This class will be used for setting up our server and defining the requests for sending and retrieving data. It will interface with the Https_client Class which is where the requests for the data needed for the rest of our classes will come from. It will be compiled using the ssl and http.client libraries which allow for secure transfers using HTTPS protocols and certificate authentication.
+This class will be used for setting up the server and defining the requests for sending and retrieving data. It will interface with the Https_client class which is where the requests for the data needed for the rest of the classes will come from. It will be compiled using the ssl and http.client libraries which allow for secure transfers using HTTPS protocols and certificate authentication.
 
 ---
 3.10.7. Db_helper Class
@@ -241,9 +241,9 @@ This class will hold a list of the user's recent actions, such as creating a tag
 ---
 3.10.9. File_manager_helper Class
 
-This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI, it will also be gathering and collecting the files information to list the file names that will potentially be tagged. It first needs to handle the required system specifications that the Client has to determine whether they are using Windows or Linux so the Class needs multiple functions that handles these differences by using inheritance and creating the objects to communicate with the GUI class since this is one of the three classes that GUI handles. 
+The File_manager_helper class will be responsible for retrieving the computers' file hierarchy from the file manager for display in the GUI. It will also be gathering and collecting the files' information to list the file names that will potentially be tagged. It first needs to handle the required system specifications that the Client has to determine whether they are using Windows or Linux so the Class needs multiple functions that handles these differences by using inheritance and creating the objects to communicate with the GUI class since this is one of the three classes that GUI handles.
 
-There is a sub directory checkbox that is designed on the left pane of the GUI, in order to determine what the subfolder will be this class needs to inherit from the folders section that is above the subfolder designed in the GUI so its important to add another sub class of File_manager_helper so the file hierarchy can be located to determine its sub. The files that that the Client will be grabbing to tag will need to be stored in a list so that the tags can be stored in their respective folder and subfolders. So it's important that the class has functions that suit the needs of the Client.   
+There will be a subdirectory checkbox on the left pane of the GUI, in order to determine what the subfolder will be, this class needs to inherit from the folders section that is above the subfolder designed in the GUI so it is important to add another subclass of File_manager_helper so the file hierarchy can be located to determine its sub. The files that that the client will be grabbing to tag will need to be stored in a list so that the tags can be stored in their respective folder and subfolders. So it's important that the class has functions that suit the needs of the client.
 
 ---
 3.10.10. Https_client Class
