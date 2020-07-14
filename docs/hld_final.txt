@@ -62,9 +62,9 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 ===
 2.1. Overview Of Design
 
-The design of this project will be based around two main classes, the Client_main Class and the Server_main Class. The Client_main Class will mostly manage the relationships between the Gui class which has its own Super and sub classes, and the User class which has no inheritances. The Server_main will be in charge of handling the Https_server Class and the database. 
+The design of this project will be based around two main classes, the Main Class and the Server_main Class. The Main Class will mostly manage the relationships between the Gui class which has its own Super and sub classes, and the User class which has no inheritances. The Server_main will be in charge of handling the Https_server Class and the database. 
 
-The Client_main Class will handle interactions between the user inputs and how the GUI will react. The Server_main Class will handle interactions between the Db_helper and Https_server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The Gui class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags. The GUI will also have a tab available to display reports for the total amount of user, total amount of tags, a demonstration report that shows none of the tags are directly linked to confidential data and a report showing each user and their current level of permissions. 
+The Main Class will handle interactions between the user inputs and how the GUI will react. The Server_main Class will handle interactions between the Db_helper and Https_server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The Gui class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags. The GUI will also have a tab available to display reports for the total amount of user, total amount of tags, a demonstration report that shows none of the tags are directly linked to confidential data and a report showing each user and their current level of permissions. 
 
 To access the application the User will need to log in through the GUI with a Username with the given User Type that they are associated with that will be stored in the database, the password will be stored in the database using only salt and hash for authentication purposes. There will be three different levels of users, based on subclasses, where the increased level of user indicates increased privileges and gives them access to more methods that they can execute.
 
@@ -131,7 +131,7 @@ The GUI of TagIt.FM will initialize as a window and can be resized and dragged t
 
 After a successful login, the GUI will display three separated areas. One side will be a panel where the employee can navigate their file tree and select a folder or file that they want to add or remove tags from. On the other side of the screen, there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to create new tags and delete existing tags from the database. In the middle of the screen, there will be a search bar where the employee will be able to search for files by entering the associated tags; this is also where the returned files will be displayed.
 
-There will also be a clickable button that will allow the user to access the reports outlined in section 3.7.
+There will also be a clickable button that will allow the user to access the reports outlined in section 3.7. The GUI will also display the user's username in a small box in the corner of the window so they are able to confirm they are logged in under the correct account. Next to that small box will be a logout button that will allow the user to exit their session and bring them back to the login screen. In the file hierarchy area of the GUI the user will also be able to observe the file creation date and current size of the file as outlined in section 3.8.  
 
 ---
 3.3.1. TagIt.FM Concept UI Diagram
@@ -143,11 +143,11 @@ https://github.com/Bizzlebin/TEAM/blob/master/ui_mockup.png
 ===
 3.4. Internal Interfaces
 
-There will be a few internal interfaces at work in TagIt.FM due to several classes needing to pass data back and forth to each other. The Gui Class will be interfacing with the Tags Class to retrieve the list of created tags and add them to the display for the user to see. The Gui Class will also interface with the History Class which will let the Gui Class retrieve a list of the user's recent actions and display them to the user. The Client_main class will be interfacing with both the User and Gui classes to manage their interactions through the user's choices and actions in the GUI.
+There will be a few internal interfaces at work in TagIt.FM due to several classes needing to pass data back and forth to each other. The Gui Class will be interfacing with the Tags Class to retrieve the list of created tags and add them to the display for the user to see. The Gui Class will also interface with the History Class which will let the Gui Class retrieve a list of the user's recent actions and display them to the user. The Main class will be interfacing with both the User and Gui classes to manage their interactions through the user's choices and actions in the GUI.
 
-The Client_main class will also create an instance of the Http_client class which will communicate data retrieved from the server side of the network through the Client_main class to the rest of the classes.
+The Main class will also create an instance of the Http_client class which will communicate data retrieved from the server side of the network through the Main class to the rest of the classes.
 
-There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server Class and a Db_helper class. The Db_helper class is responsible for the encapsulation of data being sent to the database as well as the de-encapsulation of data retrieved from the database that will be sent through the Server_main Class and over the server to the client side. The Https_server class will handle the transfer of data to and from the Http_client Class. The data retrieved from the Client_main class will be used to update the database whereas the data sent back to the client will be used to update the Tags and History Classes.
+There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server Class and a Db_helper class. The Db_helper class is responsible for the encapsulation of data being sent to the database as well as the de-encapsulation of data retrieved from the database that will be sent through the Server_main Class and over the server to the client side. The Https_server class will handle the transfer of data to and from the Http_client Class. The data retrieved from the Main class will be used to update the database whereas the data sent back to the client will be used to update the Tags and History Classes.
 
 ===
 3.5. External Interfaces
@@ -174,6 +174,8 @@ Reports will be able to display total count of users and the total count of tags
 ===
 3.8. Other Output
 
+Other information that will be available for the user to view will include the last modified date and current size of the file selected. There will also be a small area to display the current user's username so that they are able to know they are logged in under the correct account.  
+
 ===
 3.9. Databases
 
@@ -183,11 +185,11 @@ This project only requires the use of one RDBMS for the storage and management o
 3.10. Top-Level Classes (Class Hierarchy)
 
 ---
-3.10.1. Client_main Class
+3.10.1. Main Class
 
 This class will handle the classes for the client side of the application, it will be a separate class from the Server_main Class. The class will primarily be responsible for handling the five classes that branch off into their own respective hierarchies. It will call the Gui class and handle all interaction between the user inputs and the GUI.
 
-The Client_main will initially have seven functions that it will use to structure the data for the MHC employees. The init function will initialize the GUI, HTTPS Server, and the user on instantiation, which will then be responsible for creating the next three functions that create the GUI, HTTPS Client and the User objects. This method will be kept private while the rest of the functions will be public so that if an error occurs, or a User logs out and wants to log back in, they can be restarted individually.
+The Main will initially have seven functions that it will use to structure the data for the MHC employees. The init function will initialize the GUI, HTTPS Server, and the user on instantiation, which will then be responsible for creating the next three functions that create the GUI, HTTPS Client and the User objects. This method will be kept private while the rest of the functions will be public so that if an error occurs, or a User logs out and wants to log back in, they can be restarted individually.
 
 The create_gui function will primarily be involved in creating the application's GUI and then updating the associated private variables required for that function. The create_https_client and create_user function the same manner as the create_gui. These three functions will store variables that will be used in by the User superclass and subclasses to handle any tasks, for example, if the User would like to create a file tag in the GUI they can call the create_gui function. The last three functions: read_gui, read_https_client and read_user will primarily be in charge of reading the memory locations of the objects inside the function so information can be gathered.
 
@@ -201,7 +203,7 @@ This main also needs to create functions based on reading the memory locations o
 ---
 3.10.3. Gui Class
 
-This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. This allows for the retrieval of the computers entire file hierarchy and that same file hierarchy will be displayed to the user within the GUI so they can navigate through it and select the files they want to tag or interact with. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7 in a separate area. 
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. This allows for the retrieval of the computers entire file hierarchy and that same file hierarchy will be displayed to the user within the GUI so they can navigate through it and select the files they want to tag or interact with. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7 in a separate area. The Gui class will also provide information about the creation date and current size of the file selected in the file hierarchy area of the window, as well as displaying the user's username next to the logout function so they can confirm they are logged in under the correct account.  
 
 ---
 3.10.4. User Class
