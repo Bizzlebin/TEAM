@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-13
+Updated on 2020-07-14
 
 +++
 1. Introduction
@@ -241,7 +241,9 @@ This class will hold a list of the user's recent actions, such as creating a tag
 ---
 3.10.9. File_manager_helper Class
 
-This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI.
+This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI, it will also be gathering and collecting the files information to list the file names that will potentially be tagged. It first needs to handle the required system specifications that the Client has to determine whether they are using Windows or Linux so the Class needs multiple functions that handles these differences by using inheritance and creating the objects to communicate with the GUI class since this is one of the three classes that GUI handles. 
+
+There is a sub directory checkbox that is designed on the left pane of the GUI, in order to determine what the subfolder will be this class needs to inherit from the folders section that is above the subfolder designed in the GUI so its important to add another sub class of File_manager_helper so the file hierarchy can be located to determine its sub. The files that that the Client will be grabbing to tag will need to be stored in a list so that the tags can be stored in their respective folder and subfolders. So it's important that the class has functions that suit the needs of the Client.   
 
 ---
 3.10.10. Https_client Class
