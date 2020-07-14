@@ -217,12 +217,12 @@ The User class will primarily involve seven different functions to create the st
 ---
 3.10.5. Tags Class
 
-This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will recieve constant updates from the database taking into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags Class stay up-to-date.
+This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will recieve constant updates from the database aided by the Db_helper class and will take into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags Class stay up-to-date. 
 
 ---
 3.10.6. Https_server Class
 
-This class will be used for setting up our server and defining the requests for sending and retrieving data.
+This class will be used for setting up our server and defining the requests for sending and retrieving data. It will interface with the Https_client Class which is where the requests for the data needed for the rest of our classes will come from. It will be compiled using the ssl and http.client libraries which allow for secure transfers using HTTPS protocols and certificate authentication.
 
 ---
 3.10.7. Db_helper Class
