@@ -62,15 +62,15 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 ===
 2.1. Overview Of Design
 
-The design of this project will be based around two main classes, the Client Main Class and the Server Main Class. The Client Main Class will mostly manage the relationships between the GUI class which has its own Super and sub classes, and the user class which has no inheritances. The Server Main will be in charge of handling the Server Class and the database. 
+The design of this project will be based around two main classes, the Client_main Class and the Server_main Class. The Client_main Class will mostly manage the relationships between the Gui class which has its own Super and sub classes, and the User class which has no inheritances. The Server_main will be in charge of handling the Https_server Class and the database. 
 
-The Client Main Class will handle interactions between the user inputs and how the GUI will react. The Server Main Class will handle interactions between the DBHelper and Server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The GUI class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags. The GUI will also have a tab available to display reports for the total amount of user, total amount of tags, a demonstration report that shows none of the tags are directly linked to confidential data and a report showing each user and their current level of permissions. 
+The Client_main Class will handle interactions between the user inputs and how the GUI will react. The Server_main Class will handle interactions between the Db_helper and Https_server Classes as well as interactions with the database itself to manage the flow of data from the GUI to the database. The Gui class will instantiate objects that inherit class to allow the user to view information about their file hierarchy, tags, and their search history. The User Class is completely independent and is also where the user will interact with these objects to select files, add tags or Remove tags from files, Create new tags or Delete existing tags, and search for files based upon their assigned tags. The GUI will also have a tab available to display reports for the total amount of user, total amount of tags, a demonstration report that shows none of the tags are directly linked to confidential data and a report showing each user and their current level of permissions. 
 
 To access the application the User will need to log in through the GUI with a Username with the given User Type that they are associated with that will be stored in the database, the password will be stored in the database using only salt and hash for authentication purposes. There will be three different levels of users, based on subclasses, where the increased level of user indicates increased privileges and gives them access to more methods that they can execute.
 
 The User Parent Class will have a Username and Password and will be able to add and remove tags from files, as well as search for files based on the assigned tags. The next level of Users Subclass which is called the Mid Level will inherit the previous methods and properties and will, in addition, be able to Create and Delete tags. The highest level of the User class will inherit the mid level class and then becomes a sub class which will be able to create, delete, and promote or demote user access levels. Every User class will have an id assigned to them, which will be used in the process of finding the user to accomplish a task of crud.  The GUI will also communicate through an external interface with the local computer's file manager so that the file hierarchy can be viewed and navigated through within the GUI.
 
-The DBHelper class will reformat incoming and outgoing data so that the data will interact correctly with both the database and the programming language. The class also will handle the creation of database queries in an OOP language, which will be responsible for handling the leg hierarchies data. All data will then be transferred through an HTTPS server for security purposes. The tag database server and the HTTPS server will be controlled by the Server Class.
+The Db_helper class will reformat incoming and outgoing data so that the data will interact correctly with both the database and the programming language. The class also will handle the creation of database queries in an OOP language, which will be responsible for handling the leg hierarchies data. All data will then be transferred through an HTTPS server for security purposes. The tag database server and the HTTPS server will be controlled by the Https_server Class.
 
 ===
 2.2. Design Issues
@@ -131,6 +131,8 @@ The GUI of TagIt.FM will initialize as a window and can be resized and dragged t
 
 After a successful login, the GUI will display three separated areas. One side will be a panel where the employee can navigate their file tree and select a folder or file that they want to add or remove tags from. On the other side of the screen, there will be a panel that has all of the available tags that can be used, as well as a search bar to search for a specific tag that the employee wants to use. If the employee has the correct permissions, this is also where they will be able to create new tags and delete existing tags from the database. In the middle of the screen, there will be a search bar where the employee will be able to search for files by entering the associated tags; this is also where the returned files will be displayed.
 
+There will also be a clickable button that will allow the user to access the reports outlined in section 3.7.
+
 ---
 3.3.1. TagIt.FM Concept UI Diagram
 
@@ -146,7 +148,7 @@ There will be a few internal interfaces at work in TagIt.FM due to several class
 ===
 3.5. External Interfaces
 
-TagIt.FM will feature 2 external interfaces: one on the client side and one on the server side. On the client side, the app will interact with the local filesystem in order to provide an up-to-date listing of the computer's files and directories; this will occur without any filesystem locking or other interference which would infringe upon normal filesystem operations. On the server side, the application will interact with an SQLite database, which will hold everything from the tag information to the user permissions. This interface will be responsible for encapsulating all requests into discrete SQL statements and deencapsulating all responses back into standard datatypes recognized by the app.
+TagIt.FM will feature 2 external interfaces: one on the client side and one on the server side. On the client side, the app will interact with the local filesystem in order to provide an up-to-date listing of the computer's files and directories; this will occur without any filesystem locking or other interference which would infringe upon normal filesystem operations. On the server side, the application will interact with an SQLite database, which will hold everything from the tag information to the user permissions. This interface will be responsible for encapsulating all requests into discrete SQL statements and deencapsulating all responses back into standard datatypes recognized by the app. There will also be pre programmed SQL statements that will allow for the retrieval of the reports outlined in section 3.7.
 
 ===
 3.6. Architecture
@@ -163,7 +165,7 @@ https://github.com/Bizzlebin/TEAM/blob/master/architecture_diagram.PNG
 ===
 3.7. Reports
 
-Reports will be able to display total count of users, total count of tags. Another report will also be available that will allow a user to select a tag and it will display all of the files it is associated with, this will occurr without revealing any confidential information included in those files. A final report that can retrieved will display a database view that allows the user to view each user's current level of permissions.
+Reports will be able to display total count of users and the total count of tags available for use. Another report will also be available that will allow a user to select a tag and it will display all of the files it is associated with that the user could normally access, this will occurr without revealing any confidential information included in those files. A final report that can retrieved will display a database view that allows the user to view each user's current level of permissions.
 
 ===
 3.8. Other Output
@@ -195,7 +197,7 @@ This main also needs to create functions based on reading the memory locations o
 ---
 3.10.3. Gui Class
 
-This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class.
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7. 
 
 ---
 3.10.4. User Class
