@@ -188,14 +188,14 @@ The create_gui function will primarily be involved in creating the application's
 ---
 3.10.2. Server_main Class
 
-This class will handle 2 classes and they are the Server and DBHelper classes, these do not have any inheritance hierarchies built into the design as of now but future versions may call for subclasses. The number of functions are undetermined but there will be an init function as a standard to this class to handle the instantiation, the DBHelper and the Server objects will be created in this section. There must be a need to create the Server and DBHelper functions after creating the objects so that the private variables can be declared.
+This class will handle 2 classes and they are the Https_server and DBHelper classes, these do not have any inheritance hierarchies built into the design as of now but future versions may call for subclasses. The number of functions are undetermined but there will be an init function as a standard to this class to handle the instantiation, the DBHelper and the Server objects will be created in this section. There must be a need to create the Https_server and Db_helper functions after creating the objects so that the private variables can be declared.
 
 This main also needs to create functions based on reading the memory locations of the Server and DBHelper objects so that tasks can be completed from the requests coming in. It will handle the data for authentication purposes of the client's requests.
 
 ---
 3.10.3. Gui Class
 
-This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the File Manager class through the FileManagerHelper class.
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class.
 
 ---
 3.10.4. User Class
@@ -217,11 +217,11 @@ This class will be responsible for holding all the created tags and displaying t
 This class will be used for setting up our server and defining the requests for sending and retrieving data.
 
 ---
-3.10.7. DBHelper Class
+3.10.7. Db_helper Class
 
 The DBHelper class will be used for reformatting the data from Python to SQL, enabling the data to correctly interact with the database tables. The class will also facilitate the use of Python from within the application to create the SQL functions and statements needed to manipulate the database.
 
-TEAM will implement the normalization of this class according to 3NF standards. Because of this the database will feature less dependencies on the tables that are created, and the tables will be organized to a level where there is no data duplication within them. The DBHelper class will prevent the need for a many-to-many relationship within the database tables, ensuring 3NF is maintained.
+TEAM will implement the normalization of this class according to 3NF standards. Because of this the database will feature less dependencies on the tables that are created, and the tables will be organized to a level where there is no data duplication within them. The Db_helper class will prevent the need for a many-to-many relationship within the database tables, ensuring 3NF is maintained.
 
 This class will also have the responsibility of handling errors that may come across from the application. It will spot dirty data and return a statement requesting any required corrections, ensuring that any redundancies or missing data can be corrected prior to being committed to the database.
 
@@ -231,7 +231,7 @@ This class will also have the responsibility of handling errors that may come ac
 This class will hold a list of the user's recent actions, such as creating a tag, adding a tag to a file, or searching for a file by its tags. This class will cooperate with the GUI as one of its other responsibilites mainly because to access the History the User will need to interact with the right pane displayed when the applications UserType is logged in because this is where finding the history of the recent actions will be setup.
 
 ---
-3.10.9. FileManagerHelper Class
+3.10.9. File_manager_helper Class
 
 This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI.
 
@@ -243,7 +243,7 @@ This class handles the requests and transfers of data to and from the server sid
 ---
 3.10.11. HLD Diagram
 
-The following diagram explains the classes that will implemented during the design phase of the project. It contains two main classes, Client Main and Server Main. The diagram displays the Client Main on the left as being responsible for handling the five classes in its hierarchy: GUI, User, History, Tags, FileManagerHelper, and on the right side the Server Main is only responsible for two classes: Server and DBHelper.
+The following diagram explains the classes that will implemented during the design phase of the project. It contains two main classes, Client Main and Server Main. The diagram displays the Client Main on the left as being responsible for handling the five classes in its hierarchy: GUI, User, History, Tags, File_manager_helper, and on the right side the Server_main is only responsible for two classes: Https_server and Db_helper.
 
 https://github.com/Bizzlebin/TEAM/blob/master/hld_diagram.png
 
