@@ -143,7 +143,11 @@ https://github.com/Bizzlebin/TEAM/blob/master/ui_mockup.png
 ===
 3.4. Internal Interfaces
 
-There will be a few internal interfaces at work in TagIt.FM due to several classes needing to pass data back and forth to each other. The GUI will be interfacing with the tags class to retrieve the list of created tags and add them to the display for the user to see. The GUI will also interface with the history class which will let the GUI to retrieve a list of the user's recent actions and display them to the user. The main class will be interfacing with both the user and GUI class to manage their interactions through the user's choices and actions in the GUI.
+There will be a few internal interfaces at work in TagIt.FM due to several classes needing to pass data back and forth to each other. The Gui Class will be interfacing with the Tags Class to retrieve the list of created tags and add them to the display for the user to see. The Gui Class will also interface with the History Class which will let the Gui Class retrieve a list of the user's recent actions and display them to the user. The Client_main class will be interfacing with both the User and Gui classes to manage their interactions through the user's choices and actions in the GUI.
+
+The Client_main class will also create an instance of the Http_client class which will communicate data retrieved from the server side of the network through the Client_main class to the rest of the classes.
+
+There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server Class and a Db_helper class. The Db_helper class is responsible for the encapsulation of data being sent to the database as well as the de-encapsulation of data retrieved from the database that will be sent through the Server_main Class and over the server to the client side. The Https_server class will handle the transfer of data to and from the Http_client Class. The data retrieved from the Client_main class will be used to update the database whereas the data sent back to the client will be used to update the Tags and History Classes.
 
 ===
 3.5. External Interfaces
@@ -197,7 +201,7 @@ This main also needs to create functions based on reading the memory locations o
 ---
 3.10.3. Gui Class
 
-This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7. 
+This will be the class that contains and displays the objects for the user interface. It will connect with the History class to ensure that the user has access to previously searched tags, and it call the Tags class to update and display tags as the user searches for them. Additionally, the GUI class will communicate with the computer's base file manager through the File_manager_helper class. This allows for the retrieval of the computers entire file hierarchy and that same file hierarchy will be displayed to the user within the GUI so they can navigate through it and select the files they want to tag or interact with. The Gui class will also contain a function that will allow the user to view the reports detailed in section 3.7 in a separate area. 
 
 ---
 3.10.4. User Class
@@ -211,7 +215,7 @@ The User class will primarily involve seven different functions to create the st
 ---
 3.10.5. Tags Class
 
-This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will communicate any changes in tags to the tags database, ensuring that the database stays up-to-date.
+This class will be responsible for holding all the created tags and displaying them for the employee. The Tags class will recieve constant updates from the database taking into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags Class stay up-to-date.
 
 ---
 3.10.6. Https_server Class
