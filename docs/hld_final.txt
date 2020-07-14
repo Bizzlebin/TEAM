@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-12
+Updated on 2020-07-13
 
 +++
 1. Introduction
@@ -18,7 +18,7 @@ Updated on 2020-07-12
 ===
 1.1. Purpose
 
-The purpose of this project is to provide an application that in return will improve the speed of the process for searching for files on a computers operating system. TagIt.FM is created to assist anyone who has ever had a difficult time locating a specific file within their file manager when they need it urgently, this will provide a very reliable source for any company who is looking for quick results. 
+The purpose of this project is to provide an application that in return will improve the speed of the process for searching for files on a computers operating system. TagIt.FM is created to assist anyone who has ever had a difficult time locating a specific file within their file manager when they need it urgently, this will provide a very reliable source for any company who is looking for quick results.
 
 The client that TEAM relies on, MHC, is an insurance company and there need for the application is to be able to quickly find the documents needed for the different types of insurance for various file types of the specified OS, which will be used for medical or finanical needs. Customer service representatives, especially, will benefit from the application because it will both simplify the search process and reduce the amount of time they need to keep a customer on hold. This, in turn, can improve the mood of the customer and decrease frustrations for the employee. The purpose of this document is to provide an overview of what will be included in the initial release of the application. The details of the project will be further discussed and developed in the Low-Level Design document.
 
@@ -39,6 +39,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 **GitHub**: Company that provides hosting for software development version control using Git
 **GUI**: Graphical user interface
 **HIPAA**: Health Insurance Portability And Accountability Act Of 1996
+**HTTP**: Hypertext Transfer Protocol is an application protocol for distributed, collaborative, hypermedia information systems
 **HTTPS**: Hypertext transfer protocol secure is an extension of the hypertext transfer protocol that is used for secure communication over a computer network
 **IDE**: An integrated development environment, such as PyCharm
 **Library**: Reusable code, including functions, that can be used for common programming tasks
@@ -98,13 +99,13 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 ===
 2.4. Libraries
 
-http.client
-ssl
-os
-tkinter
+**http.client**: Defines classes which implement the client side of the HTTP and HTTPS protocols
+**ssl**: Provides access to transport layer security encryption and peer authentication facilities for network sockets, both client-side and server-side
+**os**: Provides a portable way of using operating system dependent functionality
+**tkinter**: Provides a robust platform independent windowing toolkit
 path
-sys
-timeit
+**sys**: Provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter
+**timeit**: Provides a simple way to time small bits of Python code
 
 +++
 3. Design Details
@@ -178,16 +179,16 @@ This project only requires the use of one RDBMS for the storage and management o
 ---
 3.10.1. Client_main Class
 
-This class will handle the classes for the client side of the application, it will be a separate class from the Server Main Class. The class will primarily be responsible for handling the five classes that branch off into their own respective hierarchies. It will call the GUI class and handle all interaction between the user inputs and the GUI.
+This class will handle the classes for the client side of the application, it will be a separate class from the Server_main Class. The class will primarily be responsible for handling the five classes that branch off into their own respective hierarchies. It will call the Gui class and handle all interaction between the user inputs and the GUI.
 
-The Client Main will initially have 8 Functions that it will use to structure the data for the MHC employees. The init function will initialize the GUI, HTTPS Server, and the user on instantiation, which will then be responsible for creating the next three functions that create the GUI, HTTPS Client and the User objects. This method will be kept private while the rest of the functions will be public so that if an error occurs, or a User logs out and wants to log back in, they can be restarted individually.
+The Client_main will initially have seven functions that it will use to structure the data for the MHC employees. The init function will initialize the GUI, HTTPS Server, and the user on instantiation, which will then be responsible for creating the next three functions that create the GUI, HTTPS Client and the User objects. This method will be kept private while the rest of the functions will be public so that if an error occurs, or a User logs out and wants to log back in, they can be restarted individually.
 
 The create_gui function will primarily be involved in creating the application's GUI and then updating the associated private variables required for that function. The create_https_client and create_user function the same manner as the create_gui. These three functions will store variables that will be used in by the User superclass and subclasses to handle any tasks, for example, if the User would like to create a file tag in the GUI they can call the create_gui function. The last three functions: read_gui, read_https_client and read_user will primarily be in charge of reading the memory locations of the objects inside the function so information can be gathered.
 
 ---
 3.10.2. Server_main Class
 
-This class will handle 2 classes and they are the Server and DBHelper classes, these do not have any Inheritance hierarchies built into the design as of now but future versions may call for Sub-Classes. The number of functions are undetermined but there will be an init function as a standard to this class to handle the instantiation, the DBHelper and the Server objects will be created in this section. There must be a need to create the Server and DBHelper functions after creating the objects so that the private variables can be declared.
+This class will handle 2 classes and they are the Server and DBHelper classes, these do not have any inheritance hierarchies built into the design as of now but future versions may call for subclasses. The number of functions are undetermined but there will be an init function as a standard to this class to handle the instantiation, the DBHelper and the Server objects will be created in this section. There must be a need to create the Server and DBHelper functions after creating the objects so that the private variables can be declared.
 
 This main also needs to create functions based on reading the memory locations of the Server and DBHelper objects so that tasks can be completed from the requests coming in. It will handle the data for authentication purposes of the client's requests.
 
@@ -235,7 +236,7 @@ This class will hold a list of the user's recent actions, such as creating a tag
 This class will be responsible for retrieving the computers file hierarchy from the file manager for display in the GUI.
 
 ---
-3.10.10. Https_client
+3.10.10. Https_client Class
 
 This class handles the requests and transfers of data to and from the server side of the project architecture. It will utilize both the http.client and ssl libraries to provide secure transfers of data between the client and server. The http.client library provide HTTPS support if the code is compiled using the ssl library. This is accomplished through the ssl library's methods that allow for certificate authentication and its ability to create ssl sockets. 
 
