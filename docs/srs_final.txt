@@ -364,17 +364,17 @@ The application must keep all tag data updated in realtime as tags are created, 
 ===
 8.1. Scenario A
 
-Manager wants to know, due to COVID-19, how many customers with age of 60 or above have visited the hospital.
+Manager wants to know, due to COVID-19, how many customers with age of 60 or above have visited the hospital(B2,F1,N6).
 
 ===
 8.2. Scenario B
 
-Customer wants to know what his benefits are if he has another knee surgery for his torn ACL.
+Customer wants to know what his benefits are if he has another knee surgery for his torn ACL(B1,B2,F1,N6).
 
 ===
 8.3. Scenario C
 
-Manager wants to pull data of people who have recently ordered prescription for Chloroquine phosphate.
+Manager wants to pull data of people who have recently ordered prescription for Chloroquine phosphate(B2,F4,P2)
 
 +++
 9. Use Case And User Stories
