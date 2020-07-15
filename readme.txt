@@ -12,7 +12,9 @@ By Jeremiah Thomas, et al
 
 Created on 2020-05-24
 
-Updated on 2020-07-08
+Updated on 2020-07-23
+
+Released on 2020-07-20
 
 ***
 
@@ -327,6 +329,31 @@ Due By Saturday (2020-07-18)
 9. Template HLD, including all graphics (DS only).
 9.1. Sign the "Requirements Document Review History" for version 2 (LSD, LT, and DS only).
 
+===
+Week 9 (2020-07-19)
+
+---
+Due By *Monday* (2020-07-20)
+
+1. Sign the SRS "Review And Approval" for version 2 (CA, DS, PM only).
+2. Sign the HLD "Review And Approval" for version 2 (LSD, DS, PM only).
+
+---
+Due By Tuesday (2020-07-21)
+
+3. Meeting prep.
+3.1. Final presentations.
+3.2. Group activity: FFA project retrospective!
+
+---
+Due By Thursday (2020-07-23)
+
+4. Meeting prep.
+4.1. Group activity: optional photo.
+4.3. Group activity: discuss end-of project dinner.
+4.3. Group activity: goodbyes!
+5. Archive repository (PM only).
+
 +++
 Ground Rules
 
@@ -346,4 +373,4 @@ Metametadata
 **meta_author**: Jeremiah Thomas
 **meta_generator**: Notepad++
 **meta_created**: 2020-05-24
-**meta_updated**: 2020-07-09
+**meta_updated**: 2020-07-14
