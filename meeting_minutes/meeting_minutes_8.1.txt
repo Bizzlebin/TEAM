@@ -1,0 +1,39 @@
+Meeting Minutes 8.1
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_8.1.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-14
+
++++
+Summary
+
+Tuesmeeting on 2020-07-14 of TEAM Exists As Metonym, focus beginning final steps for SRS and HLD. Freeze going into effect tonight.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Stavros Bannoura, Zachary Wawrzaszek, Jeremiah Thomas, Sandhya Joshi
+**Absent**: None
+
++++
+Presentations
+
+**Jeremiah**: Created official project calendar and a Gantt chart, updated readme schedule. Worked on V&V, planned on releasing it tonight
+**Anna**: Fixed some formatting and typos in SRS and HLD. Added links for the diagrams in the SRS, reworked the use cases and added a description for the use case diagram. Added some descriptions for diagrams and libraries in the HLD. Created blank version of the deliverables
+**Sandhya**: Updated requirements per change requests. Rewrote several sections in SRS and reorganized. Mapped business requirements to functional requirements. Planned to map operational scenarios with business requirements.
+**Stavros**: Worked on chapter 3 of HLD, mostly classes section. Added description to user authentication diagram and part of HLD diagram.
+**Zach**: Fixed class naming inconsistencies throughout HLD text and diagrams, added a class that was missed, added to several sections of HLD and also added details to some sections. Read through the HLD to check for inconsistencies.
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:09
+**Next Meeting Scheduled** 2020-07-16 20:00
