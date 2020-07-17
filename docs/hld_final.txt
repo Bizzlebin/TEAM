@@ -116,7 +116,7 @@ MHC deals with documents and records that must remain confidential due to HIPAA 
 
 To provide another layer of security to TagIT.FM, MHC Employees will be provided an account that is based off their job-related responsibilites in the company. Since every user will have the ability to complete tasks in the application, TagIT.FM will have three different roles assigned to user accounts in order to restrict the users' ability to modify and access critical data within the application. In order to create or delete tags within TagIt.FM, the user is required to log in with a Mid_user level access. For administrative tasks, there is the High_user level which can create or delete user accounts and grant accounts a different access level.
 
-This layered approach in the application it will provide a higher level of security that will give the client a sense of comfort about how their data is handled. It will also organize the structure to prevent any confusion regarding who can handle the higher administrative roles.
+This layered approach in the application will provide a higher level of security that will offer the client a sense of comfort about how their data is handled. It will also organize the structure to prevent any confusion regarding who can handle the higher administrative roles.
 
 ===
 3.2. Hardware
