@@ -10,9 +10,9 @@ By Sandhya Joshi, et al
 
 Created on 2020-06-04
 
-Updated on 2020-07-16
+Updated on 2020-07-17
 
-Released on 2020-07-22
+Released on 2020-07-20
 
 +++
 Table Of Contents
@@ -167,33 +167,32 @@ Employees, especially the customer care representatives, need to provide this in
 ---
 2.4.1. Communication
 
-The team has been using Slack and GitHub as the primary collaboration tools; Slack is mainly used for communication. The project manager has created channels based on the project deliverables. Discussions regarding the specific topics related to each deliverable on the respective channel. The main channel is used for discussing general topics and communicating with the team. The meeting channel is used for bi-weekly team meeting.
+The team has been using Slack and GitHub as the primary collaboration tools; Slack is mainly used for communication. The project manager created channels based on the project deliverables and discussions regarding topics specific to each deliverable take place on the respective channel. The main channel is used for discussing general topics and communicating with the team. The meeting channel is used for bi-weekly team meeting.
+
+Even though Slack is technically asynchronous, one of its biggest strengths for our group is constant communication and updates.  Our Slack communication channel is always open 24 × 7 for this continuous discussion and exchange of thoughts and we are very able to collaborate methodically. Conversations can span multiple days, picking up instantly where they left off. And during the middle of the project, the PM held regular "office hours" throughout the week where he would be on Slack exclusively; this helped everyone feel more comfortable talking in chat and helped ease the group into the dynamic, non-time-limited dialogs that are possible with the medium.
+
+As far as the weakness are concerned, our team does not do synchronous communication like video chat or conference calls. We would get larger amounts of instant feedback while using video chat or a conference call. Sometimes, we may not be able to correctly analyze what another person's reaction to our thought is when using asynchronous communication. Although each team member conveys their feelings through emojis and offers responses, it is not as effective at communicating emotion as watching the person's reaction. This can leave some emotional distance between the team members. This is might be the only weakness we could find in collaboration within with our team.
 
 ---
 2.4.2. Document Storage And Control
 
-All project documents are stored in a GitHub repository. The project manager has given permission to all team members to commit changes to these documents.
+All project documents are stored with Git and mirrored in a GitHub repository, which provides a neutral, common place where everyone can upload files. Since the repo is public, everyone can see what is in it at any time. The project manager has given permission to all team members to commit changes to these documents, but nobody else has permission to make changes so that the documents remain secure. The advantage of this is that everyone retains a local copy of the team's material and can work offline, with Git handling the complexities of merging changes from different members later. The disadvantage is that incorrect changes sometimes get put into the repo; with everyone able to make commits, the process is fast but the error-checking is nearly absent, at least up front.
 
 ---
 2.4.3. File Sharing And Management
 
-GitHub is used for storing and sharing project related files. The team repository contains all documentation that concerns the project.
+
+GitHub is used for storing and sharing project related files. As noted above, the team repository contains all documentation that concerns the project and anyone can pull a fresh copy at any time. Similarly, anyone can push their local Git commits to the team repo at any time, effectively sharing them with everyone else. The advantages of this are that it is a single system with the storage, all shared documents are tracked, and the team has multiple ways to access the shared content, including locally and online at the GitHub website. The disadvantage is that this method is slower and less direct for rapid prototyping using certain tools that not every member has installed on their computer; in these cases, it has been simpler to send screenshots or comparable images directly over Slack and wait until the work has slowed down to commit to Git.
 
 ---
 2.4.4. Project Management
 
-GitHub and Slack are used for project management. The readme document on GitHub contains the to-do list with current tasks and organized by assigned team roles. All the team members are required to read the list and complete tasks by the due date. Slack is used for bi-weekly meetings, questions, and discussion.
+GitHub and Slack are both used for project management. The readme document on GitHub contains the todo list with current tasks and is organized by assigned team roles; it is updated at least weekly, and generally a week ahead of time, so that members can plan their own schedules and work at their own pace without the pressure of surprise assignments. All the team members are required to read the checklist and complete tasks by the due date. To compliment the list, Slack is used for bi-weekly meetings, questions, and discussion: assignments are frequently elaborated and explained in Slack and team progress is tracked at least at every meeting. The advantage of this combined method is that is low overhead, utilizes the tools already in use by the group, and is able to both provide and capture feedback continuously. The disadvantage is that the list can sometimes seem impersonal since it does not have any direct collaborative features. Still, on rare occasions, schedule adjustments were made after the PM received feedback about delays; thus, the schedule is still collaborative in a way, if not fully shared or gamified.
 
 ---
 2.4.5. Version Control Of Documents
 
-As progress is made to the project, all the members keep updating their files in the GitHub repository. GitHub allows for reverting documents back to previous versions and to see changes that have been made.
-
-2.4.6. Strengths and Weaknesses
-
-The biggest strength of our group is constant communication and updates. Everyone in the team is extremely responsible for their work. Our Slack communication channel is always open 24 x 7 for this continuous discussion and exchange of thoughts. Although this is an asynchronous form of communication, we are very able to collaborate methodically.
-
-As far as the weakness are concerned, our team does not do synchronous communication like video chat or conference calls. We would get instant feedback while using video chat or a conference call. Sometimes, we may not be able to correclty analyze what another person's reaction to our thoughts is, using asynchronous communication. Although each team member conveys their feelings through emoji's and offers responses, it is not as effective as watching the person's reaction. This can leave some emotional distance between the team members. This is might be the only weakness we could find in collaboration within with our team.
+As progress is made to the project, all the members keep updating their files locally and in the GitHub repository. Even though everyone in the team is extremely responsible for their work, Git allows for reverting documents back to previous versions, something that has been used on occasion. It also allows everyone to see the changes that have been made, not only contributing statistics to the PM but allowing the team to immediately know who to talk to about a given document. The advantage of Git is that it is a well-tested suite of tools that allows everything from tracking individual lines to managing different branches of work on the team's deliverables. The disadvantage is the learning curve: while Git is simple enough for basic file sharing and storage, many of the version-control operations—branching, merging, reverting, tracking, and even commit messages—have been sources of confusion and even frustration for team members at various points during the course of the project.
 
 +++
 3. Business Requirements
