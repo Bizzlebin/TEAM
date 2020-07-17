@@ -1,0 +1,50 @@
+Meeting Minutes 8.2
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_8.2.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-16
+
++++
+Summary
+
+Thursday meeting on 2020-07-16 of TEAM Exists As Metonym, focus on final steps for SRS and HLD. Roundtable discussion on remaining SRS and HLD fixes.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Jeremiah Thomas, Sandhya Joshi
+**Tardy**: Stavros Bannoura
+**Absent**: Zachary Wawrzaszek
+
++++
+Presentations
+
+**Anna**: Worked on copyedit of SRS and HLD documents
+**Sandhya**: Did some edits to SRS, proofreading and connecting the functional requirements with the V&V document.
+**Jeremiah**: Overhauled the RTM and V&V divisions in the SRS so they are more modular, updated readme
+
++++
+SRS/HLD Roundtable
+
+**Anna**: Worked on the SRS and HLD, still have a few questions for Zach that have not been resolved
+**Jeremiah**: Order prioritation of requirements needs to be double checked
+**Sandhya**: Happy with SRS/HLD
+**Stavros**: HLD looks in good shape other than some minor tweaks
+**Anna**: Diagrams should be correct with updates from today
+**Jeremiah**: Section 3.11 is missing in HLD - Zach?
+**Stravros**: Thought section 3.11 was not needed? Maybe put in a DNA statement
+**Jeremiah**: Section 3.7 needs to specify what level user has access to reports
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:16
+**Next Meeting Scheduled** 2020-07-21 20:00
