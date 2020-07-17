@@ -33,24 +33,44 @@ Table Of Contents
 2.4.3. File Sharing And Management
 2.4.4. Project Management
 2.4.5. Version Control Of Documents
-2.4.6. Strengths and Weaknesses
 3. Business Requirements
+3.1. B1
+3.2. B2
+3.3. B3
 4. Functional Requirements
+4.1. F1
+4.2. F2
+4.3. F3
 5. Interface Requirements
 5.1. User Interfaces
 5.1.1. GUI
+5.1.1.1. I1
+5.1.1.2. I2
+5.1.1.3. I3
+5.1.1.4. I4
+5.1.1.5. I5
 5.1.2. CLI
 5.1.3. API
 5.2. Hardware Interfaces
+5.2.1. I6
 5.3 Communication Interfaces
+5.3.1. I7
 5.4 Software Interfaces
+5.4.1. I8
 6. Performance Requirements
+6.1. P1
+6.2. P2
 7. Other Non-Functional Attributes
 7.1. Security
+7.1.1 N1
 7.2. Reliability
+7.2.1. N2
 7.3. Maintainability
+7.3.1. N3
 7.4. Portability
+7.4.1. N4
 7.5. Resource Utilization
+7.5.1. N5
 7.6. Serviceability
 8. Operational Scenarios
 8.1. Scenario A
@@ -62,8 +82,8 @@ Table Of Contents
 9.1.2. B2 UC01
 9.1.3. Use Case Diagram
 9.2. User Stories
-9.2.2. User Stores Per Functional Requirement
 9.2.1. User Stories Per Business Requirement
+9.2.2. User Stores Per Functional Requirement
 10. Sequence Diagrams
 10.1. Sequence Diagram Of Requirements I1 And N5
 10.2. Sequence Diagram Of Requirement N2
@@ -72,6 +92,14 @@ Table Of Contents
 11.2. Procedures For Project Requirement Changes
 11.2.1. Example Change
 11.3. Schedule
+11.3.1. Planning
+11.3.2. Analysis
+11.3.3. Design
+11.3.4. Building
+11.3.5. Testing
+11.3.6. Installation
+11.3.7. Maintenance
+11.3.8. Gantt Chart
 11.4. Requirements Traceability Matrix
 11.5. Verification And Validation Testing Document
 
@@ -89,19 +117,19 @@ Table Of Contents
 ===
 1.1. Purpose
 
-The purpose of this document is to build an application system, called Tagit.FM, that will enhance the search capabilities in MHC's database system. The tag-based file manager system stores metadata in the form of custom tags in a separate database instead of working directly in an operating system's limited file manager. The program searches tags and displays the most recent searches to ensure continuity and clarity.
+The purpose of this document is to build an application system, called Tagit.FM, that will enhance the search capabilities in MHC's database system. The tag-based file manager system stores metadata in the form of custom tags in a separate database instead of working directly in an operating system's limited file manager. The program searches tags and displays the most recent searches to ensure continuity and clarity for the user.
 
 ===
 1.2. Scope Of This Document
 
-The intended readers of this document are current and future developers working on "Tagit.FM", hereafter referred to as the TEAM, and the developers at MHC. The plan will include, but is not restricted to, a summary of the system functionality, the scope of the project from the perspective of the team. This document specifies the business requirements, functional and non-functional requirements, interface requirements, operational scenarios, user stories, sequence diagrams, scheduling and delivery estimates, project risks and how those risks will be mitigated, the processes by which the project will be developed, and metrics and measurements that will be recorded throughout the project.
+The intended readers of this document are current and future developers working on "Tagit.FM", hereafter referred to as TEAM, and the developers at MHC. The plan will include, but is not restricted to, a summary of the system functionality and the scope of the project from the perspective of TEAM. This document specifies the business requirements, functional and non-functional requirements, interface requirements, operational scenarios, user stories, sequence diagrams, scheduling and delivery estimates, project risks and how those risks will be mitigated, the processes by which the project will be developed, and metrics and measurements that will be recorded throughout the project.
 
 ===
 1.3. Definitions, Acronyms, And Abbreviations
 
 **ACID**: Atomicity, consistency, isolation, durability
 **API**: Application programming interface
-**Customer**: A person who uses services provided by the insurance company
+**Customer**: A person who uses services provided by the MHC
 **CLI**: Command line interface; a text-based interface used for entering commands
 **DBMS**: Database management system
 **Git**: Distributed version-control system used for tracking source code during software development
@@ -109,7 +137,7 @@ The intended readers of this document are current and future developers working 
 **GUI**: Graphical user interface
 **HIPAA**: Health Insurance Portability And Accountability Act Of 1996
 **Metadata**: Data about data, or data which further describes the properties, qualities, and/or quantities of other data
-**MHC**: My Healthcare, fictional insurance company used for this project
+**MHC**: My Healthcare, fictional insurance company used as the sponsor of this project
 **Slack**: Proprietary business communication platform that features chat and file sharing
 **SQLite**: A database that operates directly from library function calls, without a separate process or server
 **Tag**: A string without spaces which provides categorical information about its object
@@ -120,20 +148,20 @@ The intended readers of this document are current and future developers working 
 
 Contemporary businesses generate vast amounts of digital information, including documentation for business processes, customer lists, accounting spreadsheets, and more. Efficiently accessing this data, however, can be a problem: only filenames and some filesystem-specific metadata are easily searchable and systems that add information or tags directly to files can cause integrity problems. Additionally, modifications to the files may not be acceptable due to regulatory or other requirements. Clearly, a different solution is required.
 
-Our tag-based file manager, TagIt.FM, stores the metadata in the form of custom tags in a separate database. Instead of working directly in the limited file manager of an operating system, we will offer a clean user interface that can sort based on any number of user-selected tags. The program searches and opens with the most recent search displayed to ensure continuity and clarity.
+The tag-based file manager, TagIt.FM, that will be developed by TEAM will store metadata in the form of custom tags in a separate database. Instead of working directly in the limited file manager of an operating system, it will offer a clean user interface that can sort based on any number of user-selected tags. The program will searche and open with the most recent search displayed to ensure continuity and clarity for the user.
 
 ===
 1.5. Business Context
 
-In today's world, providing the best customer experience is as important as getting a new customer. MHC is serving millions of people from infancy, through their working lives, and into retirement. Their mission is to help people live healthier, and make the healthcare system work better for everyone. They follow HIPAA regulations to protect customer's data and privacy. They value customer satisfaction and the quality of customer experience.
+In today's world, providing the best customer experience is as important as getting a new customer. MHC is serving millions of people from infancy, through their working lives, and into retirement. Their mission is to help people live healthier lives, and make the healthcare system work better for everyone. They follow HIPAA regulations to protect customer's data and privacy and they value customer satisfaction and the quality of customer experience.
 
-MHC maintains policyholder data on all of their customers in a database, including personal information, like social security number and date of birth. Records are maintained by MHC of their customers' medical history, doctor's and hospital visits, prescription medication, surgeries, etc. This information gets updated at minimum annually as the policyholder/patient medical information changes.
+MHC maintains policyholder data on all their customers in a database, including personal information like social security numbers and dates of birth. Records are kept by MHC of their customers' medical history, doctor and hospital visits, prescription medication, surgeries, etc. This information gets updated as the policyholder/patient medical information changes or at minimum on an annual basis.
 
-The data is stored internally at the organization in a database and policy holders are only allowed to access their own information. As this information will be used by the employees at MHC, the business needs to keep track of all these records.
+The data is stored internally at the MHC in their central database, and policy holders are only allowed to access their own information. As this information will be used by the employees at MHC, the business needs to keep track of all these records in an organized manner.
 
-TagIt.FM can be used by any organization that has a database. It can be used to search customer information, user information, medical history, personal data, or even recent tag searches the employee has performed. The software can be used to retrieve any information quickly and effectively.
+TagIt.FM can be used by any organization that has a database. It can be used to search for any type of customer information, such as, policy information, medical history, or personal data. The software can be used to retrieve any information quickly and effectively.
 
-The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that are stored in the database. Another employee can obtain the same information if she or he wants to access the same customer's medical history using any of the tags associated with the customer's file. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive
+The tag-based file manager will address issues of misplaced documents or forgotten file names. For instance, when an employee searches the database for changes in the recent medical history of a customer, they can create a file tag based on the customer's name or medications that are stored in the database. Another employee can obtain the same customer information by searching for those same tags that the first employee added to customer's file, making sharing and collaboration easy. TagIt.FM will provide solutions to make everyday access to business information simpler and more intuitive.
 
 +++
 2. General Description
@@ -141,24 +169,22 @@ The tag-based file manager will address issues of misplaced documents or forgott
 ===
 2.1. Product Features/Functions
 
-TagIt.FM creates a tag-based file manager that stores metadata, in the form of custom tags, in a separate database. Instead of working directly in an operating system's limited file manager, the product will offer a clean user interface that can sort based on any number of user-selected tags. The program will remember previous searches and open with the most recent search displayed to ensure continuity and clarity. It will provide some basic tags and instructions to get users started but otherwise aims at being "invisible", allowing businesses to instantly search, sort, and access important data. 
+TagIt.FM creates a tag-based file manager that stores metadata, in the form of custom tags in a separate database. Instead of working directly in an operating system's limited file manager, the product will offer a clean user interface that can find documents based on any number of user-selected tags. The program will remember previous searches and open with the most recent search displayed to ensure continuity and clarity. It will provide some basic tags and instructions to get users started but otherwise aims at being "invisible", allowing businesses to instantly search, sort, and access important data.
 
 The database will be loaded with business-critical features including management controls that restrict tag creation and file tagging to specific groups or users to prevent confusion or abuse. Each tag will include an optional description, also protected within the database. Because tags are stored inside the database, they automatically come with the key benefits of ACID. Every operation is guaranteed not to harm the integrity of either the main database or the filesystem.
 
-TagIt.FM will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with legacy file managing systems, which simplifies administration. In short, the tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive. This product will help employees at MHC search for any customer records more accurately. TagIt.FM will be extremely beneficial for any customer care representative, who needs to find out the customer information quickly so that they can serve the customer efficiently.
+TagIt.FM will address the shortcomings of other solutions. Business-critical files will never be modified in any way nor will any filenames change. Users will always be able to make use of this system side-by-side with legacy file managing systems, which simplifies administration. In short, the tag-based file manager will create new opportunities for organization and collaboration by making everyday access to business information simpler, easier, and more intuitive. This product will help employees at MHC search for any customer records more accurately. TagIt.FM will be extremely beneficial for any customer care representative, who needs to find information quickly so that they can serve the customer efficiently.
 
 ===
 2.2. User Characteristics
 
-Our client, MHC serves millions of people from infancy to into retirement. They store important customer information internally for their own use. Most of the policy members call the customer care line with questions regards to their benefits, claims, billing, sometimes even ask for details of the specialist who participates in their network.
+Our client, MHC serves millions of people from infancy to into retirement. They store important customer information for internal use in their central database. Most of the policy members who call the customer care line have questions regarding their benefits, claims, billing, or questions regarding specialists who are members of the insurance network.
 
-This information would be used by the employees at MHC. Most of the policy members call the customer care with questions regard to their benefits, claims, billing, or with questions regarding specialists who are members of the insurance network.
-
-Employees, especially the customer care representatives, need to provide this information within a certain time frame. According to company customer service policy, they cannot keep the customer on hold for more than 3 min. The employee must be able to access this information in a fast and accurate manner. They need technology that can pull information based on a person's recent medical history changes or on other recent inquiries. MHC will benefit from an application that creates file tags based on custom criteria and search history so that the information can be accessed quickly.
+Employees, especially the customer care representatives, need to provide this information within a certain time frame. According to company customer service policy, they cannot keep the customer on hold for more than 3 min. The employee must therefore be able to access all needed information in a fast and accurate manner. They need technology that can pull information based on a person's recent medical history changes or on other recent inquiries. MHC will benefit from an application that creates file tags based on custom criteria and search history so that the information can be accessed quickly.
 
 2.3. General Constraints
 
-1. The software must be operated on Windows or Linux operating systems.
+1. The software must be ran on Windows or Linux operating systems.
 2. The maximum size of a database file is 2 147 483 646 pages.
 
 ===
@@ -167,27 +193,26 @@ Employees, especially the customer care representatives, need to provide this in
 ---
 2.4.1. Communication
 
-The team has been using Slack and GitHub as the primary collaboration tools; Slack is mainly used for communication. The project manager created channels based on the project deliverables and discussions regarding topics specific to each deliverable take place on the respective channel. The main channel is used for discussing general topics and communicating with the team. The meeting channel is used for bi-weekly team meeting.
+TEAM has been using Slack and GitHub as the primary collaboration tools; Slack is mainly used for communication. The project manager created channels based on the project deliverables and discussions regarding topics specific to each deliverable take place on the respective channel. The main channel is used for discussing general topics and communicating with the other group members. The meeting channel is used for bi-weekly meetings.
 
-Even though Slack is technically asynchronous, one of its biggest strengths for our group is constant communication and updates.  Our Slack communication channel is always open 24 × 7 for this continuous discussion and exchange of thoughts and we are very able to collaborate methodically. Conversations can span multiple days, picking up instantly where they left off. And during the middle of the project, the PM held regular "office hours" throughout the week where he would be on Slack exclusively; this helped everyone feel more comfortable talking in chat and helped ease the group into the dynamic, non-time-limited dialogs that are possible with the medium.
+Even though Slack is an asynchronous form of communication, one of its biggest strengths of our group is constant communication and updates.  Our Slack communication channel is open 24 × 7 for continuous discussion and exchange of thoughts, which assists in maintaing an active, collaborative environment. Conversations can span over multiple days, picking up instantly where they left off. During the middle of the project, the project manager held regular "office hours" throughout the week where he would be on Slack exclusively; this helped everyone feel more comfortable talking in chat and helped ease the group into the dynamic, continuous dialogs that are possible with in the medium.
 
-As far as the weakness are concerned, our team does not do synchronous communication like video chat or conference calls. We would get larger amounts of instant feedback while using video chat or a conference call. Sometimes, we may not be able to correctly analyze what another person's reaction to our thought is when using asynchronous communication. Although each team member conveys their feelings through emojis and offers responses, it is not as effective at communicating emotion as watching the person's reaction. This can leave some emotional distance between the team members. This is might be the only weakness we could find in collaboration within with our team.
+As far as the weakness are concerned, our team does not have a synchronous communication channel established, like video chat or conference calls. We would get larger amounts of instant feedback while using one of these options. Sometimes, we may not be able to correctly analyze what another person's reaction to our thought is when using asynchronous communication. Although each team member conveys their feelings through emojis and offers responses, it is not as effective at communicating emotion as watching the person's reaction. This can leave some emotional distance between the team members. This is might be the only weakness we could find in collaboration within with our team.
 
 ---
 2.4.2. Document Storage And Control
 
-All project documents are stored with Git and mirrored in a GitHub repository, which provides a neutral, common place where everyone can upload files. Since the repo is public, everyone can see what is in it at any time. The project manager has given permission to all team members to commit changes to these documents, but nobody else has permission to make changes so that the documents remain secure. The advantage of this is that everyone retains a local copy of the team's material and can work offline, with Git handling the complexities of merging changes from different members later. The disadvantage is that incorrect changes sometimes get put into the repo; with everyone able to make commits, the process is fast but the error-checking is nearly absent, at least up front.
+All project documents are stored with Git and mirrored in a GitHub repository, which provides a neutral, shared location where everyone can upload files. Since the repository is public, everyone can see what is in it at any time. The project manager has given permission to all team members to commit changes to these documents, but nobody else has permission to make changes so that the documents remain secure. The advantage of this is that everyone retains a local copy of the team's material and can work offline, with Git handling the complexities of merging changes from different members later. The disadvantage is that incorrect changes sometimes get put into the repository; with everyone able to make commits, the process is fast, but the error-checking is nearly absent, at least up front.
 
 ---
 2.4.3. File Sharing And Management
 
-
-GitHub is used for storing and sharing project related files. As noted above, the team repository contains all documentation that concerns the project and anyone can pull a fresh copy at any time. Similarly, anyone can push their local Git commits to the team repo at any time, effectively sharing them with everyone else. The advantages of this are that it is a single system with the storage, all shared documents are tracked, and the team has multiple ways to access the shared content, including locally and online at the GitHub website. The disadvantage is that this method is slower and less direct for rapid prototyping using certain tools that not every member has installed on their computer; in these cases, it has been simpler to send screenshots or comparable images directly over Slack and wait until the work has slowed down to commit to Git.
+GitHub is used for storing and sharing project related files. As noted above, the team repository contains all documentation that concerns the project, and anyone can pull a fresh copy at any time. Similarly, anyone can push their local Git commits to the team repository at any time, effectively sharing them with everyone else. The advantages of this system are that all shared documents are tracked, and the team has multiple ways to access the shared content, including locally and online at the GitHub website. The disadvantage is that this method is slower and less direct for rapid prototyping using certain tools that not every member has installed on their computer; in these cases, it has been simpler to send screenshots or comparable images directly over Slack and wait until the work has slowed down to commit to Git.
 
 ---
 2.4.4. Project Management
 
-GitHub and Slack are both used for project management. The readme document on GitHub contains the todo list with current tasks and is organized by assigned team roles; it is updated at least weekly, and generally a week ahead of time, so that members can plan their own schedules and work at their own pace without the pressure of surprise assignments. All the team members are required to read the checklist and complete tasks by the due date. To compliment the list, Slack is used for bi-weekly meetings, questions, and discussion: assignments are frequently elaborated and explained in Slack and team progress is tracked at least at every meeting. The advantage of this combined method is that is low overhead, utilizes the tools already in use by the group, and is able to both provide and capture feedback continuously. The disadvantage is that the list can sometimes seem impersonal since it does not have any direct collaborative features. Still, on rare occasions, schedule adjustments were made after the PM received feedback about delays; thus, the schedule is still collaborative in a way, if not fully shared or gamified.
+GitHub and Slack are both used for project management. The readme document on GitHub contains the to-do list with current tasks and is organized by assigned team roles; it is updated at least weekly, and generally a week ahead of time, so that members can plan their own schedules and work at their own pace without the pressure of surprise assignments. All team members are required to read the checklist and complete tasks by the due date. To compliment the list, Slack is used for bi-weekly meetings, questions, and discussion: assignments are frequently elaborated and explained in Slack and team progress is tracked at least at every meeting. The advantage of this combined method is low overhead. It utilizes the tools already in use by the group, and can to both provide and capture feedback continuously. The disadvantage is that the checklist can sometimes seem impersonal since it does not have any direct collaborative features. Still, on rare occasions, schedule adjustments were made after the project manager received feedback about delays; thus, the schedule is still collaborative in a way, if not fully shared or gamified.
 
 ---
 2.4.5. Version Control Of Documents
@@ -205,10 +230,10 @@ MHC wants to maintain its quality of service by providing the best customer care
 ===
 3.2. B2
 
-Employees at MHC want to search the files with filename, filetype, and/or location efficiently so that they can answer the customers effectively.
+Employees at MHC want to search for files by filename, filetype, and/or location in an efficient manner so that they can answer the customers effectively.
 
 ===
-3.4. B3
+3.3. B3
 
 The application must not have direct access to any confidential data or documents; rather, tags must be attached to files in a way that does not require read permissions to access the file tags.
 
@@ -218,17 +243,17 @@ The application must not have direct access to any confidential data or document
 ===
 4.1. F1
 
-Customer care representatives must be able to retrieve the policy holder information using a keyword from their database.
+Customer care representatives must be able to retrieve the policy holder information using a keyword from their tag database.
 
 ===
-4.4. F2
+4.2. F2
 
 The file tags must not allow employees to access documents that they do not have permissions to access.
 
 ===
-4.6. F3
+4.3. F3
 
-The application must require an appropriate employee login in order to create, update and delete tags.
+The application must require an appropriate employee login to create, update, and delete tags.
 
 +++
 5. Interface Requirements
@@ -240,27 +265,27 @@ The application must require an appropriate employee login in order to create, u
 5.1.1. GUI
 
 ~~~~~
-5.1.1.3. I1
+5.1.1.1. I1
 
 The employees at MHC must log to TagIt.FM in via it's GUI in order to manage tags.
 
 ~~~~~
-5.1.1.1. I2
+5.1.1.2. I2
 
 The GUI must have a conspicuous search feature that employees can use when searching for tags.
 
 ~~~~~
-5.1.1.1. I3
+5.1.1.3. I3
 
 The GUI must provide an option to allow/disallow employees from searching within subdirectories.
 
 ~~~~~
-5.1.1.2. I4
+5.1.1.4. I4
 
 Employees must be able to change the target search directory in the GUI before any search so they can expand or narrow the results.
 
 ~~~~~
-5.1.1.4. I5
+5.1.1.5. I5
 
 The GUI must include a history option that lists recently searched tags so that employees do not need to remember their past searches.
 
@@ -272,7 +297,7 @@ Description: In order to make the application user-friendly, TagIt.FM will be us
 ---
 5.1.3. API - N/A
 
-Decription: TagIt.FM will not use an API because all the features are exposed in the GUI and support for third-party add-ons will not be available at this time.
+Description: TagIt.FM will not use an API because all the features are exposed in the GUI and support for third-party add-ons will not be available at this time.
 
 ===
 5.2. Hardware Interfaces
@@ -335,7 +360,7 @@ The employees at MHC must be able to access the application 24 x 7 because the c
 
 ===
 
-7.3.2. N3
+7.3.1. N3
 
 The application must have no external dependencies because the company wants to maintain the security of customer data and the ability to safely upgrade the application in the future.
 
@@ -353,7 +378,7 @@ In order to increase efficiency, the application must be able to support several
 ---
 7.5.1. N5
 
-The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.
+The application must keep all tag data updated in real time as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.
 
 ===
 7.6. Serviceability
@@ -433,7 +458,7 @@ https://github.com/Bizzlebin/TEAM/blob/master/wk_4_uml_diagram.vpd.png
 ===
 10.2. Sequence Diagram Of Requirement N2
 
-The N2 requirement states that the application must be available 24 x 7. The following sequence diagram is an excerpt of the search process showing how the TagIt.FM server will contiuously communicate with the database containing the tag information, in order to satisfy the N2 requirement.
+The N2 requirement states that the application must be available 24 x 7. The following sequence diagram is an excerpt of the search process showing how the TagIt.FM server will continuously communicate with the database containing the tag information, to satisfy the N2 requirement.
 
 https://github.com/Bizzlebin/TEAM/blob/master/wk_4_uml_diagram_loopfragment2.vpd.png
 
@@ -515,6 +540,8 @@ The M[o]SC[o]W method is a system commonly used to prioritize requirements for f
 
 To submit a change request, a team member must create a numbered section in the change_requests.txt file. This section must contain, in description list items, the status (open), the ID of the requirement, the updated requirement text, the rationale, the requester's name, and the request's open date as follows:
 
+11.2.1 Example Change
+
 """
 ===
 0. Example Change
@@ -538,6 +565,84 @@ During the next team meeting, the change control board must vote on all active i
 
 ===
 11.3. Schedule
+
+An example project calendar for the full SDLC, detailing the time each major project task is expected to take. Times are rounded into 4-hour (half-day) blocks. Subtasks are not broken out in this version, however, and ongoing overhead for larger teams and management is not included.
+
+11.3.1. Planning
+
+**Identification**: 4 h (does not include what precedes the "Eureka!")
+**Pitch**: 4 h
+**Formation**: 8 h (includes initial management overhead, tool setup, and standardization)
+
+**Total**: 16 h
+
+---
+11.3.2. Analysis
+
+**Gathering**: 8 h (includes brainstorming and client meetings)
+**Sorting**: 8 h (includes later changes and votes)
+**Drafting**: 4 h (includes diagrams)
+**Finalizing**: 4 h
+
+**Total**: 24 h
+
+---
+11.3.3. Design
+
+**Overview**: 4 h (every step doubles in complexity)
+**Details**: 8 h (includes diagrams)
+**Modules**: 16 h (including DB design)
+**Pseudocode**: 32 h (template, comments, and basic logic only)
+
+**Total**: 60 h
+
+---
+11.3.4. Building
+
+**Graphics**: 8 h (timeboxed else they take forever!)
+**DB**: 4 h
+**Exceptions**: 4 h
+**Classes**: 48 h (12 × 4 h/class average from prior experience)
+**Integration**: 8 h
+
+**Total**: 72 h
+
+---
+11.3.5. Testing
+
+**Interface**: 4 h (overlaps Building > Integration)
+**Performance**: 8 h (unattended)
+**Recovery**: 4 h
+**Usability**: 8 h (3 people minimum)
+**Alpha**: 4 h
+
+**Total**: 28 h
+
+---
+11.3.6. Installation
+
+**Marketing**: 4 h (mirrors alpha)
+**Manuals**: 8 h (mirrors usability)
+**Deployment**: 8 h ("Deployment Day", just in case)
+
+**Total**: 20 h
+
+---
+11.3.7. Maintenance
+
+[Ongoing]
+
+---
+Grand Total
+
+**Total**: 220 h (27.5 d)
+
+---
+11.3.8 Gantt Chart
+
+The following Gantt chart illustrates the schedule outlined in the previous sections.
+
+https://github.com/Bizzlebin/TEAM/blob/master/gantt.ods
 
 ===
 11.4. Requirements Traceability Matrix
@@ -587,7 +692,7 @@ TC0010,    Server,        Null,   SB (LT),  Validate if the change target contro
 TC0011,    Server,        Null,   SB (LT),  Validate if the user can access the history data.
 TC0012,    Client,        Null,   SB (LT),  Validate whether user type has the required computer system.
 TC0013,    Server,        Null,   SB (LT),  Validate if any requests to the server did not successfully pass.
-TC0014,    Client,        Null,   SB (LT),  Validate whether usertype has the required filesystem.
+TC0014,    Client,        Null,   SB (LT),  Validate whether user type has the required filesystem.
 TC0015,    Client,        Null,   ZW (LSD), Validate that average search times remain below 5 seconds.
 TC0016,    Client,        Null,   ZW (LSD), Validate that directories can still be accessed during searches.
 TC0017,    Client,        Null,   JT (PM),  Compare file pre and post-tagging; are hashes the same?
