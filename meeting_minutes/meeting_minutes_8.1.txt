@@ -10,10 +10,12 @@ By Anna Malmberg, et al
 
 Created on 2020-07-14
 
+Edited on 2020-07-15
+
 +++
 Summary
 
-Tuesmeeting on 2020-07-14 of TEAM Exists As Metonym, focus beginning final steps for SRS and HLD. Freeze going into effect tonight.
+Tuesday meeting on 2020-07-14 of TEAM Exists As Metonym, focus beginning final steps for SRS and HLD. Freeze going into effect tonight.
 
 **Call To Order**: Jeremiah Thomas 20:00
 
