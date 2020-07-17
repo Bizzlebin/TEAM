@@ -552,11 +552,11 @@ B3,     None,      Must,   TC0003
 F1,     B2,        Must,   TC0004
 F2,     B3,        Must,   TC0005
 F3,     B3,        Should, TC0006
-I1,     F3,        Should, TC0007
+I1,     F1,        Must,   TC0007
 I2,     F1,        Must,   TC0008
 I3,     F2,        Should, TC0009
 I4,     F1,        Must,   TC0010
-I5,     F1,        Should, TC0011
+I5,     F2,        Should, TC0011
 I6,     B2,        Must,   TC0012
 I7,     B1,        Must,   TC0013
 I8,     B2,        Must,   TC0014
