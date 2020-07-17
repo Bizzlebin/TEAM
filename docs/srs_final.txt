@@ -65,7 +65,7 @@ Table Of Contents
 9.2.2. User Stores Per Functional Requirement
 9.2.1. User Stories Per Business Requirement
 10. Sequence Diagrams
-10.1. Sequence Diagram Of Requirements I1 And N6
+10.1. Sequence Diagram Of Requirements I1 And N5
 10.2. Sequence Diagram Of Requirement N2
 11. Appendices
 11.1. MOSCOW
@@ -352,7 +352,7 @@ In order to increase efficiency, the application must be able to support several
 7.5. Resource Utilization
 
 ---
-7.5.1. N6
+7.5.1. N5
 
 The application must keep all tag data updated in realtime as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.
 
