@@ -71,7 +71,6 @@ Table Of Contents
 7.4.1. N4
 7.5. Resource Utilization
 7.5.1. N5
-7.6. Serviceability
 8. Operational Scenarios
 8.1. Scenario A
 8.2. Scenario B
@@ -379,9 +378,6 @@ In order to increase efficiency, the application must be able to support several
 7.5.1. N5
 
 The application must keep all tag data updated in real time as tags are created, read, and/or deleted so that all employees can retrieve accurate search results.
-
-===
-7.6. Serviceability
 
 +++
 8. Operational Scenarios
