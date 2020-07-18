@@ -10,7 +10,7 @@ By Zachary Wawrzaszek, et al
 
 Created on 2020-07-02
 
-Updated on 2020-07-17
+Updated on 2020-07-18
 
 +++
 1. Introduction
@@ -20,7 +20,7 @@ Updated on 2020-07-17
 
 The purpose of this project is to provide an application that will improve the speed and accuracy of searching for files on a computer. TagIt.FM is designed to assist anyone who has ever had a difficult time locating a specific file within their file manager when they need it urgently. The TagIt.FM will be a reliable resource for any company that is looking for quick file search results.
 
-The client, MHC, is an insurance company and they need the application to quickly locate important medical and financial documents of varying filetype. Customer service representatives, especially, will benefit from the application because it will both simplify the search process and reduce the amount of time they need to keep a customer on hold. This, in turn, can improve the mood of the customer and decrease frustrations for the employee. This document will provide an overview of what is going to be included in the initial release of the application. The details of the project will be further discussed and developed in the Low-Level Design document.
+The client, MHC, is an insurance company and they need the application to quickly locate important medical and financial documents of varying filetype. Customer service representatives, especially, will benefit from the application because it will both simplify the search process and reduce the amount of time that they need to keep a customer on hold. This, in turn, can improve the mood of the customer and decrease frustrations for the employee. This document will provide an overview of what is going to be included in the initial release of the application. The details of the project will be further discussed and developed in the Low-Level Design document.
 
 ===
 1.2. Scope Of This Document
@@ -38,7 +38,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 **Git**: Distributed version-control system used for tracking source code during software development
 **GitHub**: Company that provides hosting for software development version control using Git
 **GUI**: Graphical user interface
-**hash**: A scrambled representation of a password
+**Hash**: A scrambled representation of a password
 **HIPAA**: Health Insurance Portability And Accountability Act Of 1996
 **HTTP**: Hypertext transfer protocol is an application protocol for distributed, collaborative, hypermedia information systems
 **HTTPS**: Hypertext transfer protocol secure is an extension of the hypertext transfer protocol that is used for secure communication over a computer network
@@ -51,7 +51,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 **PyCharm**: An IDE used specifically for the Python programming language
 **RDBMS**: Relational database management system
 **SDLC**: Software development life cycle
-**salt**: In cryptography, a salt is random data that is used to safeguard passwords in storage
+**Salt**: In cryptography, a salt is random data that is used to safeguard passwords in storage
 **Slack**: Proprietary business communication platform that features chat and file sharing
 **SQL**: Structured query language: a language used in programming that is designed for data held in a relational database management system
 **SQLite**: A database that operates directly from library function calls, without a separate process or server
@@ -65,7 +65,7 @@ This document outlines the basic structure of TagIt.FM's interfaces and provides
 ===
 2.1. Overview Of Design
 
-The design of this project will be based around two main classes, the Main class and the Server_main class. The Main class will manage the interactions between the GUI class, the user classes, and the database. The Server_main class will oversee the handling the Https_server class and the database.
+The design of this project will be based around two main classes, the Main class, and the Server_main class. The Main class will manage the interactions between the GUI class, the user classes, and the database. The Server_main class will oversee the handling the Https_server class and the database.
 
 The Main class will handle interactions between user input and how the GUI will react. The Server_main class will handle interactions between the Db_helper and Https_server classes as well as interactions with the database to manage the flow of data from the GUI to the database. The Gui class will instantiate objects that allow the user to view information about their file hierarchy, tags, and search history. The User class is completely independent and it is where the user will interact with these object instances to select files, add tags or remove tags from files, create new tags or delete existing tags, and search for files based upon their assigned tags. The GUI will also be able to display reports for the total number of users, total number of tags, a demonstration report that shows none of the tags are directly linked to confidential data, and a report showing each user and their current level of permissions.
 
@@ -117,7 +117,7 @@ TEAM will be using PyCharm version 2020.1.2 with the build number 201.7846.77 as
 
 MHC deals with documents and records that must remain confidential due to HIPAA regulations. Therefore, all data transfers will be handled using an HTTPS server. The HTTPS server will encrypt the data and stop potential intruders from being able to understand any data that they may have intercepted during a transfer to the database. The company network runs on a private network and mandates the use of firewalls when connecting to the internet, which reduces the potential of DDOS attacks or hackers being able to find direct access to the servers. The physical security of the building will provide further protection and deny unauthorized personnel direct access to the network or server.
 
-To provide another layer of security to TagIT.FM, MHC employees will be provided an username and password. The user account permissions will be based off their job-related responsibilities in the company. Since every user will have the ability to complete tasks in the application, TagIT.FM will have three different roles assigned to user accounts to restrict the users' ability to modify and access critical data within the application. To create or delete tags within TagIt.FM, the user is required to log in with a Mid_user level access. For administrative tasks, there is a High_user level which can create or delete user accounts and grant accounts a different access level.
+To provide another layer of security to TagIT.FM, MHC employees will be provided a username and password. The user account permissions will be based off their job-related responsibilities in the company. Since every user will have the ability to complete tasks in the application, TagIT.FM will have three different roles assigned to user accounts to restrict the users' ability to modify and access critical data within the application. To create or delete tags within TagIt.FM, the user is required to log in with a Mid_user level access. For administrative tasks, there is a High_user level which can create or delete user accounts and grant accounts a different access level.
 
 This layered approach in the application will provide a higher level of security that will offer the client a sense of comfort about how their data is handled. It will also organize the user account structure to prevent any confusion regarding who can handle the higher administrative roles.
 
@@ -149,7 +149,7 @@ There will be a few internal interfaces at work in TagIt.FM due to several class
 
 The Main class will be interfacing with both the User and Gui classes to manage their interactions through the user's choices and actions in the GUI. The Main class will also create an instance of the Http_client class which will communicate data retrieved from the server side of the network through the Main class to the rest of the classes.
 
-There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server class and a Db_helper class. The Db_helper class will be responsible for the encapsulation of data that will be be sent to the database, as well as the de-encapsulation of data retrieved from the database. The Https_server class will handle the transfer of data to and from the Http_client class. The data retrieved from the Main class will be used to update the database and the data sent back to the client will be used to update the Tags and History Classes.
+There will also be internal interfaces necessary on the server side of the network. The Server_main class will create instances of both an Https_server class and a Db_helper class. The Db_helper class will be responsible for the encapsulation of data that will be sent to the database, as well as the de-encapsulation of data retrieved from the database. The Https_server class will handle the transfer of data to and from the Http_client class. The data retrieved from the Main class will be used to update the database and the data sent back to the client will be used to update the Tags and History classes.
 
 ===
 3.5. External Interfaces
@@ -216,14 +216,14 @@ This will be the class that contains and displays the objects for the user inter
 
 The basic User class will contain usernames and passwords attributes and will let the employee interact with the GUI. This class will have two subclasses representing the level of the employee, each subclass inheriting from the previous class, and adding its own functions and attributes.
 
-Each level of the user classes will be set up using this format due to the authentication requirements outlined in the SRS document. Depending on their job duties at MHC, user accounts will be assigned either as High_user, Mid_user or User at creation but the level may be changed at a later date by a High_user. The level of the account will give the employee access to specific functions within the TagIt.FM application, so that they will be able to complete the tasks required by their role.
+Each level of the user classes will be set up using this format due to the authentication requirements outlined in the SRS document. Depending on their job duties at MHC, user accounts will be assigned either as High_user, Mid_user or User at creation but the level may be changed later by a High_user. The level of the account will give the employee access to specific functions within the TagIt.FM application, so that they will be able to complete the tasks required by their role.
 
 The User class will primarily involve seven different functions to create the structure for the remaining two subclasses, they are: init, login, create_file_tag, delete_file_tag, read_file_tags, read_history, and read_id. The init function will handle initializing the user object, which creates the username and password while calling the login function. The login function will be responsible for handling the client's response to a login request with the given username and password. The create_file_tag, delete_file_tag, and read_file_tags will check that the user has the required user level prior to completing a task, they will then quickly complete their tasks using the given parameters and arguments. The read_history will primarily be responsible for gathering the information from the user's history that stores recent tag searches and the read_id will primarily read the users ID.
 
 ---
 3.10.5. Tags Class
 
-This class will be responsible for holding all the created tags and tag descriptions, and displaying them for the employee. The Tags class will receive constant updates from the database aided by the Db_helper class and it will take into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags class stay up-to-date.
+This class will be responsible for holding all the created tags and tag descriptions and displaying them for the employee. The Tags class will receive constant updates from the database aided by the Db_helper class and it will take into account any changes that have been made to the availability of specific tags, ensuring that both the database and the Tags class stay up-to-date.
 
 ---
 3.10.6. Https_server Class
@@ -247,14 +247,14 @@ This class will hold a list of the user's recent actions, such as creating a tag
 ---
 3.10.9. File_manager_helper Class
 
-The File_manager_helper class will be responsible for retrieving the computer's file hierarchy from the file manager for display in the GUI. It will also be gathering and collecting the file's information to list the file names that will potentially be tagged. It will determine whether the client is using Windows or Linux, so it will need multiple functions that handle these differences by using inheritance and it will creates the object that communicate with the GUI class.
+The File_manager_helper class will be responsible for retrieving the computer's file hierarchy from the file manager for display in the GUI. It will also be gathering and collecting the file's information to list the file names that will potentially be tagged. It will determine whether the client is using Windows or Linux, so it will need multiple functions that handle these differences by using inheritance and it will create the object that communicate with the GUI class.
 
 File_manager_helper class will be called by the GUI when a user searches for a tag; the subdirectory checkbox in the GUI will be read in order to determine if subdirectories will be searched. The class will then interface with the local filesystem and return a Python-friendly list of available files to the GUI.
 
 ---
 3.10.10. Https_client Class
 
-This class handles the requests and transfers of data to and from the server side of the project architecture. It will utilize both the http.client and ssl libraries to provide secure transfers of data between the client and server. The http.client library will provide HTTPS support if the code is compiled using the ssl library. This is accomplished through the ssl library's methods that allow for certificate authentication and its ability to create ssl sockets. 
+This class handles the requests and transfers of data to and from the server side of the project architecture. It will utilize both the http.client and ssl libraries to provide secure transfers of data between the client and server. The http.client library will provide HTTPS support if the code is compiled using the ssl library. This is accomplished through the ssl library's methods that allow for certificate authentication and its ability to create ssl sockets.
 
 ---
 3.10.11. HLD Diagram
@@ -271,7 +271,9 @@ The authentication diagram below explains the process of when a client logs in t
 https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
 ===
-3.11. Configuration Data
+3.11. Configuration Data - N/A
+
+Description: Configurations are used to allow for the user to create ad hoc reporting formats and other minor adjustments to the functionality of the application. At the initial release, TagIT.FM will not feature any configurations that the user can modify, however some may be added in a future release.
 
 ===
 3.12. Data Flows And States
@@ -281,11 +283,11 @@ https://github.com/Bizzlebin/TEAM/blob/master/authentication_diagram.png
 
 Data flow diagram 1, illustrates the functions that will be available to the High_user class. This class will be able to change the level of users, in addition to the tag creation and deletion functions that it will inherit from the Mid_user class, and the search function it will inherit from the User class.
 
-https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1.PNG
+https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram1_v2.PNG
 
 ---
 3.12.2. Data Flow Diagram 2
 
 Data flow diagram 2, illustrates some of the functions that will be available to a user depending on their level, and how they will interact with the database tables. The login function as well as the create/delete user functions will interact with the User table. The create/delete tag functions will interact with the Tag table, and the update or clear history functions will interact with the History table.
 
-https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2.PNG
+https://github.com/Bizzlebin/TEAM/blob/master/data_flow_diagram2_v2.PNG
