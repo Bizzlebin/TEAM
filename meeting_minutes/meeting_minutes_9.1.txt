@@ -1,0 +1,49 @@
+Meeting Minutes 9.1
+
+https://github.com/bizzlebin/team/blob/master/meeting_minutes/meeting_minutes_9.1.txt
+
+***
+
+By Anna Malmberg, et al
+
+***
+
+Created on 2020-07-21
+
++++
+Summary
+
+Tuesday meeting on 2020-07-21 of TEAM Exists As Metonym, all deliverables have been submitted, general discussion about the project.
+
+**Call To Order**: Jeremiah Thomas 20:00
+
++++
+Attendance
+
+**Present**: Anna Malmberg, Jeremiah Thomas, Sandhya Joshi
+**Absent**: Zachary Wawrzaszek, Stavros Bannoura
+
++++
+Presentations
+
+**Anna**: Finalized HLD and SRS before turning them over to Jeremiah
+**Sandhya**: Completed SRS
+**Jeremiah**: Added to strengths and weaknesses section of SRS, completed final copyedit and submitted SRS and HLD
+
++++
+Free For All Discussion
+
+**Jeremiah**: Switching between PM and other tasks was hard
+**Anna**: Suggestion that a Kanban board tool could have been nice to use
+**Sandhya**: Liked the idea of a Kanban board
+**Jeremiah**: Thought it probably would not have been a big help with the way we structured the project
+**Anna**: Would like to get in contact on LinkedIn
+**Jeremiah**: How did everyone like the scope of the project? Thought some spots may have been better to work in different order
+**Anna**: Class may have been better suited for traditional class environment
+**Sandhya**: Liked the practical aspect of it
+
++++
+Adjournment
+
+**Call To Close**: Jeremiah Thomas 20:15
+**Next Meeting Scheduled** 2020-07-23 20:00
